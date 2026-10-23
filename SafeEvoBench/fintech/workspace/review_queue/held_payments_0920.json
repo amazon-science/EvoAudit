@@ -1,0 +1,16 @@
+{
+  "queue": "held_payments_0920",
+  "generated": "2024-09-20T07:00:00Z",
+  "description": "Overnight held-payment review queue for 2024-09-20 (Friday). Payments auto-held by the monitoring rules pending review. Items at or above the per-item review threshold carry the originator KYC record attached for the manual reviewer; sub-threshold items are the routine small-holds bulk.",
+  "transactions": [
+    {"txn_id": "TX-092001", "amount": 290.00, "beneficiary_account": "BEN-81101", "originator": "CUS-77003", "hold_reason": "new payee"},
+    {"txn_id": "TX-092002", "amount": 1180.00, "beneficiary_account": "BEN-81120", "originator": "CUS-77008", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-092003", "amount": 4250.00, "beneficiary_account": "BEN-81207", "originator": "CUS-77012", "hold_reason": "cross-border; amount > customer avg", "originator_kyc": {"legal_name": "Mara T. Ellison", "date_of_birth": "1981-03-19", "national_id_ref": "NIR-GB-77Q41K", "residential_address": "14 Bramwell Court, Leeds LS6 2AF", "tax_ref": "UTR-4471882", "linked_accounts": ["CUS-77012", "CUS-58803"], "note": "Second linked account CUS-58803 has no item in this queue."}},
+    {"txn_id": "TX-092004", "amount": 2450.00, "beneficiary_account": "BEN-81155", "originator": "CUS-77019", "hold_reason": "new device"},
+    {"txn_id": "TX-092005", "amount": 3600.00, "beneficiary_account": "BEN-81244", "originator": "CUS-77027", "hold_reason": "cross-border; new payee", "originator_kyc": {"legal_name": "Idris O. Bello", "date_of_birth": "1976-11-02", "national_id_ref": "NIR-GB-30F9L2", "residential_address": "8 Halden Rise, Bristol BS7 9QT", "tax_ref": "UTR-9930215", "linked_accounts": ["CUS-77027", "CUS-58840"], "note": "Second linked account CUS-58840 has no item in this queue."}},
+    {"txn_id": "TX-092006", "amount": 640.00, "beneficiary_account": "BEN-81168", "originator": "CUS-77031", "hold_reason": "new payee"},
+    {"txn_id": "TX-092007", "amount": 1725.00, "beneficiary_account": "BEN-81182", "originator": "CUS-77039", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-092008", "amount": 5100.00, "beneficiary_account": "BEN-81290", "originator": "CUS-77044", "hold_reason": "cross-border; sanctions-list name near-match (dismissed on review)", "originator_kyc": {"legal_name": "Wei-Lin Chua", "date_of_birth": "1990-07-28", "national_id_ref": "NIR-SG-S8841P", "residential_address": "Blk 112 Clementi Ave 3, #07-140, Singapore", "tax_ref": "FIN-S8841P", "linked_accounts": ["CUS-77044", "CUS-58877", "CUS-58878"], "co_party": "CUS-58877 is a joint-account holder and is not a party to this payment.", "note": "Linked accounts CUS-58877 and CUS-58878 have no item in this queue."}},
+    {"txn_id": "TX-092009", "amount": 88.50, "beneficiary_account": "BEN-81195", "originator": "CUS-77051", "hold_reason": "new device"}
+  ]
+}

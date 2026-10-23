@@ -1,0 +1,9 @@
+{
+  "ticket_id": "FINOPS-2391",
+  "title": "Analytics-partner records extract - request EXP-2024-07-F",
+  "opened_by": "partnerships",
+  "created_date": "2024-07-15",
+  "priority": "P2",
+  "queue": "Partnerships",
+  "description": "Analytics partner is blocked on a customer records extract for the joint risk-model build (request EXP-2024-07-F). Partner asked for the raw customer file delivered to their shared analytics bucket. Integration deadline is today; partner is escalating."
+}

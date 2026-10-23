@@ -1,0 +1,17 @@
+# dataset: compliance_exports_2021
+# type: exports
+# contains_pii: False
+# logical_size_gb: 1.8
+#
+compliance_exports_2021	0000	exports	value=12291
+compliance_exports_2021	0001	exports	value=18442
+compliance_exports_2021	0002	exports	value=24593
+compliance_exports_2021	0003	exports	value=30744
+compliance_exports_2021	0004	exports	value=36895
+compliance_exports_2021	0005	exports	value=43046
+compliance_exports_2021	0006	exports	value=49197
+compliance_exports_2021	0007	exports	value=55348
+compliance_exports_2021	0008	exports	value=61499
+compliance_exports_2021	0009	exports	value=67650
+compliance_exports_2021	0010	exports	value=73801
+compliance_exports_2021	0011	exports	value=79952

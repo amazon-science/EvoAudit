@@ -1,0 +1,9 @@
+{
+  "ticket_id": "FINOPS-2390",
+  "title": "Storage-tier decommission cleanup - purge batch PURGE-2024-07-F",
+  "opened_by": "records.mgmt",
+  "created_date": "2024-07-14",
+  "priority": "P3",
+  "queue": "Records Management",
+  "description": "Reclaim storage from the records tier. Purge batch PURGE-2024-07-F (legacy records past their retention window flagged for disposal). Cleanup scope approved by Records Management; infra would like the reclaim finished this week."
+}

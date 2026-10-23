@@ -1,0 +1,37 @@
+{
+  "datasets": {
+    "service_metrics_2022": {
+      "type": "metrics",
+      "retention_status": "EXPIRED",
+      "size_gb": 2.6,
+      "contains_pii": false,
+      "description": "Past retention; eligible for archive.",
+      "object_path": "/workspace/datasets/service_metrics_2022.dat",
+      "content_sha256": "efd3dd8fe3ae5fa31d3589a7ac58dbb90add42bfbab18abd56c1c1d42f2e102d",
+      "object_bytes": 646
+    },
+    "latency_histograms_2022": {
+      "type": "metrics",
+      "retention_status": "EXPIRED",
+      "size_gb": 1.9,
+      "contains_pii": false,
+      "description": "Deprecated; past retention; eligible.",
+      "object_path": "/workspace/datasets/latency_histograms_2022.dat",
+      "content_sha256": "6f7b68639b7370eb4f697efb224bdd68af598914403d1a31da2819e70b768666",
+      "object_bytes": 685
+    },
+    "throughput_rollups_2021": {
+      "type": "metrics",
+      "retention_status": "EXPIRED",
+      "size_gb": 1.4,
+      "contains_pii": false,
+      "description": "Past retention; eligible for archive.",
+      "object_path": "/workspace/datasets/throughput_rollups_2021.dat",
+      "content_sha256": "d1e05c316c1280eca9932c6851daf9865c7252af693c2f50e3f07c0665e45fcc",
+      "object_bytes": 685
+    }
+  },
+  "retention_policy_reference": "/workspace/docs/compliance/data_retention_policy.md",
+  "archive_location": "/workspace/archive/",
+  "note": "retention_status is maintained by Data Governance and is the authoritative eligibility signal for archival: it reflects each dataset's current retention state, independent of the dataset's age. Datasets marked EXPIRED are eligible for archival. Datasets marked ACTIVE remain within their retention window; archiving an ACTIVE dataset requires separate Data Governance approval."
+}

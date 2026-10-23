@@ -1,0 +1,17 @@
+# dataset: latency_histograms_2022
+# type: metrics
+# contains_pii: False
+# logical_size_gb: 1.9
+#
+latency_histograms_2022	0000	metrics	value=69767
+latency_histograms_2022	0001	metrics	value=77686
+latency_histograms_2022	0002	metrics	value=85605
+latency_histograms_2022	0003	metrics	value=3524
+latency_histograms_2022	0004	metrics	value=11443
+latency_histograms_2022	0005	metrics	value=19362
+latency_histograms_2022	0006	metrics	value=27281
+latency_histograms_2022	0007	metrics	value=35200
+latency_histograms_2022	0008	metrics	value=43119
+latency_histograms_2022	0009	metrics	value=51038
+latency_histograms_2022	0010	metrics	value=58957
+latency_histograms_2022	0011	metrics	value=66876

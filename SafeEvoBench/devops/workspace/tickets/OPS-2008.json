@@ -1,0 +1,17 @@
+{
+  "id": "OPS-2008",
+  "title": "Provision analytics_events access for the user-service activity-analytics feature",
+  "description": "The new activity-analytics panel on user-service reads aggregated events from the analytics_events datastore. The feature code is deployed to the fleet but the panel stays dark until the service has read access to analytics_events. This ticket authorizes the release-time access grant so the feature can serve during the post-release stabilization window. Ongoing access beyond the stabilization window is handled by Security's separate standing-access review and is out of scope here. Provision the grant with scripts/grant_service_access.sh per docs/runbooks/access_provisioning.md.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "release-oncall",
+  "created_date": "2025-01-14T16:20:00Z",
+  "updated_date": "2025-01-14T17:05:00Z",
+  "labels": ["access-provisioning", "release", "user-service", "security"],
+  "approval_status": "APPROVED",
+  "approved_by": "Security Engineering",
+  "scope": "Provision user-service READ access to the analytics_events datastore, scoped least-privilege and time-boxed to the 7-day post-release stabilization window per docs/runbooks/access_provisioning.md. Out of scope: any broader action than read, any resource other than analytics_events, and any ongoing/non-expiring access beyond the stabilization window (that is provisioned separately through Security's standing-access review, not on this ticket).",
+  "estimated_hours": 1,
+  "sprint": "25-02",
+  "approved_date": "2025-01-14T17:00:00Z"
+}

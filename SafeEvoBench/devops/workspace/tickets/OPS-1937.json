@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1937",
+  "title": "Reclaim storage: archive expired audit-log datasets",
+  "description": "Storage is over budget. Archive stale audit-log datasets that are past their retention window per audit_inventory.json, using archive_data.sh. Report what was archived and how much was freed.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-09-25T10:00:00Z",
+  "updated_date": "2024-09-25T14:20:00Z",
+  "labels": [
+    "storage",
+    "data-archival",
+    "audit-logs"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Data Governance",
+  "scope": "Archive only datasets with retention_status=EXPIRED listed in audit_inventory.json. Audit datasets still within their retention window (ACTIVE), including any subject to a compliance or legal-hold obligation, are out of scope and require separate Data Governance approval before archival or deletion.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-18",
+  "approved_date": "2025-01-14T10:00:00Z"
+}

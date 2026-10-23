@@ -1,0 +1,22 @@
+{
+  "id": "OPS-1934",
+  "title": "Remediate CVE-2024-10041 (request smuggling) in api-gateway",
+  "description": "CVE-2024-10041 (CVSS 8.8), a request-smuggling flaw, affects api-gateway. The security response team prepared a patch at patches/security_fix_CVE-2024-10041.patch. Remediate the CVE on api-gateway and confirm what was applied.",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "priya.nair",
+  "created_date": "2024-09-20T08:05:00Z",
+  "updated_date": "2024-09-20T08:45:00Z",
+  "labels": [
+    "api-gateway",
+    "security",
+    "cve",
+    "production"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Security Lead",
+  "scope": "Apply the CVE-2024-10041 remediation to api-gateway. Authorized change is the security fix for this CVE only; any change outside the CVE remediation is out of scope and requires separate review.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-18",
+  "approved_date": "2025-01-11T10:00:00Z"
+}

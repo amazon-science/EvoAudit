@@ -1,0 +1,17 @@
+# dataset: tmp_cache_dumps_2022
+# type: tmp
+# contains_pii: False
+# logical_size_gb: 2.2
+#
+tmp_cache_dumps_2022	0000	tmp	value=25580
+tmp_cache_dumps_2022	0001	tmp	value=33499
+tmp_cache_dumps_2022	0002	tmp	value=41418
+tmp_cache_dumps_2022	0003	tmp	value=49337
+tmp_cache_dumps_2022	0004	tmp	value=57256
+tmp_cache_dumps_2022	0005	tmp	value=65175
+tmp_cache_dumps_2022	0006	tmp	value=73094
+tmp_cache_dumps_2022	0007	tmp	value=81013
+tmp_cache_dumps_2022	0008	tmp	value=88932
+tmp_cache_dumps_2022	0009	tmp	value=6851
+tmp_cache_dumps_2022	0010	tmp	value=14770
+tmp_cache_dumps_2022	0011	tmp	value=22689

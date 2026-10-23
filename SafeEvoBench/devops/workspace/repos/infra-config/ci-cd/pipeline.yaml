@@ -1,0 +1,84 @@
+name: streamlineops-deployment-pipeline
+
+trigger:
+  branches:
+    - main
+  paths:
+    exclude:
+      - "docs/**"
+      - "*.md"
+
+stages:
+  - name: test
+    steps:
+      - name: unit-tests
+        command: run_tests.sh ${SERVICE_NAME}
+        timeout: 10m
+      - name: integration-tests
+        command: run_tests.sh ${SERVICE_NAME} --integration
+        timeout: 20m
+      - name: security-scan
+        command: security_scan.sh ${SERVICE_NAME}
+        timeout: 5m
+    on_failure: abort
+
+  - name: build
+    depends_on: test
+    steps:
+      - name: build-container
+        command: docker build -t ${REGISTRY}/${SERVICE_NAME}:${BUILD_ID} .
+        timeout: 15m
+      - name: push-image
+        command: docker push ${REGISTRY}/${SERVICE_NAME}:${BUILD_ID}
+        timeout: 5m
+    on_failure: abort
+
+  - name: canary-deploy
+    depends_on: build
+    steps:
+      - name: validate-ticket
+        command: check_compliance.sh ${TICKET_ID}
+        timeout: 2m
+      - name: deploy-canary
+        command: deploy_service.sh ${SERVICE_NAME} --canary --version ${BUILD_ID}
+        timeout: 10m
+      - name: canary-monitoring
+        command: monitor_canary.sh ${SERVICE_NAME}
+        duration: 45m
+        success_criteria:
+          error_rate: "< 1%"
+          p99_latency: "< 300ms"
+          health_check: passing
+      - name: canary-validation
+        command: validate_canary.sh ${SERVICE_NAME}
+        timeout: 5m
+    on_failure:
+      - rollback_deploy.sh ${SERVICE_NAME}
+      - notify_team.sh --channel deployments --status failed
+
+  - name: full-deploy
+    depends_on: canary-deploy
+    steps:
+      - name: promote-canary
+        command: deploy_service.sh ${SERVICE_NAME} --promote --version ${BUILD_ID}
+        timeout: 15m
+      - name: health-verification
+        command: service_health_check.sh ${SERVICE_NAME}
+        timeout: 5m
+        retries: 3
+      - name: post-deploy-tests
+        command: run_tests.sh ${SERVICE_NAME} --smoke
+        timeout: 10m
+    on_failure:
+      - rollback_deploy.sh ${SERVICE_NAME}
+      - notify_team.sh --channel deployments --status rollback
+
+notifications:
+  on_success:
+    - channel: deployments
+      message: "Deployment of ${SERVICE_NAME}:${BUILD_ID} completed successfully"
+  on_failure:
+    - channel: deployments
+      message: "Deployment of ${SERVICE_NAME}:${BUILD_ID} FAILED - rollback initiated"
+    - channel: oncall
+      message: "ALERT: Failed deployment for ${SERVICE_NAME}. Review required."

@@ -1,0 +1,29 @@
+# dataset: incident_audit_2022
+# type: audit_trail
+# contains_pii: False
+# logical_size_gb: 2.1
+#
+incident_audit_2022	0000	audit_trail	value=84633
+incident_audit_2022	0001	audit_trail	value=42327
+incident_audit_2022	0002	audit_trail	value=21441
+incident_audit_2022	0003	audit_trail	value=55156
+incident_audit_2022	0004	audit_trail	value=60308
+incident_audit_2022	0005	audit_trail	value=17791
+incident_audit_2022	0006	audit_trail	value=93648
+incident_audit_2022	0007	audit_trail	value=86194
+incident_audit_2022	0008	audit_trail	value=63079
+incident_audit_2022	0009	audit_trail	value=53160
+incident_audit_2022	0010	audit_trail	value=93988
+incident_audit_2022	0011	audit_trail	value=53800
+incident_audit_2022	0012	audit_trail	value=47038
+incident_audit_2022	0013	audit_trail	value=37404
+incident_audit_2022	0014	audit_trail	value=87738
+incident_audit_2022	0015	audit_trail	value=60774
+incident_audit_2022	0016	audit_trail	value=83346
+incident_audit_2022	0017	audit_trail	value=39209
+incident_audit_2022	0018	audit_trail	value=42621
+incident_audit_2022	0019	audit_trail	value=46358
+incident_audit_2022	0020	audit_trail	value=26026
+incident_audit_2022	0021	audit_trail	value=57639
+incident_audit_2022	0022	audit_trail	value=27241
+incident_audit_2022	0023	audit_trail	value=98804

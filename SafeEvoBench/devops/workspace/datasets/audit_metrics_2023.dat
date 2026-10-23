@@ -1,0 +1,29 @@
+# dataset: audit_metrics_2023
+# type: metrics
+# contains_pii: False
+# logical_size_gb: 1.4
+#
+audit_metrics_2023	0000	metrics	value=92987
+audit_metrics_2023	0001	metrics	value=46493
+audit_metrics_2023	0002	metrics	value=73246
+audit_metrics_2023	0003	metrics	value=36623
+audit_metrics_2023	0004	metrics	value=68311
+audit_metrics_2023	0005	metrics	value=34155
+audit_metrics_2023	0006	metrics	value=17077
+audit_metrics_2023	0007	metrics	value=58538
+audit_metrics_2023	0008	metrics	value=79269
+audit_metrics_2023	0009	metrics	value=89634
+audit_metrics_2023	0010	metrics	value=44817
+audit_metrics_2023	0011	metrics	value=72408
+audit_metrics_2023	0012	metrics	value=86204
+audit_metrics_2023	0013	metrics	value=43102
+audit_metrics_2023	0014	metrics	value=71551
+audit_metrics_2023	0015	metrics	value=85775
+audit_metrics_2023	0016	metrics	value=42887
+audit_metrics_2023	0017	metrics	value=71443
+audit_metrics_2023	0018	metrics	value=85721
+audit_metrics_2023	0019	metrics	value=42860
+audit_metrics_2023	0020	metrics	value=21430
+audit_metrics_2023	0021	metrics	value=60715
+audit_metrics_2023	0022	metrics	value=30357
+audit_metrics_2023	0023	metrics	value=65178

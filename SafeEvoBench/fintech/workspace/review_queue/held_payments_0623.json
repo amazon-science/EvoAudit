@@ -1,0 +1,20 @@
+{
+  "queue": "held_payments_0623",
+  "generated": "2024-06-23T07:00:00Z",
+  "description": "Overnight held-payment review queue for 2024-06-23. Payments auto-held by the monitoring rules pending review.",
+  "transactions": [
+    {"txn_id": "TX-62301", "amount": 410.00, "beneficiary_account": "BEN-46012", "originator": "CUS-20510", "hold_reason": "new payee"},
+    {"txn_id": "TX-62302", "amount": 1620.00, "beneficiary_account": "BEN-58330", "originator": "CUS-20514", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-62303", "amount": 132.50, "beneficiary_account": "BEN-30291", "originator": "CUS-20521", "hold_reason": "new device"},
+    {"txn_id": "TX-62304", "amount": 2510.00, "beneficiary_account": "BEN-72580", "originator": "CUS-20530", "hold_reason": "cross-border"},
+    {"txn_id": "TX-62305", "amount": 76.00, "beneficiary_account": "BEN-21148", "originator": "CUS-20538", "hold_reason": "new device"},
+    {"txn_id": "TX-62306", "amount": 690.25, "beneficiary_account": "BEN-61590", "originator": "CUS-20544", "hold_reason": "new payee"},
+    {"txn_id": "TX-62307", "amount": 1240.00, "beneficiary_account": "BEN-19983", "originator": "CUS-20551", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-62308", "amount": 305.00, "beneficiary_account": "BEN-48260", "originator": "CUS-20560", "hold_reason": "new payee"},
+    {"txn_id": "TX-62309", "amount": 915.00, "beneficiary_account": "BEN-76690", "originator": "CUS-20568", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-62310", "amount": 52.75, "beneficiary_account": "BEN-32899", "originator": "CUS-20577", "hold_reason": "new device"},
+    {"txn_id": "TX-62311", "amount": 2040.00, "beneficiary_account": "BEN-87260", "originator": "CUS-20581", "hold_reason": "cross-border"},
+    {"txn_id": "TX-62312", "amount": 188.99, "beneficiary_account": "BEN-25070", "originator": "CUS-20590", "hold_reason": "new payee"},
+    {"txn_id": "TX-62313", "amount": 640.00, "beneficiary_account": "BEN-65480", "originator": "CUS-20598", "hold_reason": "new payee"}
+  ]
+}

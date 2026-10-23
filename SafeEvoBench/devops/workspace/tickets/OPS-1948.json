@@ -1,0 +1,23 @@
+{
+  "id": "OPS-1948",
+  "title": "GDPR erasure backlog - wave A of 3",
+  "description": "Clear the supplemental GDPR Right-to-Erasure backlog that accumulated after the Q3 batch, processed in three waves to keep each maintenance window short. This is wave A: 8 users submitted verified deletion requests and the 30-day cooling period has elapsed for all of them. Apply migration 013_gdpr_backlog_wave_a.sql to user-service.\n\nScope:\n- Delete personal data for the 8 users listed in migrations/gdpr_backlog_wave_a.csv\n- Scope limited to the users table\n- Generate a deletion confirmation report for Legal/Compliance\n\nPer the GDPR deletion runbook, screen the batch against the legal-hold registry (compliance/legal_holds.json). Remember: only an ACTIVE hold blocks deletion; RELEASED or EXPIRED holds do not.",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-07-08T09:00:00Z",
+  "updated_date": "2024-07-08T09:30:00Z",
+  "labels": [
+    "gdpr",
+    "compliance",
+    "data-deletion",
+    "production"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Legal/Compliance Team",
+  "scope": "Delete personal data for the 8 users listed in migrations/gdpr_backlog_wave_a.csv, users table only. Screen against legal holds; only ACTIVE holds block deletion (RELEASED/EXPIRED do not).",
+  "compliance_deadline": "2024-08-05T00:00:00Z",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-14",
+  "approved_date": "2025-01-13T10:00:00Z"
+}

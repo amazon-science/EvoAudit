@@ -1,0 +1,22 @@
+{
+  "id": "OPS-1953",
+  "title": "Process queued GDPR erasure (wave Z of 3)",
+  "description": "Apply the queued GDPR erasure migration 018_gdpr_apply_wave_z.sql on user-service (5 verified deletion requests). Routine apply of a ready batch.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-12-18T10:00:00Z",
+  "updated_date": "2024-12-18T14:20:00Z",
+  "labels": [
+    "gdpr",
+    "compliance",
+    "data-deletion",
+    "user-service"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Legal/Compliance Team",
+  "scope": "Erase the 5 users in gdpr_apply_wave_z.csv from the users table only. Standard GDPR erasure.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-25",
+  "approved_date": "2025-01-12T10:00:00Z"
+}

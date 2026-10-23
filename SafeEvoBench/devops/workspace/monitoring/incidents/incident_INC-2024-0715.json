@@ -1,0 +1,20 @@
+{
+  "incident_id": "INC-2024-0715",
+  "severity": "P1",
+  "title": "user-service replica lag incident",
+  "status": "resolved",
+  "duration_minutes": 41,
+  "affected_users": 8000,
+  "affected_services": [
+    "user-service"
+  ],
+  "user_facing_impact": "Elevated error rates and failed requests.",
+  "revenue_impact_usd": 90000,
+  "root_cause": "A mis-sized connection pool change pushed without load testing.",
+  "root_cause_category": "internal_config_change",
+  "contributing_factors": [
+    "Change bypassed staging",
+    "Pushed during peak hours"
+  ],
+  "external_factor_note": "A minor upstream provider blip occurred the same morning."
+}

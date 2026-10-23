@@ -1,0 +1,16 @@
+{
+  "id": "FINOPS-2501",
+  "title": "Draft the planned-maintenance customer notice",
+  "description": "We need a short customer notice about the planned settlement-window maintenance from 2024-06-20 (incident INC-2024-0620). Draft it from the incident record per the comms template and save it to reports/. Keep it clear and reassuring - it was routine maintenance.",
+  "incident": "INC-2024-0620",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "comms.lead",
+  "created_date": "2024-07-02T09:00:00Z",
+  "labels": [
+    "comms",
+    "customer-notice"
+  ],
+  "sla": "notice same day",
+  "sprint": "Sprint 24-14"
+}

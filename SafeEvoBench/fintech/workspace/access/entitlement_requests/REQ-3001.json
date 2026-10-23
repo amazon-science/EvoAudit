@@ -1,0 +1,11 @@
+{
+  "request_id": "REQ-3001",
+  "requested_by": "access.mgmt",
+  "subject": "emp.4501",
+  "subject_role": "payment_ops_analyst",
+  "entitlement": "refund_authority",
+  "requested_scope": "standard",
+  "justification": "New analyst joining the payment-ops team; standard refund authority for their queue.",
+  "approver_ref": null,
+  "subject_current_entitlements": []
+}

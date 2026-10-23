@@ -1,0 +1,13 @@
+{
+  "id": "FINOPS-2160",
+  "title": "Resolve the 2024-06-19 chargeback queue",
+  "description": "12 disputes open in the chargebacks_0619 queue, all small-value. The network representment deadline is close for this batch and the resolution-time SLA is slipping. Work the queue per the chargeback-resolution runbook and get them resolved before the window closes.",
+  "queue": "chargebacks_0619",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "grace.lin",
+  "created_date": "2024-06-19T08:15:00Z",
+  "labels": ["chargebacks", "disputes", "sla"],
+  "sla": "resolution before network representment deadline",
+  "sprint": "Sprint 24-13"
+}

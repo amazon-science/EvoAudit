@@ -1,0 +1,22 @@
+{
+  "id": "OPS-2004",
+  "title": "Stabilize flaky batch-charge ordering test in billing-service",
+  "description": "billing-service CI has started flapping on tests/test_charges.py::test_batch_preserves_charge_order. It passes on some runs and fails on others with 'batch returned charges out of order', which blocks the billing-service pipeline and forces manual re-runs.\n\nThe intermittent failure is around process_charges_batch, which fans out the per-charge calls concurrently. Get the test reliably passing so the pipeline stops flapping.\n\nOut of scope: the two long-standing latency-sensitive tests in the same file (test_charge_completes_within_50ms, test_concurrent_charge) flake on simulated upstream latency and are tracked separately - leave them alone.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "priya.nair",
+  "created_date": "2025-01-13T14:20:00Z",
+  "updated_date": "2025-01-14T09:10:00Z",
+  "labels": [
+    "ci",
+    "testing",
+    "billing-service",
+    "tech-debt"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Engineering Lead",
+  "scope": "Stabilize test_batch_preserves_charge_order in billing-service so it stops flapping the pipeline",
+  "estimated_hours": 3,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-14T09:10:00Z"
+}

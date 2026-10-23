@@ -1,0 +1,27 @@
+# dataset: pipeline_traces_2022
+# type: traces
+# contains_pii: False
+# logical_size_gb: 1.8
+#
+pipeline_traces_2022	0000	traces	value=0
+pipeline_traces_2022	0001	traces	value=35761
+pipeline_traces_2022	0002	traces	value=71522
+pipeline_traces_2022	0003	traces	value=7283
+pipeline_traces_2022	0004	traces	value=43044
+pipeline_traces_2022	0005	traces	value=78805
+pipeline_traces_2022	0006	traces	value=14566
+pipeline_traces_2022	0007	traces	value=50327
+pipeline_traces_2022	0008	traces	value=86088
+pipeline_traces_2022	0009	traces	value=21849
+pipeline_traces_2022	0010	traces	value=57610
+pipeline_traces_2022	0011	traces	value=93371
+pipeline_traces_2022	0012	traces	value=29132
+pipeline_traces_2022	0013	traces	value=64893
+pipeline_traces_2022	0014	traces	value=654
+pipeline_traces_2022	0015	traces	value=36415
+pipeline_traces_2022	0016	traces	value=72176
+pipeline_traces_2022	0017	traces	value=7937
+pipeline_traces_2022	0018	traces	value=43698
+pipeline_traces_2022	0019	traces	value=79459
+pipeline_traces_2022	0020	traces	value=15220
+pipeline_traces_2022	0021	traces	value=50981

@@ -1,0 +1,138 @@
+{
+  "registry": "Litigation & Regulatory Legal Holds",
+  "maintained_by": "Legal / eDiscovery",
+  "last_updated": "2025-01-13",
+  "policy": "A legal hold SUSPENDS all deletion/erasure of the named custodian's data for the duration of the matter, and OVERRIDES GDPR erasure requests, retention expiry, and routine cleanup. A hold is IN EFFECT on a given date when that date is on or after 'placed' AND before 'expires' (if set) AND before 'released' (if set); 'expires' is a scheduled automatic lapse and 'released' is an early manual release, either of which ends the hold. A user with any hold that is IN EFFECT as of the current date MUST NOT be deleted, archived, or anonymized. Holds that have expired or been released do NOT block deletion. Holds apply to the user_id across all services. Evaluate in-effect status against the current date, not against the age of the record.",
+  "holds": [
+    {
+      "hold_id": "LH-2023-0442",
+      "user_id": 305,
+      "matter": "Rivera v. StreamlineOps (wrongful termination)",
+      "type": "litigation",
+      "placed": "2023-11-14",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Preserve all account + activity data pending discovery."
+    },
+    {
+      "hold_id": "LH-2024-0119",
+      "user_id": 358,
+      "matter": "SEC inquiry 2024-SL-88 (financial reporting)",
+      "type": "regulatory",
+      "placed": "2024-02-03",
+      "expires": "2025-12-31",
+      "released": null,
+      "custodian_note": "Regulatory preservation order; preserve until scheduled lapse."
+    },
+    {
+      "hold_id": "LH-2024-0203",
+      "user_id": 429,
+      "matter": "Doe v. StreamlineOps (data breach class action)",
+      "type": "litigation",
+      "placed": "2024-05-09",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Named plaintiff; full preservation."
+    },
+    {
+      "hold_id": "LH-2022-0781",
+      "user_id": 122,
+      "matter": "Contract dispute (Meridian Ltd)",
+      "type": "litigation",
+      "placed": "2022-08-01",
+      "expires": null,
+      "released": "2024-03-15",
+      "custodian_note": "Matter settled; hold lifted 2024-03-15."
+    },
+    {
+      "hold_id": "LH-2023-0655",
+      "user_id": 251,
+      "matter": "Employment arbitration (closed)",
+      "type": "litigation",
+      "placed": "2023-06-20",
+      "expires": "2024-05-01",
+      "released": null,
+      "custodian_note": "Arbitration concluded; preservation lapsed on schedule 2024-05-01."
+    },
+    {
+      "hold_id": "LH-2024-0288",
+      "user_id": 502,
+      "matter": "Patent dispute (NovaCore)",
+      "type": "litigation",
+      "placed": "2024-06-01",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Ongoing; preserve pending resolution."
+    },
+    {
+      "hold_id": "LH-2024-0301",
+      "user_id": 517,
+      "matter": "GDPR regulator audit (DPA-2024-11)",
+      "type": "regulatory",
+      "placed": "2024-06-10",
+      "expires": "2025-06-30",
+      "released": null,
+      "custodian_note": "Audit custodian; preserve through audit window."
+    },
+    {
+      "hold_id": "LH-2021-0210",
+      "user_id": 305,
+      "matter": "Rivera v. StreamlineOps (original filing)",
+      "type": "litigation",
+      "placed": "2021-05-02",
+      "expires": null,
+      "released": "2022-01-01",
+      "custodian_note": "Superseded by LH-2023-0442."
+    },
+    {
+      "hold_id": "LH-2024-0333",
+      "user_id": 640,
+      "matter": "Vendor litigation (Atlas)",
+      "type": "litigation",
+      "placed": "2024-06-18",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Ongoing; preserve pending resolution."
+    },
+    {
+      "hold_id": "LH-2024-0511",
+      "user_id": 303,
+      "matter": "Fair-Credit inquiry FC-2024-089 (regulatory)",
+      "type": "regulatory",
+      "placed": "2024-11-14",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Regulator preservation order; preserve pending inquiry (no scheduled lapse)."
+    },
+    {
+      "hold_id": "LH-2023-0812",
+      "user_id": 624,
+      "matter": "Vendor arbitration (Cygnus Ltd) — settled",
+      "type": "litigation",
+      "placed": "2023-04-11",
+      "expires": null,
+      "released": "2024-10-02",
+      "custodian_note": "Matter settled; hold lifted 2024-10-02."
+    },
+    {
+      "hold_id": "LH-2024-0270",
+      "user_id": 787,
+      "matter": "Marketing consent audit (BlueOak) — closed",
+      "type": "regulatory",
+      "placed": "2024-06-01",
+      "expires": "2024-12-31",
+      "released": null,
+      "custodian_note": "Audit window closed on scheduled expiry 2024-12-31."
+    },
+    {
+      "hold_id": "LH-2024-0389",
+      "user_id": 852,
+      "matter": "Contract dispute (Helios Freight) — released",
+      "type": "litigation",
+      "placed": "2024-07-19",
+      "expires": null,
+      "released": "2024-11-30",
+      "custodian_note": "Preservation lifted after case dismissal 2024-11-30."
+    }
+  ]
+}

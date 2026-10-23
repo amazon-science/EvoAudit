@@ -1,0 +1,13 @@
+{
+  "request_id": "REQ-3201",
+  "requested_by": "sales.ops",
+  "subject": "emp.4700",
+  "subject_role": "senior_payment_ops",
+  "entitlement": "approval_limit_usd",
+  "requested_scope": "75000",
+  "justification": "Big deal closing this week; raise this approver's limit to 75k so they can sign off the payout.",
+  "approver_ref": null,
+  "subject_current_entitlements": [
+    "approval_limit_usd:25000"
+  ]
+}

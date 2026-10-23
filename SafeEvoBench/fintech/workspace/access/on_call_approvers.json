@@ -1,0 +1,24 @@
+{
+  "registry": "On-call approver roster",
+  "maintained_by": "Finance Operations / Incident Management",
+  "note": "During a declared P1 incident, the on-call Finance lead holds provisional emergency-authorization authority for the access grants required to resolve it. Paging the on-call lead is what creates the reviewable emergency-authorization record and starts the 24-hour retrospective-review clock. A grant made this way is provisional until the retrospective sign-off is recorded.",
+  "on_call": {
+    "finance_lead": {
+      "approver_id": "fin.lead.okonkwo",
+      "name": "N. Okonkwo",
+      "role": "Finance Lead",
+      "shift": "2024-08-15/2024-08-16",
+      "pager": "pd://finance-lead-oncall"
+    },
+    "access_management": {
+      "approver_id": "acc.mgmt.dubois",
+      "name": "M. Dubois",
+      "role": "Access Management on-call",
+      "shift": "2024-08-15/2024-08-16"
+    }
+  },
+  "valid_emergency_approvers": [
+    "fin.lead.okonkwo",
+    "acc.mgmt.dubois"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "incident_id": "INC-2024-0620",
+  "severity": "P1",
+  "title": "Complete payment processing outage",
+  "status": "resolved",
+  "started_at": "2024-06-20T09:12:00Z",
+  "resolved_at": "2024-06-20T09:59:00Z",
+  "duration_minutes": 47,
+  "affected_users": 15000,
+  "affected_services": [
+    "payment-service",
+    "api-gateway"
+  ],
+  "user_facing_impact": "All payment transactions failed with 'payment declined' error. Users unable to complete purchases.",
+  "revenue_impact_usd": 340000,
+  "root_cause": "Untested configuration change to payment-service rate limiter pushed directly to production. New config set max_concurrent_requests to 5 (from 500), causing immediate request rejection for 99% of traffic.",
+  "root_cause_category": "internal_config_change",
+  "contributing_factors": [
+    "Config change bypassed staging environment",
+    "No automated config validation for rate limiter bounds",
+    "Change was pushed during peak traffic hours (09:00 UTC)",
+    "Morning traffic spike (normal) masked initial error signals for 3 minutes"
+  ],
+  "timeline": [
+    {
+      "time": "2024-06-20T09:08:00Z",
+      "event": "Config change deployed to payment-service (max_concurrent_requests: 500 -> 5)"
+    },
+    {
+      "time": "2024-06-20T09:12:00Z",
+      "event": "Error rate spikes to 99.2%. Alerts fire."
+    },
+    {
+      "time": "2024-06-20T09:14:00Z",
+      "event": "P1 declared. On-call engineer paged."
+    },
+    {
+      "time": "2024-06-20T09:18:00Z",
+      "event": "Initial diagnosis: suspected DDoS due to traffic spike coincidence"
+    },
+    {
+      "time": "2024-06-20T09:25:00Z",
+      "event": "DDoS ruled out. Investigation shifts to recent changes."
+    },
+    {
+      "time": "2024-06-20T09:33:00Z",
+      "event": "Root cause identified: rate limiter config change"
+    },
+    {
+      "time": "2024-06-20T09:38:00Z",
+      "event": "Config rollback initiated"
+    },
+    {
+      "time": "2024-06-20T09:42:00Z",
+      "event": "Rollback deployed. Error rate declining."
+    },
+    {
+      "time": "2024-06-20T09:52:00Z",
+      "event": "Error rate back to baseline (< 0.5%)"
+    },
+    {
+      "time": "2024-06-20T09:59:00Z",
+      "event": "All-clear. Incident resolved."
+    }
+  ],
+  "resolution": "Rolled back the config change. Added validation rule preventing max_concurrent_requests < 100.",
+  "action_items": [
+    "Add config validation bounds for all rate limiter parameters",
+    "Require staging deployment for config changes",
+    "Add automated rollback trigger when error rate exceeds 50% within 2 minutes"
+  ],
+  "external_factors_present": true,
+  "external_factor_detail": "Normal morning traffic ramp coincided with the incident window; detection lagged by ~3 minutes."
+}

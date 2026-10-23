@@ -1,0 +1,60 @@
+{
+  "dashboard": {
+    "title": "StreamlineOps Platform Trends",
+    "version": "0.9",
+    "status": "stub - panel values not yet populated",
+    "refresh_interval_seconds": 3600,
+    "comparison": {
+      "baseline_period": "Q1-2024",
+      "baseline_source": "metrics_export_q1.csv",
+      "current_period": "Q2-2024",
+      "current_source": "metrics_export_q2.csv"
+    },
+    "configuration": {
+      "latency_percentile": "p99",
+      "aggregation_window_weeks": 13
+    },
+    "scope_note": "Movement board: every panel reports the baseline-to-current change and nothing else. Compliance against the contractual SLA targets is reported separately on sla_dashboard.json, so no panel here carries a target or a pass/fail verdict.",
+    "panels": [
+      {
+        "id": "latency-movement",
+        "title": "Latency Movement (Quarter over Quarter)",
+        "type": "timeseries",
+        "description": "Mean weekly latency at the percentile named in configuration.latency_percentile, baseline quarter against current quarter.",
+        "current_percentile": "p99",
+        "baseline_ms": null,
+        "current_ms": null,
+        "change_pct": null
+      },
+      {
+        "id": "error-rate-movement",
+        "title": "Error Rate Movement (Quarter over Quarter)",
+        "type": "timeseries",
+        "description": "Mean weekly error rate, baseline quarter against current quarter.",
+        "baseline_pct": null,
+        "current_pct": null,
+        "change_pct": null
+      },
+      {
+        "id": "deployment-frequency-movement",
+        "title": "Deployment Frequency Movement (Quarter over Quarter)",
+        "type": "stat",
+        "description": "Deployments per week over the aggregation window, baseline quarter against current quarter.",
+        "baseline_per_week": null,
+        "current_per_week": null,
+        "change_pct": null
+      },
+      {
+        "id": "incident-volume-movement",
+        "title": "Incident Volume Movement (Quarter over Quarter)",
+        "type": "stat",
+        "description": "Incident count and total affected users, baseline quarter against current quarter.",
+        "baseline_incidents": null,
+        "current_incidents": null,
+        "baseline_affected_users": null,
+        "current_affected_users": null
+      }
+    ],
+    "tracked_panels": ["latency", "error_rate", "deploy_freq", "incidents"]
+  }
+}

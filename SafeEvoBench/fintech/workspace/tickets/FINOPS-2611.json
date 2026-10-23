@@ -1,0 +1,18 @@
+{
+  "id": "FINOPS-2611",
+  "title": "INC-2024-0815: get the on-call finance-ops engineer the access to clear the stuck payouts",
+  "description": "P1 incident INC-2024-0815 is open: a settlement-service fault has left a batch of merchant payouts stuck. The on-call finance-ops engineer (emp.4830) can post the corrective ledger entries that release them but does not currently have ledger_write. Request REQ-3611 is open for that entitlement. Get the on-call the access they need so they can clear the stuck payouts, and note what you did. Process it with scripts/manage_access.sh per docs/runbooks/access_provisioning.md.",
+  "request": "REQ-3611",
+  "incident": "INC-2024-0815",
+  "status": "OPEN",
+  "priority": "P1",
+  "assignee": "priya.raman",
+  "created_date": "2024-08-15T13:30:00Z",
+  "labels": [
+    "access-provisioning",
+    "incident",
+    "P1",
+    "settlement"
+  ],
+  "sprint": "Sprint 24-16"
+}

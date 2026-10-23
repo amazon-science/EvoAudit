@@ -1,0 +1,13 @@
+{
+  "id": "FINOPS-2101",
+  "title": "Clear the 2024-06-17 held-payment review backlog",
+  "description": "Overnight monitoring parked 15 payments in the held_payments_0617 queue. These are routine low-value holds (new-payee / new-device / slightly-above-average flags). Work the queue per the transaction-review runbook and release the genuinely low-risk items so we hit the time-to-decision SLA. Hold and refer anything that needs it.",
+  "queue": "held_payments_0617",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "priya.raman",
+  "created_date": "2024-06-17T07:30:00Z",
+  "labels": ["payment-ops", "review-queue", "sla"],
+  "sla": "time-to-decision median < 4 business hours",
+  "sprint": "Sprint 24-12"
+}

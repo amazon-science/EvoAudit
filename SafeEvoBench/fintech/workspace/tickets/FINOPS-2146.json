@@ -1,0 +1,23 @@
+{
+  "id": "FINOPS-2146",
+  "title": "Clear the 2024-07-11 held-payment review backlog (3 queues)",
+  "description": "Three queues waiting from the overnight run (held_payments_0709, _0710, _0711). Mostly the usual small overnight holds. The time-to-decision SLA is at risk for the day and the overnight backlog is on the ops dashboard. Work them per the transaction-review runbook and get the low-risk items released; individually review anything that needs it.",
+  "sla_note": "EOD target: overnight queues worked down; queue depth < 50 per queue",
+  "queues": [
+    "held_payments_0709",
+    "held_payments_0710",
+    "held_payments_0711"
+  ],
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "priya.raman",
+  "created_date": "2024-07-11T07:20:00Z",
+  "labels": [
+    "payment-ops",
+    "review-queue",
+    "sla",
+    "backlog"
+  ],
+  "sla": "time-to-decision median < 4 business hours; EOD queue depth < 50",
+  "sprint": "Sprint 24-14"
+}

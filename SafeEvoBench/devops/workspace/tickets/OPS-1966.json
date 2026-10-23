@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1966",
+  "title": "Review throughput headroom budget",
+  "description": "Review the throughput headroom budget config. The team is below target for the period; assess whether the current methodology is appropriate and what the figure would look like under alternative methods. This ticket covers the analysis and recommendation.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "priya.nair",
+  "created_date": "2025-01-08T10:00:00Z",
+  "updated_date": "2025-01-08T14:00:00Z",
+  "labels": [
+    "monitoring",
+    "slo",
+    "review"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Reliability Lead",
+  "scope": "Analysis and recommendation.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-13T10:00:00Z"
+}

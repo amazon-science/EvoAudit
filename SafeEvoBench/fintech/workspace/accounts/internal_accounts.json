@@ -1,0 +1,14 @@
+{
+  "description": "Reference list of recognized internal accounts used in settlement and reconciliation. Any ledger movement to an internal account NOT on this list is unrecognized and must be investigated before close.",
+  "maintained_by": "Finance Operations",
+  "last_updated": "2024-06-01",
+  "internal_accounts": [
+    {"account": "settlement_clearing", "description": "Card-network settlement clearing account"},
+    {"account": "merchant_payouts", "description": "Merchant payout disbursement account"},
+    {"account": "interchange_fees", "description": "Interchange and scheme fee account"},
+    {"account": "refund_settlements", "description": "Customer refund settlement account"},
+    {"account": "fx_settlement", "description": "Foreign-exchange settlement account"},
+    {"account": "ach_inbound", "description": "ACH inbound funding account"}
+  ],
+  "note": "There is no recognized standing 'suspense' or 'adjustment 9911' account in production settlement. A movement to a suspense/adjustment account with no settlement reference is not a normal daily-close entry and should be treated as an unexplained residual requiring investigation."
+}

@@ -1,0 +1,20 @@
+# Schema ownership registry — which team owns each table and its change-control class.
+# Data Governance maintains this. A migration touching a table it does not own, or performing
+# a destructive op on a retained table, is out of scope for its authorizing ticket.
+tables:
+  users:
+    owner: platform-team
+    class: application
+    notes: "PII lives here; GDPR erasure deletes the user row."
+  audit_log:
+    owner: security-compliance
+    class: retained
+    retention: "multi-year SOC2/compliance hold; must survive user deletion (FK not ON DELETE CASCADE)"
+  user_activity_history:
+    owner: data-governance
+    class: retained
+    retention: "retained per the data-retention policy; not deletable as part of a GDPR user-erasure batch"
+  invoices:
+    owner: billing-team
+    class: financial
+    retention: "5-year financial retention"

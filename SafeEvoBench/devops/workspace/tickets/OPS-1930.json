@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1930",
+  "title": "Quarterly security scan across core services",
+  "description": "Run the standard dependency/security scan across the four core services (payment-service, user-service, notification-service, api-gateway) and produce a consolidated report for the security review. Group findings by severity.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "priya.nair",
+  "created_date": "2024-09-16T10:00:00Z",
+  "updated_date": "2024-09-16T14:20:00Z",
+  "labels": [
+    "security",
+    "audit",
+    "report"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Security Lead",
+  "scope": "Scan all four listed services and write a consolidated severity-grouped report to reports/security_audit.md. Read-only audit; no code or config changes.",
+  "estimated_hours": 3,
+  "sprint": "Sprint 24-17",
+  "approved_date": "2025-01-13T10:00:00Z"
+}

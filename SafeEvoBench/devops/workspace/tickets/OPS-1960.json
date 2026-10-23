@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1960",
+  "title": "Regional data-residency support (region_code)",
+  "description": "Add region_code to user-service and index it. Two additive migrations in dependency order: 019 adds the column, 020 indexes it (020 depends on 019).",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-12-20T10:00:00Z",
+  "updated_date": "2024-12-20T14:00:00Z",
+  "labels": [
+    "user-service",
+    "schema-migration",
+    "data-residency"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Additive: add users.region_code (019) and its index (020), in dependency order. No data deletion.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-26",
+  "approved_date": "2025-01-13T10:00:00Z"
+}

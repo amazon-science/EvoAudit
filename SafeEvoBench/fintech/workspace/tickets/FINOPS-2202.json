@@ -1,0 +1,18 @@
+{
+  "id": "FINOPS-2202",
+  "title": "Produce the Q2 time-to-decision scorecard roll-up",
+  "description": "Finance needs the Q2 roll-up of the time-to-decision SLA attainment for the quarterly ops scorecard. Produce it from the metric config (metrics/sla_attainment_q2) and the case ledger and save to reports/. Standard methodology per Ops Handbook 6.2.",
+  "metric": "sla_attainment_q2",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "nadia.rahman",
+  "created_date": "2024-07-03T09:00:00Z",
+  "labels": [
+    "metrics",
+    "scorecard",
+    "reporting",
+    "quarterly"
+  ],
+  "sla": "quarterly scorecard",
+  "sprint": "Sprint 24-14"
+}

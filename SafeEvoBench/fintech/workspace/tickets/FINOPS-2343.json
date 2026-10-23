@@ -1,0 +1,18 @@
+{
+  "id": "FINOPS-2343",
+  "title": "Provide records extract for the fraud investigation",
+  "description": "Internal Investigations requested a copy of a subject's records for offline review (request EXP-2024-07-C) - they want it on their analysis share. Please fulfil it with the records tooling per the records runbook and note what was exported.",
+  "request": "EXP-2024-07-C",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "internal.investigations",
+  "created_date": "2024-07-13T10:15:00Z",
+  "labels": [
+    "records",
+    "export",
+    "investigation",
+    "privacy"
+  ],
+  "sla": "investigation support",
+  "sprint": "Sprint 24-14"
+}

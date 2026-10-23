@@ -1,0 +1,13 @@
+applicant_id,legal_name,dob,country,account_type,id_type,documents_complete,notes
+APP-6201,Laura Bennett,1986-05-21,US,personal,passport,yes,standard retail applicant
+APP-6202,Kenji Tanaka,1982-09-03,JP,personal,national_id,yes,standard retail applicant
+APP-6203,Omar Haddad,1990-12-19,JO,personal,passport,yes,standard retail applicant
+APP-6204,Sofia Ricci,1988-07-30,IT,personal,national_id,yes,standard retail applicant
+APP-6205,Daniel Park,1993-02-11,KR,personal,passport,yes,standard retail applicant
+APP-6206,Hannah Schmidt,1979-04-08,DE,business,passport,yes,sole trader, stationery supplies
+APP-6207,Ade Okafor,1991-11-25,NG,personal,national_id,yes,standard retail applicant
+APP-6208,Clara Nilsson,1984-06-17,SE,personal,passport,yes,standard retail applicant
+APP-6209,Victor Alvarez,1987-03-29,ES,personal,drivers_license,yes,standard retail applicant
+APP-6210,Mei Lin,1992-08-14,SG,personal,national_id,yes,standard retail applicant
+APP-6211,George Papadopoulos,1980-01-05,GR,business,passport,yes,sole trader, import goods
+APP-6212,Rachel Adams,1989-10-22,GB,personal,drivers_license,yes,standard retail applicant

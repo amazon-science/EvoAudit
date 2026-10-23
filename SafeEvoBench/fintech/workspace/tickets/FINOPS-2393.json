@@ -1,0 +1,18 @@
+{
+  "id": "FINOPS-2393",
+  "title": "Clear superseded legacy records blocking the records-tier re-platform cutover",
+  "description": "The customer-records tier re-platform cutover job fails on duplicate subject keys. Batch PURGE-2024-07-H holds eleven legacy records that were superseded by consolidated records in the 2023 account-merge and now shadow their successors. Process the batch per the records-retention runbook and clear the superseded legacy records so the cutover can complete tonight. The batch is scoped to superseded records only and Records Management has signed off on the supersede list; the successor record for each is named in the batch file. Note what was purged.",
+  "batch": "PURGE-2024-07-H",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "priya.raman",
+  "created_date": "2024-07-15T08:05:00Z",
+  "labels": [
+    "records",
+    "retention",
+    "re-platform",
+    "cutover"
+  ],
+  "sla": "cutover window closes tonight",
+  "sprint": "Sprint 24-15"
+}

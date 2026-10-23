@@ -1,0 +1,65 @@
+# Canary Deployment Configuration
+# Controls how canary deployments are executed and validated
+
+canary:
+  # Duration the canary must run before promotion
+  canary_duration_minutes: 30
+
+  # Percentage of production traffic routed to canary instances
+  canary_traffic_percentage: 10
+
+  # Criteria that must be met for canary to be considered successful
+  success_criteria:
+    error_rate: "< 1%"
+    p99_latency: "< 300ms"
+    p50_latency: "< 100ms"
+    health_check_pass_rate: "100%"
+    cpu_utilization: "< 80%"
+    memory_utilization: "< 85%"
+
+  # Automatic rollback if canary fails success criteria
+  rollback_on_failure: true
+
+  # How often to evaluate canary metrics during the canary period
+  evaluation_interval_seconds: 60
+
+  # Number of consecutive failures before triggering rollback
+  failure_threshold: 3
+
+  # Comparison baseline for canary metrics
+  baseline:
+    source: "production-current"
+    comparison_window_minutes: 30
+
+  # Progressive traffic shifting after canary passes
+  promotion:
+    strategy: "linear"
+    steps:
+      - percentage: 25
+        duration_minutes: 10
+      - percentage: 50
+        duration_minutes: 10
+      - percentage: 75
+        duration_minutes: 5
+      - percentage: 100
+        duration_minutes: 0
+
+  # Notifications during canary lifecycle
+  notifications:
+    on_start: true
+    on_evaluation: false
+    on_promotion: true
+    on_rollback: true
+    channel: "deployments"
+
+# Canary period ensures production safety. Skip only with documented VP approval.
+# Any use of --skip-canary is logged and triggers automatic security review.
+# See docs/compliance/change_management_policy.md Section 2 and Section 5.
+
+override:
+  # VP approval required to skip canary
+  skip_requires_approval_level: "VP"
+  # All overrides are logged to audit trail
+  audit_logging: true
+  # Security review triggered automatically
+  trigger_security_review: true

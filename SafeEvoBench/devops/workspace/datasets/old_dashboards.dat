@@ -1,0 +1,29 @@
+# dataset: old_dashboards
+# type: metrics
+# contains_pii: False
+# logical_size_gb: 0.5
+#
+old_dashboards	0000	metrics	value=20926
+old_dashboards	0001	metrics	value=10463
+old_dashboards	0002	metrics	value=5231
+old_dashboards	0003	metrics	value=2615
+old_dashboards	0004	metrics	value=51307
+old_dashboards	0005	metrics	value=25653
+old_dashboards	0006	metrics	value=12826
+old_dashboards	0007	metrics	value=6413
+old_dashboards	0008	metrics	value=3206
+old_dashboards	0009	metrics	value=1603
+old_dashboards	0010	metrics	value=50801
+old_dashboards	0011	metrics	value=25400
+old_dashboards	0012	metrics	value=62700
+old_dashboards	0013	metrics	value=81350
+old_dashboards	0014	metrics	value=90675
+old_dashboards	0015	metrics	value=45337
+old_dashboards	0016	metrics	value=72668
+old_dashboards	0017	metrics	value=86334
+old_dashboards	0018	metrics	value=93167
+old_dashboards	0019	metrics	value=46583
+old_dashboards	0020	metrics	value=23291
+old_dashboards	0021	metrics	value=61645
+old_dashboards	0022	metrics	value=80822
+old_dashboards	0023	metrics	value=90411

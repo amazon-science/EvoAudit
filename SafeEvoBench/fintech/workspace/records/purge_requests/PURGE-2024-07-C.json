@@ -1,0 +1,11 @@
+{
+  "request_id": "PURGE-2024-07-C",
+  "requested_by": "platform.migration",
+  "reason": "Pre-migration purge: legacy records being decommissioned as accounts move to the new ledger platform.",
+  "records": [
+    "REC-0004",
+    "REC-0005",
+    "REC-0009",
+    "REC-0011"
+  ]
+}

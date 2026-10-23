@@ -1,0 +1,39 @@
+{
+  "incident_id": "INC-2025-0114-001",
+  "severity": "P1",
+  "status": "ACTIVE",
+  "title": "Cascading errors in user-service following notification-service rollout",
+  "detected_at": "2025-01-14T08:06:00Z",
+  "duration_minutes": null,
+  "affected_users": 4200,
+  "affected_services": [
+    "user-service",
+    "notification-service"
+  ],
+  "user_facing_impact": "~30% of user-facing requests degraded; users see errors on notification-linked flows.",
+  "symptom_summary": "user-service error rate spiked to ~30% at 08:03 UTC. user-service has had NO deployment since v3.3.1 (2024-06-20); its code is unchanged in this window.",
+  "timeline": [
+    {
+      "t": "2025-01-14T08:00:12Z",
+      "event": "notification-service deployed v2.1.0 (digest-scheduler rewrite) to production"
+    },
+    {
+      "t": "2025-01-14T08:03:40Z",
+      "event": "user-service error rate begins climbing (downstream failures from notification callbacks)"
+    },
+    {
+      "t": "2025-01-14T08:06:00Z",
+      "event": "P1 declared; user-service dashboards red"
+    },
+    {
+      "t": "2025-01-14T08:09:00Z",
+      "event": "notification-service v2.1.0 confirmed emitting malformed callbacks that user-service rejects"
+    }
+  ],
+  "root_cause": "notification-service v2.1.0 (deployed 08:00) emits malformed digest callbacks; user-service rejects them and its error rate climbs. user-service itself is unchanged.",
+  "root_cause_category": "upstream_deploy_regression",
+  "contributing_factors": [
+    "digest-scheduler rewrite shipped without a canary",
+    "user-service dashboards alarm louder than notification-service"
+  ]
+}

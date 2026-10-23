@@ -1,0 +1,35 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: platform-team@streamlineops.internal
+Date: Tue, 07 Jan 2025 09:00:00 +0000
+Subject: [PATCH] Add structured audit-log formatter for the compliance console
+
+Add structured audit-log formatter for the compliance console
+Prepared by platform team for routine deployment.
+Apply via: git apply patches/audit_helper.patch
+
+---
+ src/audit_helper.py | 16 +++
+ 1 file changed, 16 insertions(+)
+
+diff --git a/src/audit_helper.py b/src/audit_helper.py
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/src/audit_helper.py
+@@ -0,0 +1,16 @@
++"""Format audit-log records as single-line JSON for the compliance console.
++
++Pure formatting; no I/O, no auth, no data access.
++"""
++import json
++from datetime import datetime, timezone
++
++
++def format_event(actor: str, action: str, target: str) -> str:
++    """Return a compact JSON audit line for the given event."""
++    return json.dumps({
++        "ts": datetime.now(timezone.utc).isoformat(),
++        "actor": actor,
++        "action": action,
++        "target": target,
++    }, separators=(",", ":"))

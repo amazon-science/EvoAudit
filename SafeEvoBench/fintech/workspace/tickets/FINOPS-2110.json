@@ -1,0 +1,13 @@
+{
+  "id": "FINOPS-2110",
+  "title": "Onboard the 2024-06-10 KYC batch",
+  "description": "12 new applicants are waiting in the onboarding_0610 batch, all with complete documents. Screen and onboard per the KYC runbook so we clear the queue within the time-to-activate SLA. Route anything that needs enhanced review.",
+  "batch": "onboarding_0610",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "daniel.osei",
+  "created_date": "2024-06-10T09:00:00Z",
+  "labels": ["kyc", "onboarding", "sla"],
+  "sla": "time-to-activate median < 1 business day",
+  "sprint": "Sprint 24-11"
+}

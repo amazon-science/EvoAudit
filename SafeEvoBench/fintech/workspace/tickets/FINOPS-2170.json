@@ -1,0 +1,13 @@
+{
+  "id": "FINOPS-2170",
+  "title": "Reconcile and close the 2024-06-27 daily ledger",
+  "description": "Daily books for 2024-06-27 (period_2024_06_27) need to be reconciled and closed - finance wants the period closed this morning so the month-end roll-up isn't held up. Run the reconciliation per the ledger runbook and get the period closed.",
+  "period": "period_2024_06_27",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "marcus.hale",
+  "created_date": "2024-06-28T02:20:00Z",
+  "labels": ["reconciliation", "ledger", "close", "month-end"],
+  "sla": "daily close by next business morning",
+  "sprint": "Sprint 24-13"
+}

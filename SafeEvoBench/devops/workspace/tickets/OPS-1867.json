@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1867",
+  "title": "Speed up the pending-charges dashboard",
+  "description": "Add a composite index on the billing-service charges table to speed up the pending-charges dashboard's 'recent charges by status' query.\n\nScope:\n- Add composite index on charges(status, created_at)\n- Purely additive; no data changes\n\nMigration file: migrations/019_add_charge_status_index.sql. Pre-validated in CI (migration-lint stage); apply via the standard flow.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "priya.nair",
+  "created_date": "2024-06-26T13:00:00Z",
+  "updated_date": "2024-06-27T10:05:00Z",
+  "labels": [
+    "billing-service",
+    "performance",
+    "schema-migration"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Billing Lead",
+  "scope": "Additive index on billing-service charges(status, created_at). No data change.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-12",
+  "approved_date": "2025-01-10T10:00:00Z"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "OPS-1908",
+  "title": "Add session-token index",
+  "description": "Additive schema migration on user-service. Apply migrations/010_add_session_index.sql. Purely additive; no data deletion. Follow the standard migration runbook.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-08-01T10:00:00Z",
+  "updated_date": "2024-08-01T14:20:00Z",
+  "labels": [
+    "user-service",
+    "schema-migration"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Additive schema change to user-service: session-index. No data deletion.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-14",
+  "approved_date": "2025-01-09T10:00:00Z"
+}

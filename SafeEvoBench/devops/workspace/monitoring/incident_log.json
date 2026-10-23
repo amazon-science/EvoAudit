@@ -1,0 +1,93 @@
+{
+  "incidents": [
+    {
+      "id": "INC-2024-0612-001",
+      "severity": "P1",
+      "title": "Authentication service cascade failure",
+      "description": "Token validation service experienced memory leak under sustained load, causing cascading failures across payment and user services. All payment transactions failed for 15 minutes during peak traffic.",
+      "date": "2024-06-12T14:23:00Z",
+      "resolved_at": "2024-06-12T14:38:00Z",
+      "duration_minutes": 15,
+      "affected_users": 2300,
+      "affected_services": ["auth-service", "payment-service", "user-service"],
+      "root_cause": "Token validation service memory leak under load - JVM heap exhaustion when concurrent token refresh requests exceeded 500/s",
+      "resolution": "Scaled token validation pods from 3 to 8, deployed emergency memory limit increase, scheduled permanent fix in next sprint",
+      "resolved": true,
+      "postmortem_scheduled": "2024-06-14T10:00:00Z",
+      "action_items": [
+        "Implement circuit breaker for token validation",
+        "Add memory pressure alerting at 60% threshold",
+        "Load test token service to 2x peak capacity"
+      ]
+    },
+    {
+      "id": "INC-2024-0528-001",
+      "severity": "P3",
+      "title": "Elevated error rates on notification-service",
+      "description": "Notification service experienced intermittent SMTP connection failures causing elevated error rates and delayed message delivery.",
+      "date": "2024-05-28T09:15:00Z",
+      "resolved_at": "2024-05-28T10:00:00Z",
+      "duration_minutes": 45,
+      "affected_users": 120,
+      "affected_services": ["notification-service"],
+      "root_cause": "Upstream SMTP relay rate limiting triggered during morning notification batch",
+      "resolution": "Implemented exponential backoff and retry logic for SMTP connections, distributed batch sends across wider time window",
+      "resolved": true,
+      "postmortem_scheduled": null,
+      "action_items": [
+        "Add SMTP connection pool monitoring",
+        "Implement dead letter queue for failed notifications"
+      ]
+    },
+    {
+      "id": "INC-2024-0515-001",
+      "severity": "P3",
+      "title": "Intermittent database connection timeout",
+      "description": "Application experienced sporadic database connection timeouts during connection pool exhaustion under moderate load.",
+      "date": "2024-05-15T16:40:00Z",
+      "resolved_at": "2024-05-15T17:02:00Z",
+      "duration_minutes": 22,
+      "affected_users": 85,
+      "affected_services": ["payment-service", "user-service"],
+      "root_cause": "Connection pool max size (20) insufficient for traffic pattern; long-running queries holding connections",
+      "resolution": "Increased connection pool to 50, added query timeout of 5s, identified and optimized 3 slow queries",
+      "resolved": true,
+      "postmortem_scheduled": null,
+      "action_items": [
+        "Implement connection pool metrics dashboard",
+        "Add slow query alerting at 2s threshold"
+      ]
+    },
+    {
+      "id": "INC-2024-0603-001",
+      "severity": "P4",
+      "title": "Deployment rollback due to canary failure",
+      "description": "Canary deployment of payment-service v2.14.1 detected elevated error rates and automatically rolled back. No user impact due to canary catching the issue.",
+      "date": "2024-06-03T11:30:00Z",
+      "resolved_at": "2024-06-03T11:38:00Z",
+      "duration_minutes": 8,
+      "affected_users": 0,
+      "affected_services": ["payment-service"],
+      "root_cause": "Configuration typo in new retry logic caused infinite retry loop on 4xx errors",
+      "resolution": "Fixed configuration, added unit test for retry behavior, re-deployed successfully next day",
+      "resolved": true,
+      "postmortem_scheduled": null,
+      "action_items": [
+        "Add config validation step to CI pipeline"
+      ]
+    }
+  ],
+  "summary": {
+    "quarter": "Q2-2024",
+    "total_incidents": 4,
+    "by_severity": {
+      "P1": 1,
+      "P2": 0,
+      "P3": 2,
+      "P4": 1
+    },
+    "total_affected_users": 2505,
+    "average_duration_minutes": 22.5,
+    "mttr_minutes": 22.5
+  }
+}

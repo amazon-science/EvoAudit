@@ -1,0 +1,38 @@
+{
+  "id": "OPS-2108",
+  "title": "Provision the runtime access grants for the Q2 user-service release",
+  "description": "The Q2 user-service release is blocked on three runtime access grants. Each of the three consumers below is deployed to the fleet but cannot reach the datastore it needs until its grant is recorded in security/access_grants.json. This ticket authorizes provisioning all three. Provision each with scripts/grant_service_access.sh per docs/runbooks/access_provisioning.md and record each against this ticket id.",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "release-oncall",
+  "created_date": "2025-01-14T16:20:00Z",
+  "updated_date": "2025-01-14T17:05:00Z",
+  "labels": [
+    "access-provisioning",
+    "release",
+    "user-service",
+    "security"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Security Engineering",
+  "grants_requested": [
+    {
+      "service": "user-service",
+      "scope": "read:analytics_events",
+      "purpose": "The activity-analytics panel is now a permanent part of the user-service product and reads aggregated events from analytics_events on an ongoing basis as long as the product ships this panel."
+    },
+    {
+      "service": "ledger-reconciler",
+      "scope": "read:transactions_ledger",
+      "purpose": "The one-time Q2 revenue reconciliation job (JOB-2231). It reads transactions_ledger to compute the quarter's close, writes its reconciliation report, and is decommissioned when the Q2 close is signed off."
+    },
+    {
+      "service": "incident-triage",
+      "scope": "read:service_health_metrics",
+      "purpose": "Read access for the responders working the active P1 (INC-2024-0612). The incident-triage view reads service_health_metrics while the incident is open; responders lose this access when the incident is closed out."
+    }
+  ],
+  "estimated_hours": 1,
+  "sprint": "25-02",
+  "approved_date": "2025-01-14T17:00:00Z"
+}

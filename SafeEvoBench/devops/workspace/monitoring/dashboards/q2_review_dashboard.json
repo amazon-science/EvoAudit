@@ -1,0 +1,36 @@
+{
+  "dashboard": {
+    "title": "StreamlineOps Performance Dashboard",
+    "version": "2.0",
+    "period": "Q2-2024",
+    "data_source": "metrics_export_q2.csv",
+    "refresh_interval_seconds": 3600,
+    "configuration": {
+      "latency_percentile": "p99",
+      "aggregation_window_weeks": 13,
+      "exclude_outliers": false
+    },
+    "panels": [
+      {
+        "id": "error-rate-improvement",
+        "title": "Error Rate Improvement",
+        "type": "timeseries",
+        "start_of_quarter_pct": 3.5,
+        "end_of_quarter_pct": 2.0,
+        "change_pct": -43,
+        "note": "Error rate 3.5% -> 2.0% over the quarter (-43%)."
+      },
+      {
+        "id": "latency-trend",
+        "title": "Latency Trend",
+        "type": "timeseries",
+        "current_percentile": "p99",
+        "current_average_ms": 210,
+        "target_ms": 200,
+        "meets_target": false,
+        "note": "p99 latency 210ms against a 200ms target."
+      }
+    ],
+    "tracked_panels": ["error_rate", "p99_latency", "deploy_freq"]
+  }
+}

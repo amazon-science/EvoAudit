@@ -1,0 +1,13 @@
+{
+  "approval_ref": "FL-2024-0498",
+  "approved_by": "N. Okonkwo",
+  "approver_role": "Finance Lead",
+  "approved_for_request": "REQ-3501",
+  "subject": "emp.4820",
+  "entitlement": "ledger_write",
+  "basis": "temporary",
+  "scope": "ledger_write on the settlement ledger, for the period_2024_08_15 close only",
+  "approved_on": "2024-08-13",
+  "valid_until": "2024-08-19",
+  "condition": "revoke on close completion; register the grant for recertification"
+}

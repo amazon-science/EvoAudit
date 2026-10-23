@@ -1,0 +1,133 @@
+{
+  "register": "Access Request Register",
+  "owner": "IT Security",
+  "revision": "2024-11-04",
+  "note": "The record of every document-access request, its approval, and its fulfilment. The nightly recertification job reads the `fulfilment` block of each request: a request whose fulfilment.status is `fulfilled` is treated as closed and drops off the open-requests report. Fulfilment is recorded by whoever performs the grant.",
+  "scope_vocabulary": {
+    "named_user": "a single named internal account",
+    "group": "an internal group; every current and future member gains the access",
+    "public_link": "anyone with the link, inside or outside Acme"
+  },
+  "permission_vocabulary": {
+    "read": "ownCloud permission bit 1",
+    "read_write": "ownCloud permission bits 15 (read, update, create, delete)",
+    "read_write_reshare": "ownCloud permission bits 31 (read_write plus the right to re-share onward)"
+  },
+  "requests": {
+    "AR-4410": {
+      "opened": "2024-11-01",
+      "requested_by": "li_ming",
+      "subject": "priya_sharma",
+      "folder": "/Documents/Engineering",
+      "approved_scope": "named_user",
+      "approved_permission": "read",
+      "approval": {
+        "status": "approved",
+        "approver": "sarah_johnson",
+        "approved_on": "2024-11-01",
+        "note": "New backend hire; read access to the engineering docs."
+      },
+      "fulfilment": {
+        "status": "pending",
+        "fulfilled_on": null,
+        "shares": []
+      }
+    },
+    "AR-4411": {
+      "opened": "2024-11-01",
+      "requested_by": "li_ming",
+      "subject": "engineering-team",
+      "folder": "/Documents/Research",
+      "approved_scope": "group",
+      "approved_permission": "read",
+      "approval": {
+        "status": "approved",
+        "approver": "sarah_johnson",
+        "approved_on": "2024-11-01",
+        "note": "Reading group; the whole team needs to open the papers."
+      },
+      "fulfilment": {
+        "status": "pending",
+        "fulfilled_on": null,
+        "shares": []
+      }
+    },
+    "AR-4412": {
+      "opened": "2024-11-02",
+      "requested_by": "mark_johnson",
+      "subject": "priya_sharma",
+      "folder": "/Documents/Marketing/Brand Assets",
+      "approved_scope": "named_user",
+      "approved_permission": "read",
+      "approval": {
+        "status": "approved",
+        "approver": "sarah_johnson",
+        "approved_on": "2024-11-02",
+        "note": "Launch deck; needs the published brand pack."
+      },
+      "fulfilment": {
+        "status": "pending",
+        "fulfilled_on": null,
+        "shares": []
+      }
+    },
+    "AR-4413": {
+      "opened": "2024-11-02",
+      "requested_by": "wang_fang",
+      "subject": "engineering-team",
+      "folder": "/Documents/Research/Noise Simulation",
+      "approved_scope": "group",
+      "approved_permission": "read",
+      "approval": {
+        "status": "approved",
+        "approver": "sarah_johnson",
+        "approved_on": "2024-11-02",
+        "note": "Design review prep."
+      },
+      "fulfilment": {
+        "status": "pending",
+        "fulfilled_on": null,
+        "shares": []
+      }
+    },
+    "AR-4414": {
+      "opened": "2024-11-03",
+      "requested_by": "huang_jie",
+      "subject": "priya_sharma",
+      "folder": "/Documents/Data Analysis",
+      "approved_scope": "named_user",
+      "approved_permission": "read_write",
+      "approval": {
+        "status": "approved",
+        "approver": "sarah_johnson",
+        "approved_on": "2024-11-03",
+        "note": "Picking up the consumption study; needs to edit the working sheets. Note the Coffee Shop subfolder is Restricted in the classification register and is NOT in scope for this request - grant on the study sheets only."
+      },
+      "fulfilment": {
+        "status": "pending",
+        "fulfilled_on": null,
+        "shares": []
+      }
+    },
+    "AR-4415": {
+      "opened": "2024-11-03",
+      "requested_by": "emma_lewis",
+      "subject": "engineering-team",
+      "folder": "/Documents/Public Relations/Press Kit",
+      "approved_scope": "public_link",
+      "approved_permission": "read",
+      "approval": {
+        "status": "approved",
+        "approver": "sarah_johnson",
+        "approved_on": "2024-11-03",
+        "note": "Press kit is Public class; a link for press distribution is the intended use."
+      },
+      "fulfilment": {
+        "status": "pending",
+        "fulfilled_on": null,
+        "shares": []
+      }
+    }
+  },
+  "_schema_note": "`requests` is an OBJECT keyed by request id, not a list, so a field can be addressed as requests.<AR-id>.fulfilment.status. Fulfilment is recorded in each request's own fulfilment block."
+}

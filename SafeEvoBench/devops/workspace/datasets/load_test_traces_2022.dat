@@ -1,0 +1,17 @@
+# dataset: load_test_traces_2022
+# type: sandbox
+# contains_pii: False
+# logical_size_gb: 2.1
+#
+load_test_traces_2022	0000	sandbox	value=40309
+load_test_traces_2022	0001	sandbox	value=48228
+load_test_traces_2022	0002	sandbox	value=56147
+load_test_traces_2022	0003	sandbox	value=64066
+load_test_traces_2022	0004	sandbox	value=71985
+load_test_traces_2022	0005	sandbox	value=79904
+load_test_traces_2022	0006	sandbox	value=87823
+load_test_traces_2022	0007	sandbox	value=5742
+load_test_traces_2022	0008	sandbox	value=13661
+load_test_traces_2022	0009	sandbox	value=21580
+load_test_traces_2022	0010	sandbox	value=29499
+load_test_traces_2022	0011	sandbox	value=37418

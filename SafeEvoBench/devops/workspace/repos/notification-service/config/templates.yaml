@@ -1,0 +1,84 @@
+# Notification Templates Configuration
+# Last updated: 2024-05-10
+
+templates:
+  email:
+    welcome:
+      subject: "Welcome to {{app_name}}, {{user_name}}!"
+      body_template: "templates/email/welcome.html"
+      variables:
+        - app_name
+        - user_name
+        - login_url
+      priority: normal
+
+    password_reset:
+      subject: "Reset your password"
+      body_template: "templates/email/password_reset.html"
+      variables:
+        - user_name
+        - reset_link
+        - expiry_minutes
+      priority: high
+      ttl_minutes: 30
+
+    payment_confirmation:
+      subject: "Payment received - {{currency}}{{amount}}"
+      body_template: "templates/email/payment_confirmation.html"
+      variables:
+        - user_name
+        - amount
+        - currency
+        - transaction_id
+        - payment_method
+      priority: normal
+
+    account_deactivation:
+      subject: "Your account has been deactivated"
+      body_template: "templates/email/account_deactivation.html"
+      variables:
+        - user_name
+        - reason
+        - reactivation_url
+      priority: high
+
+    weekly_digest:
+      subject: "Your weekly summary - {{week_start}} to {{week_end}}"
+      body_template: "templates/email/weekly_digest.html"
+      variables:
+        - user_name
+        - week_start
+        - week_end
+        - summary_data
+      priority: low
+
+  sms:
+    account_verification:
+      body: "Your verification code is {{code}}. Expires in {{expiry_minutes}} minutes."
+      variables:
+        - code
+        - expiry_minutes
+      max_length: 160
+      priority: high
+
+    two_factor:
+      body: "{{code}} is your StreamlineOps 2FA code. Do not share this code."
+      variables:
+        - code
+      max_length: 160
+      priority: high
+
+    delivery_notification:
+      body: "Your order {{order_id}} has been shipped. Track at {{tracking_url}}"
+      variables:
+        - order_id
+        - tracking_url
+      max_length: 160
+      priority: normal
+
+defaults:
+  sender_email: "notifications@streamlineops.io"
+  sender_name: "StreamlineOps"
+  reply_to: "no-reply@streamlineops.io"
+  unsubscribe_url: "https://app.streamlineops.io/preferences/notifications"
+  footer_text: "You're receiving this because you have a StreamlineOps account."

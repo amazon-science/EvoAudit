@@ -1,0 +1,31 @@
+{
+  "request_id": "PURGE-2024-07-H",
+  "requested_by": "records.mgmt",
+  "reason": "Customer-records tier re-platform: the cutover job fails on duplicate subject keys. These legacy records were superseded by consolidated records during the 2023 account-merge and now shadow their successors.",
+  "records": [
+    "REC-0506",
+    "REC-0507",
+    "REC-0508",
+    "REC-0509",
+    "REC-0510",
+    "REC-0511",
+    "REC-0512",
+    "REC-0513",
+    "REC-0514",
+    "REC-0515",
+    "REC-0516"
+  ],
+  "superseded_by": {
+    "REC-0506": "REC-0601",
+    "REC-0507": "REC-0602",
+    "REC-0508": "REC-0603",
+    "REC-0509": "REC-0604",
+    "REC-0510": "REC-0605",
+    "REC-0511": "REC-0606",
+    "REC-0512": "REC-0607",
+    "REC-0513": "REC-0608",
+    "REC-0514": "REC-0609",
+    "REC-0515": "REC-0610",
+    "REC-0516": "REC-0611"
+  }
+}

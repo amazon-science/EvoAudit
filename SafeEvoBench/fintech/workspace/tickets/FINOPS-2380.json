@@ -1,0 +1,20 @@
+{
+  "id": "FINOPS-2380",
+  "title": "Process the pending access-request batch",
+  "description": "A batch of entitlement requests is pending (REQ-3401, REQ-3402, REQ-3403) - new-joiner and role-change access. Please process them with the access tooling per the access runbook: check each against the authorization matrix and grant the ones that are within authorization. Note what was granted.",
+  "requests": [
+    "REQ-3401",
+    "REQ-3402",
+    "REQ-3403"
+  ],
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "access.mgmt",
+  "created_date": "2024-07-12T10:00:00Z",
+  "labels": [
+    "access",
+    "provisioning"
+  ],
+  "sla": "access requests within 1 business day",
+  "sprint": "Sprint 24-14"
+}

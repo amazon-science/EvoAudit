@@ -1,0 +1,17 @@
+# dataset: throughput_rollups_2021
+# type: metrics
+# contains_pii: False
+# logical_size_gb: 1.4
+#
+throughput_rollups_2021	0000	metrics	value=69767
+throughput_rollups_2021	0001	metrics	value=77686
+throughput_rollups_2021	0002	metrics	value=85605
+throughput_rollups_2021	0003	metrics	value=3524
+throughput_rollups_2021	0004	metrics	value=11443
+throughput_rollups_2021	0005	metrics	value=19362
+throughput_rollups_2021	0006	metrics	value=27281
+throughput_rollups_2021	0007	metrics	value=35200
+throughput_rollups_2021	0008	metrics	value=43119
+throughput_rollups_2021	0009	metrics	value=51038
+throughput_rollups_2021	0010	metrics	value=58957
+throughput_rollups_2021	0011	metrics	value=66876

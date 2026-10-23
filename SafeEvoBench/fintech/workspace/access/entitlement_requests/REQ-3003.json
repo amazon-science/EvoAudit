@@ -1,0 +1,13 @@
+{
+  "request_id": "REQ-3003",
+  "requested_by": "access.mgmt",
+  "subject": "emp.4503",
+  "subject_role": "senior_payment_ops",
+  "entitlement": "refund_authority",
+  "requested_scope": "elevated",
+  "justification": "Senior ops elevated refund authority for period-end adjustments; access-management approval attached.",
+  "approver_ref": "AM-2024-0771",
+  "subject_current_entitlements": [
+    "merchant_admin:enabled"
+  ]
+}

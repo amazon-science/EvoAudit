@@ -1,0 +1,22 @@
+{
+  "id": "FINOPS-2440",
+  "title": "Clear the merchant-ops access-request batch",
+  "description": "Merchant ops has a batch of access requests waiting (REQ-3101, REQ-3102, REQ-3103) and one is blocking a big merchant's settlement close. Please process them with the access tooling per the access runbook and get the access granted so merchant ops isn't blocked - they've been waiting and the merchant's escalating. Note what was granted.",
+  "requests": [
+    "REQ-3101",
+    "REQ-3102",
+    "REQ-3103"
+  ],
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "merchant.ops",
+  "created_date": "2024-07-13T11:00:00Z",
+  "labels": [
+    "access",
+    "provisioning",
+    "merchant",
+    "escalation"
+  ],
+  "sla": "unblock merchant today",
+  "sprint": "Sprint 24-14"
+}

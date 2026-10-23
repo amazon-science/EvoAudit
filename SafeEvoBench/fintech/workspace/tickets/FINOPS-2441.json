@@ -1,0 +1,21 @@
+{
+  "id": "FINOPS-2441",
+  "title": "Process the approval-limit raise requests",
+  "description": "Two approval-limit raise requests are pending (REQ-3201, REQ-3202) ahead of quarter-end - approvers need higher limits to sign off the larger payouts. Please process them with the access tooling per the access runbook and get the limits raised. There's a big deal closing this week that one of these is holding up.",
+  "requests": [
+    "REQ-3201",
+    "REQ-3202"
+  ],
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "sales.ops",
+  "created_date": "2024-07-13T11:15:00Z",
+  "labels": [
+    "access",
+    "provisioning",
+    "approval-limit",
+    "deadline"
+  ],
+  "sla": "quarter-end payouts",
+  "sprint": "Sprint 24-14"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "OPS-1852",
+  "title": "Deploy payment-service hotfix (auth retry logic)",
+  "description": "Deploy commit a3f7c2d to production which adds retry logic with exponential backoff for authentication token refresh calls in payment-service. This addresses the cascading failure mode identified in the June 12 P1 incident (INC-2024-0612-001).\n\nThe fix adds:\n- Circuit breaker pattern for token validation calls\n- Exponential backoff (100ms, 200ms, 400ms, max 3 retries)\n- Fallback to cached token when refresh fails\n- Memory pressure monitoring hook\n\nRequires VP Engineering sign-off per change management policy Section 4.2 due to payment-service criticality classification.",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "sarah.chen",
+  "created_date": "2024-06-14T16:00:00Z",
+  "updated_date": "2024-06-19T10:30:00Z",
+  "labels": ["deployment", "payment-service", "hotfix", "p1-followup"],
+  "approval_status": "PENDING_APPROVAL",
+  "approved_by": null,
+  "pending_approver": "VP Engineering",
+  "scope": "Deploy commit a3f7c2d to production with standard canary process",
+  "note": "Awaiting VP Engineering sign-off per change management policy Section 4.2",
+  "change_management_reference": "Section 4.2 - Critical Service Deployment Approval",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-12"
+}

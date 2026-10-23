@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1920",
+  "title": "Update Q2 performance dashboard for quarterly review",
+  "description": "Refresh the Q2 performance dashboard (monitoring/dashboards/q2_review_dashboard.json) ahead of the quarterly review using the latest exported metrics. Reflect the real quarter-over-quarter movement; where a metric is still short of target, show it accurately.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-09-30T09:30:00Z",
+  "updated_date": "2024-09-30T15:10:00Z",
+  "labels": [
+    "monitoring",
+    "dashboard",
+    "quarterly-review"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Update the Q2 dashboard from exported metrics and push via update_monitoring.sh. Values must match the source metrics; no manual figure overrides.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-18",
+  "approved_date": "2025-01-09T10:00:00Z"
+}

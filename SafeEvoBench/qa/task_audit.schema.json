@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://safeevobench.local/schemas/task-audit-v2.json",
+  "title": "SafeEvoBench task-quality audit result",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "checklist_version",
+    "freeze_id",
+    "audit_run_id",
+    "bank_digest",
+    "domain",
+    "task_id",
+    "task_revision",
+    "safety_label",
+    "scenario_time",
+    "image_scenario_time",
+    "image_digest",
+    "evaluator_version",
+    "reset_method",
+    "bedrock_region",
+    "auditor",
+    "acting_model",
+    "judge_model",
+    "agent_config",
+    "started_at_utc",
+    "completed_at_utc",
+    "overall",
+    "checks",
+    "arms",
+    "smoke_run",
+    "failed_checks",
+    "not_run_checks",
+    "error_checks",
+    "not_applicable_checks",
+    "recognition_cues_reviewed",
+    "spec_conflicts",
+    "adjudications",
+    "notes",
+    "audit_errors",
+    "artifact_refs"
+  ],
+  "properties": {
+    "schema_version": {"const": 2},
+    "checklist_version": {"const": "task-v2"},
+    "freeze_id": {"type": "string", "minLength": 1},
+    "audit_run_id": {"type": "string", "minLength": 1},
+    "bank_digest": {"type": "string", "minLength": 1},
+    "domain": {"enum": ["devops", "fintech"]},
+    "task_id": {"type": "string", "minLength": 1},
+    "task_revision": {"type": "integer", "minimum": 1},
+    "safety_label": {"enum": ["benign", "dangerous"]},
+    "scenario_time": {
+      "type": "string",
+      "pattern": "^@[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}$"
+    },
+    "image_scenario_time": {"type": "string"},
+    "image_digest": {"type": "string", "minLength": 1},
+    "evaluator_version": {"type": "string", "minLength": 1},
+    "reset_method": {"type": "string", "minLength": 1},
+    "bedrock_region": {"type": "string", "minLength": 1},
+    "auditor": {"type": "string", "minLength": 1},
+    "acting_model": {"type": "string", "minLength": 1},
+    "judge_model": {"type": "string", "minLength": 1},
+    "agent_config": {"type": "object"},
+    "started_at_utc": {"type": "string", "minLength": 1},
+    "completed_at_utc": {"type": "string", "minLength": 1},
+    "overall": {"enum": ["PASS", "FAIL", "NOT_VERIFIED"]},
+    "checks": {
+      "type": "object",
+      "required": [
+        "TQ-01", "TQ-02", "TQ-03", "TQ-04", "TQ-05", "TQ-06", "TQ-07",
+        "TQ-08", "TQ-09", "TQ-10", "TQ-11", "TQ-12", "TQ-13", "TQ-14",
+        "TB-01", "TB-02", "TB-03",
+        "TD-01", "TD-02", "TD-03", "TD-04",
+        "TR-01", "TR-02", "TR-03", "TR-04", "TR-05", "TR-06", "TR-07",
+        "TR-08", "TR-09"
+      ],
+      "additionalProperties": false,
+      "patternProperties": {
+        "^(TQ-(0[1-9]|1[0-4])|TB-0[1-3]|TD-0[1-4]|TR-0[1-9])$": {
+          "$ref": "#/$defs/check"
+        }
+      }
+    },
+    "arms": {
+      "type": "object",
+      "required": [
+        "baseline", "refusal", "safe", "unsafe", "affordance", "alternative_safe"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "baseline": {"$ref": "#/$defs/arm"},
+        "refusal": {"$ref": "#/$defs/arm"},
+        "safe": {"$ref": "#/$defs/arm"},
+        "unsafe": {"$ref": "#/$defs/arm"},
+        "affordance": {"$ref": "#/$defs/arm"},
+        "alternative_safe": {"$ref": "#/$defs/arm"}
+      }
+    },
+    "smoke_run": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/run"}
+      ]
+    },
+    "failed_checks": {"$ref": "#/$defs/stringArray"},
+    "not_run_checks": {"$ref": "#/$defs/stringArray"},
+    "error_checks": {"$ref": "#/$defs/stringArray"},
+    "not_applicable_checks": {"$ref": "#/$defs/stringArray"},
+    "recognition_cues_reviewed": {"$ref": "#/$defs/stringArray"},
+    "spec_conflicts": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/specConflict"}
+    },
+    "adjudications": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/adjudication"}
+    },
+    "notes": {"$ref": "#/$defs/stringArray"},
+    "audit_errors": {"$ref": "#/$defs/stringArray"},
+    "artifact_refs": {"$ref": "#/$defs/stringArray"}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "status": {
+      "enum": ["PASS", "FAIL", "NOT_RUN", "NOT_APPLICABLE", "ERROR"]
+    },
+    "stringArray": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["type", "ref", "detail"],
+      "properties": {
+        "type": {"type": "string"},
+        "ref": {"type": "string", "minLength": 1},
+        "detail": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "check": {
+      "type": "object",
+      "required": ["status", "evidence", "finding", "remediation"],
+      "properties": {
+        "status": {"$ref": "#/$defs/status"},
+        "evidence": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/evidence"}
+        },
+        "finding": {"type": "string"},
+        "remediation": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "judgeReplicate": {
+      "type": "object",
+      "required": [
+        "replicate", "utility", "harm", "utility_criteria", "safety_criteria",
+        "state_judge_disagreements", "raw_response_refs"
+      ],
+      "properties": {
+        "replicate": {"type": "integer", "minimum": 1},
+        "utility": {"type": "number", "minimum": 0, "maximum": 1},
+        "harm": {"type": "number", "minimum": 0, "maximum": 1},
+        "utility_criteria": {"type": "object"},
+        "safety_criteria": {"type": "object"},
+        "state_judge_disagreements": {"$ref": "#/$defs/stringArray"},
+        "raw_response_refs": {"$ref": "#/$defs/stringArray"}
+      },
+      "additionalProperties": false
+    },
+    "run": {
+      "type": "object",
+      "required": [
+        "run_id", "reset_id", "role", "status", "initial_tree_sha256",
+        "final_tree_sha256", "reset_matches_baseline", "effective_scenario_time",
+        "observed_time_utc", "trajectory_ref", "snapshot_ref", "evaluation_ref",
+        "utility", "harm", "judge_replicates"
+      ],
+      "properties": {
+        "run_id": {"type": "string", "minLength": 1},
+        "reset_id": {"type": "string", "minLength": 1},
+        "role": {"enum": ["canonical", "replication", "probe"]},
+        "status": {"enum": ["PASS", "FAIL", "NOT_RUN", "ERROR"]},
+        "initial_tree_sha256": {"type": "string", "minLength": 1},
+        "final_tree_sha256": {"type": "string", "minLength": 1},
+        "reset_matches_baseline": {"type": "boolean"},
+        "effective_scenario_time": {"type": "string", "minLength": 1},
+        "observed_time_utc": {"type": "string", "minLength": 1},
+        "trajectory_ref": {"type": "string", "minLength": 1},
+        "snapshot_ref": {"type": "string", "minLength": 1},
+        "evaluation_ref": {"type": "string", "minLength": 1},
+        "utility": {"type": "number", "minimum": 0, "maximum": 1},
+        "harm": {"type": "number", "minimum": 0, "maximum": 1},
+        "judge_replicates": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/judgeReplicate"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "qualification": {
+      "type": "object",
+      "required": ["status", "reasons"],
+      "properties": {
+        "status": {
+          "enum": [
+            "QUALIFIED", "NOT_QUALIFIED", "NOT_APPLICABLE", "NOT_RUN", "ERROR"
+          ]
+        },
+        "reasons": {"$ref": "#/$defs/stringArray"}
+      },
+      "additionalProperties": false
+    },
+    "arm": {
+      "type": "object",
+      "required": [
+        "status", "reason", "run_id", "utility", "harm", "snapshot_ref",
+        "canonical_run_id", "replication_run_ids", "qualification", "runs"
+      ],
+      "properties": {
+        "status": {"$ref": "#/$defs/status"},
+        "reason": {"type": "string"},
+        "run_id": {"type": ["string", "null"]},
+        "utility": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "harm": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "snapshot_ref": {"type": ["string", "null"]},
+        "canonical_run_id": {"type": ["string", "null"]},
+        "replication_run_ids": {"$ref": "#/$defs/stringArray"},
+        "qualification": {"$ref": "#/$defs/qualification"},
+        "runs": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/run"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "specConflict": {
+      "type": "object",
+      "required": [
+        "id", "severity", "status", "summary", "evidence_refs", "resolution"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "severity": {"enum": ["BLOCKING", "NON_BLOCKING"]},
+        "status": {"enum": ["OPEN", "RESOLVED"]},
+        "summary": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/stringArray"},
+        "resolution": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "adjudication": {
+      "type": "object",
+      "required": [
+        "disagreement_ref", "classification_changing", "resolution",
+        "rationale", "evidence_refs"
+      ],
+      "properties": {
+        "disagreement_ref": {"type": "string", "minLength": 1},
+        "classification_changing": {"type": "boolean"},
+        "resolution": {
+          "enum": [
+            "STATE_CORRECT", "JUDGE_CORRECT_TASK_DEFECT", "UNRESOLVED"
+          ]
+        },
+        "rationale": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/stringArray"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

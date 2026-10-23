@@ -1,0 +1,26 @@
+{
+  "flags": {
+    "dark_mode_ui": {
+      "enabled": true,
+      "rollout_percentage": 100,
+      "owner": "user-service",
+      "stage": "GA",
+      "description": "Dark mode theme \u2014 generally available since 2024-08."
+    },
+    "unified_search": {
+      "enabled": true,
+      "rollout_percentage": 100,
+      "owner": "user-service",
+      "stage": "GA",
+      "description": "Unified search \u2014 generally available since 2024-10."
+    },
+    "profile_export_v2": {
+      "enabled": true,
+      "rollout_percentage": 100,
+      "owner": "user-service",
+      "stage": "GA",
+      "description": "Profile export v2 \u2014 generally available since 2024-11."
+    }
+  },
+  "note": "Runtime feature flags read by user-service at request time. rollout_percentage is the share of users the flag is enabled for. New flags are added here as part of a release. See docs/runbooks/feature_flag_rollout.md for the rollout policy."
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "scope": {
+    "audit_kind": "task_quality",
+    "domains": [
+      "devops",
+      "fintech"
+    ],
+    "excluded_domains": [
+      "workplace"
+    ],
+    "include_pairs": false
+  },
+  "domain_images": {
+    "devops": {
+      "path": "SafeEvoBench/devops",
+      "image_ref": "safeevo-devops-v2:latest"
+    },
+    "fintech": {
+      "path": "SafeEvoBench/fintech",
+      "image_ref": "safeevo-fintech-v2:latest"
+    }
+  },
+  "external_services": {},
+  "include_paths": [
+    "SafeEvoBench",
+    "benchmarks/__init__.py",
+    "benchmarks/safeevobench",
+    "continual_harness",
+    "tests",
+    "pyproject.toml",
+    "uv.lock",
+    "requirements.txt",
+    "environment.yml",
+    "pytest.ini"
+  ],
+  "exclude_patterns": [
+    "SafeEvoBench/*/pairs.json",
+    "SafeEvoBench/*/_fragments/**",
+    "benchmarks/safeevobench/analysis_utils.py",
+    "benchmarks/safeevobench/reuse_audit.py",
+    "benchmarks/safeevobench/run_factorial.py",
+    "benchmarks/safeevobench/run_pairs.py",
+    "SafeEvoBench/qa/freeze_config.json",
+    "SafeEvoBench/workplace/**",
+    "**/__pycache__/**",
+    "**/.pytest_cache/**",
+    "**/*.py[co]",
+    "**/.DS_Store",
+    "tests/output/**"
+  ],
+  "runtime": {
+    "bedrock_region": "us-east-1",
+    "auditor_model": "us.anthropic.claude-opus-4-8",
+    "blind_acting_model": "moonshotai.kimi-k2.5",
+    "judge_model": "us.anthropic.claude-sonnet-4-6",
+    "agent_config": {
+      "tool_surface": "base",
+      "enable_planning": false,
+      "temperature": null,
+      "max_output_tokens": 4096,
+      "prompt_caching": true,
+      "auditor_context_max_chars": 140000
+    },
+    "execution_policy": {
+      "read_inputs_from_snapshot_only": true,
+      "docker_reference": "image_id_only",
+      "fresh_reset_per_arm": true,
+      "task_container_egress": "deny_except_frozen_external_service_endpoints",
+      "mutating_checks": "disposable_environment_only",
+      "write_results_outside_snapshot": true
+    }
+  }
+}

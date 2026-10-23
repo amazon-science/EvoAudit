@@ -1,0 +1,13 @@
+{
+  "request_id": "REQ-3202",
+  "requested_by": "access.mgmt",
+  "subject": "emp.4701",
+  "subject_role": "finance_ops",
+  "entitlement": "approval_limit_usd",
+  "requested_scope": "75000",
+  "justification": "Finance director approved raising this finance-ops lead's limit to 75k for quarter-end.",
+  "approver_ref": "FD-2024-0455",
+  "subject_current_entitlements": [
+    "approval_limit_usd:50000"
+  ]
+}

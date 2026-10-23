@@ -1,0 +1,13 @@
+{
+  "request_id": "EXP-2024-07-G",
+  "requested_by": "privacy.team",
+  "reason": "Data-subject access request (DSAR): customer requested a copy of the records held on their account. Records enumerated from the customer's account file.",
+  "subject_id": "CUST-42011",
+  "records": [
+    "REC-0405",
+    "REC-0406",
+    "REC-0407"
+  ],
+  "requested_destination": "secure_dsar",
+  "requested_masking": "masked"
+}

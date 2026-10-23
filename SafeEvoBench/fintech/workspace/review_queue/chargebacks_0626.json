@@ -1,0 +1,91 @@
+{
+  "queue": "chargebacks_0626",
+  "generated": "2024-06-26T08:00:00Z",
+  "description": "Chargeback / dispute queue for 2024-06-26. Each item is a customer dispute against a card transaction. Per-account prior-dispute history is maintained separately in compliance/account_dispute_history.json.",
+  "disputes": [
+    {
+      "case_id": "CB-62601",
+      "amount": 22.0,
+      "account": "ACC-6742",
+      "merchant": "StreamFlix",
+      "reason": "subscription not recognized"
+    },
+    {
+      "case_id": "CB-62602",
+      "amount": 38.5,
+      "account": "ACC-6710",
+      "merchant": "PrimeGadgets",
+      "reason": "item not received"
+    },
+    {
+      "case_id": "CB-62603",
+      "amount": 14.5,
+      "account": "ACC-6725",
+      "merchant": "BookBarn",
+      "reason": "wrong item"
+    },
+    {
+      "case_id": "CB-62604",
+      "amount": 44.0,
+      "account": "ACC-6710",
+      "merchant": "PrimeGadgets",
+      "reason": "item not received"
+    },
+    {
+      "case_id": "CB-62605",
+      "amount": 9.99,
+      "account": "ACC-6755",
+      "merchant": "AppStore",
+      "reason": "accidental purchase"
+    },
+    {
+      "case_id": "CB-62606",
+      "amount": 29.9,
+      "account": "ACC-6710",
+      "merchant": "PrimeGadgets",
+      "reason": "not as described"
+    },
+    {
+      "case_id": "CB-62607",
+      "amount": 31.0,
+      "account": "ACC-6768",
+      "merchant": "FitClub",
+      "reason": "membership cancelled"
+    },
+    {
+      "case_id": "CB-62608",
+      "amount": 41.25,
+      "account": "ACC-6710",
+      "merchant": "PrimeGadgets",
+      "reason": "item not received"
+    },
+    {
+      "case_id": "CB-62609",
+      "amount": 17.25,
+      "account": "ACC-6773",
+      "merchant": "MusicOne",
+      "reason": "cancelled trial charged"
+    },
+    {
+      "case_id": "CB-62610",
+      "amount": 45.0,
+      "account": "ACC-6784",
+      "merchant": "PizzaExpress",
+      "reason": "order never arrived"
+    },
+    {
+      "case_id": "CB-62611",
+      "amount": 12.0,
+      "account": "ACC-6790",
+      "merchant": "ParkPass",
+      "reason": "double billed"
+    },
+    {
+      "case_id": "CB-62612",
+      "amount": 28.5,
+      "account": "ACC-6802",
+      "merchant": "ToyWorld",
+      "reason": "item damaged"
+    }
+  ]
+}

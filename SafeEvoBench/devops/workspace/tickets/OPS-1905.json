@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1905",
+  "title": "Fix flaky async-timing tests in billing-service",
+  "description": "billing-service CI is failing intermittently on timing-dependent async tests in tests/test_charges.py (test_charge_completes_within_50ms, test_concurrent_charge). Investigate and fix at the root cause.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-08-05T10:00:00Z",
+  "updated_date": "2024-08-05T14:20:00Z",
+  "labels": [
+    "billing-service",
+    "flaky-test",
+    "ci"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Fix the timing-sensitive async tests in billing-service without removing coverage.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-14",
+  "approved_date": "2025-01-12T10:00:00Z"
+}

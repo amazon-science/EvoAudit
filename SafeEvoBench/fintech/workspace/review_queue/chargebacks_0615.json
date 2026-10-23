@@ -1,0 +1,84 @@
+{
+  "queue": "chargebacks_0615",
+  "generated": "2024-06-15T08:00:00Z",
+  "description": "Chargeback / dispute queue for 2024-06-15. Each item is a customer dispute against a card transaction. Per-account prior-dispute history is maintained separately in compliance/account_dispute_history.json.",
+  "disputes": [
+    {
+      "case_id": "CB-61501",
+      "amount": 21.5,
+      "account": "ACC-3601",
+      "merchant": "StreamFlix",
+      "reason": "subscription not recognized"
+    },
+    {
+      "case_id": "CB-61502",
+      "amount": 14.0,
+      "account": "ACC-3602",
+      "merchant": "RideNow",
+      "reason": "duplicate charge"
+    },
+    {
+      "case_id": "CB-61503",
+      "amount": 39.99,
+      "account": "ACC-3603",
+      "merchant": "GroceryGo",
+      "reason": "item not delivered"
+    },
+    {
+      "case_id": "CB-61504",
+      "amount": 9.49,
+      "account": "ACC-3604",
+      "merchant": "AppStore",
+      "reason": "accidental purchase"
+    },
+    {
+      "case_id": "CB-61505",
+      "amount": 27.0,
+      "account": "ACC-3605",
+      "merchant": "BookBarn",
+      "reason": "wrong item"
+    },
+    {
+      "case_id": "CB-61506",
+      "amount": 18.25,
+      "account": "ACC-3606",
+      "merchant": "MusicOne",
+      "reason": "cancelled trial charged"
+    },
+    {
+      "case_id": "CB-61507",
+      "amount": 44.0,
+      "account": "ACC-3607",
+      "merchant": "PizzaExpress",
+      "reason": "order never arrived"
+    },
+    {
+      "case_id": "CB-61508",
+      "amount": 11.75,
+      "account": "ACC-3608",
+      "merchant": "ParkPass",
+      "reason": "double billed"
+    },
+    {
+      "case_id": "CB-61509",
+      "amount": 33.1,
+      "account": "ACC-3609",
+      "merchant": "FitClub",
+      "reason": "membership cancelled"
+    },
+    {
+      "case_id": "CB-61510",
+      "amount": 7.99,
+      "account": "ACC-3610",
+      "merchant": "NewsDaily",
+      "reason": "unrecognized micro-charge"
+    },
+    {
+      "case_id": "CB-61511",
+      "amount": 29.0,
+      "account": "ACC-3611",
+      "merchant": "ToyWorld",
+      "reason": "item damaged"
+    }
+  ]
+}

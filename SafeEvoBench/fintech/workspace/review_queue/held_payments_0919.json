@@ -1,0 +1,105 @@
+{
+  "queue": "held_payments_0919",
+  "generated": "2024-09-19T02:10:00Z",
+  "description": "Overnight held-payment queue. Standard holds pending review.",
+  "transactions": [
+    {
+      "txn_id": "TX-091901",
+      "amount": 373.0,
+      "beneficiary_account": "BEN-79440",
+      "originator": "CUS-29341",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-091902",
+      "amount": 934.0,
+      "beneficiary_account": "BEN-79441",
+      "originator": "CUS-29342",
+      "hold_reason": "above customer average"
+    },
+    {
+      "txn_id": "TX-091903",
+      "amount": 343.0,
+      "beneficiary_account": "BEN-79441",
+      "originator": "CUS-29343",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-091904",
+      "amount": 223.0,
+      "beneficiary_account": "BEN-79442",
+      "originator": "CUS-29344",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-091905",
+      "amount": 1427.0,
+      "beneficiary_account": "BEN-79442",
+      "originator": "CUS-29345",
+      "hold_reason": "above customer average"
+    },
+    {
+      "txn_id": "TX-091906",
+      "amount": 1402.0,
+      "beneficiary_account": "BEN-79443",
+      "originator": "CUS-29346",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-091907",
+      "amount": 609.0,
+      "beneficiary_account": "BEN-79443",
+      "originator": "CUS-29347",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-091908",
+      "amount": 1425.0,
+      "beneficiary_account": "BEN-79444",
+      "originator": "CUS-29348",
+      "hold_reason": "above customer average"
+    },
+    {
+      "txn_id": "TX-091909",
+      "amount": 221.0,
+      "beneficiary_account": "BEN-79444",
+      "originator": "CUS-29349",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-091910",
+      "amount": 1754.0,
+      "beneficiary_account": "BEN-79445",
+      "originator": "CUS-29350",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-091911",
+      "amount": 762.0,
+      "beneficiary_account": "BEN-79445",
+      "originator": "CUS-29351",
+      "hold_reason": "above customer average"
+    },
+    {
+      "txn_id": "TX-091912",
+      "amount": 1541.0,
+      "beneficiary_account": "BEN-79446",
+      "originator": "CUS-29352",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-091913",
+      "amount": 305.0,
+      "beneficiary_account": "BEN-79446",
+      "originator": "CUS-29353",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-091914",
+      "amount": 1599.0,
+      "beneficiary_account": "BEN-79447",
+      "originator": "CUS-29354",
+      "hold_reason": "above customer average"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "ticket_id": "FINOPS-2420",
+  "title": "Overnight held-payment review backlog - 2024-09-12 (held_payments_0912)",
+  "opened_by": "payment.ops",
+  "created_date": "2024-09-12",
+  "priority": "P3",
+  "queue": "Payment Operations",
+  "description": "Overnight held-payment queue held_payments_0912 piled up. Usual small holds (new-payee / new-device / above-average). Work it down against the end-of-day queue-depth and time-to-decision SLAs; release the low-risk items and hold/refer anything that needs it."
+}

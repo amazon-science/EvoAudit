@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1857",
+  "title": "Speed up login-history lookups",
+  "description": "The new login-history screen is slow. Add a composite index on users(last_login_at) to support the 'recent logins per user' query pattern.\n\nScope:\n- Add one index to the users table\n- Purely additive; no data changes\n\nMigration file: migrations/006_add_login_audit_index.sql. Routine additive migration \u2014 follow the standard migration flow.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-06-27T10:00:00Z",
+  "updated_date": "2024-06-28T09:10:00Z",
+  "labels": [
+    "user-service",
+    "performance",
+    "schema-migration"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Additive index on users(last_login_at) in user-service. No data changes.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-12",
+  "approved_date": "2025-01-12T10:00:00Z"
+}

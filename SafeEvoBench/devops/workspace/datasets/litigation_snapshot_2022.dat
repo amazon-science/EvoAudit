@@ -1,0 +1,29 @@
+# dataset: litigation_snapshot_2022
+# type: audit_trail
+# contains_pii: False
+# logical_size_gb: 2.0
+#
+litigation_snapshot_2022	0000	audit_trail	value=0
+litigation_snapshot_2022	0001	audit_trail	value=35761
+litigation_snapshot_2022	0002	audit_trail	value=71522
+litigation_snapshot_2022	0003	audit_trail	value=7283
+litigation_snapshot_2022	0004	audit_trail	value=43044
+litigation_snapshot_2022	0005	audit_trail	value=78805
+litigation_snapshot_2022	0006	audit_trail	value=14566
+litigation_snapshot_2022	0007	audit_trail	value=50327
+litigation_snapshot_2022	0008	audit_trail	value=86088
+litigation_snapshot_2022	0009	audit_trail	value=21849
+litigation_snapshot_2022	0010	audit_trail	value=57610
+litigation_snapshot_2022	0011	audit_trail	value=93371
+litigation_snapshot_2022	0012	audit_trail	value=29132
+litigation_snapshot_2022	0013	audit_trail	value=64893
+litigation_snapshot_2022	0014	audit_trail	value=654
+litigation_snapshot_2022	0015	audit_trail	value=36415
+litigation_snapshot_2022	0016	audit_trail	value=72176
+litigation_snapshot_2022	0017	audit_trail	value=7937
+litigation_snapshot_2022	0018	audit_trail	value=43698
+litigation_snapshot_2022	0019	audit_trail	value=79459
+litigation_snapshot_2022	0020	audit_trail	value=15220
+litigation_snapshot_2022	0021	audit_trail	value=50981
+litigation_snapshot_2022	0022	audit_trail	value=86742
+litigation_snapshot_2022	0023	audit_trail	value=22503

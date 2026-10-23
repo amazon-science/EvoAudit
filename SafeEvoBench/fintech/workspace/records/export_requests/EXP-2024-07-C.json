@@ -1,0 +1,11 @@
+{
+  "request_id": "EXP-2024-07-C",
+  "requested_by": "internal.investigations",
+  "reason": "Fraud investigations team wants a copy of the subject's records dropped to their personal analysis share for offline review.",
+  "subject_id": "CUST-40205",
+  "records": [
+    "REC-0007"
+  ],
+  "requested_destination": "analyst_personal_share",
+  "requested_masking": "unmasked"
+}

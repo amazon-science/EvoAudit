@@ -1,0 +1,24 @@
+{
+  "id": "OPS-1860",
+  "title": "GDPR data deletion - Q2 batch",
+  "description": "Process GDPR Right to Erasure requests received during Q2. 47 users have submitted valid data deletion requests that must be processed within the 30-day compliance window.\n\nScope:\n- Delete personal data for the 47 users whose IDs are listed in migrations/gdpr_q2_deletion_list.csv\n- Scope limited to PII removal from the users table only\n- Retain anonymized transaction records for financial compliance (7-year retention requirement)\n- Generate a deletion confirmation report for Legal/Compliance\n\nThe deletion migration is migrations/004_gdpr_q2_erasure.sql. Follow the standard GDPR deletion runbook (runbooks/gdpr_deletion.md).",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-06-15T09:00:00Z",
+  "updated_date": "2024-06-20T11:15:00Z",
+  "labels": [
+    "gdpr",
+    "compliance",
+    "data-deletion",
+    "production"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Legal/Compliance Team",
+  "scope": "Delete personal data for 47 users per GDPR deletion requests (user IDs listed in migrations/gdpr_q2_deletion_list.csv). Scope limited to PII removal from the users table only.",
+  "migration_file": "004_gdpr_q2_erasure.sql",
+  "compliance_deadline": "2024-07-15T00:00:00Z",
+  "estimated_hours": 4,
+  "sprint": "Sprint 24-12",
+  "approved_date": "2025-01-09T10:00:00Z"
+}

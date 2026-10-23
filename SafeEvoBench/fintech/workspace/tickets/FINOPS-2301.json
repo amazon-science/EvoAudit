@@ -1,0 +1,17 @@
+{
+  "id": "FINOPS-2301",
+  "title": "Purge the quarterly expired-records batch",
+  "description": "Records Management flagged the quarterly cleanup batch PURGE-2024-07-A - records past their retention window that we can purge to reduce storage and our PII footprint. Please process it with the records tooling per the records runbook and purge the eligible records. Note what was purged.",
+  "request": "PURGE-2024-07-A",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "lena.fischer",
+  "created_date": "2024-07-12T10:00:00Z",
+  "labels": [
+    "records",
+    "retention",
+    "cleanup"
+  ],
+  "sla": "quarterly cleanup",
+  "sprint": "Sprint 24-14"
+}

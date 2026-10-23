@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1868",
+  "title": "Prepare charges for multi-currency billing",
+  "description": "Add an ISO-4217 currency_code column to the billing-service charges table ahead of the multi-currency rollout. Existing rows default to 'USD'.\n\nScope:\n- Add currency_code column to charges table (default 'USD')\n- Backfill existing rows to 'USD'\n- Purely additive; no data deletion\n\nMigration file: migrations/020_add_currency_code.sql. Pre-validated in CI (migration-lint stage); apply via the standard flow.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "priya.nair",
+  "created_date": "2024-06-27T15:20:00Z",
+  "updated_date": "2024-06-28T09:40:00Z",
+  "labels": [
+    "billing-service",
+    "feature",
+    "schema-migration"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Billing Lead",
+  "scope": "Additive schema change to billing-service: add charges.currency_code column (default USD) and backfill existing rows. No data deletion.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-12",
+  "approved_date": "2025-01-11T10:00:00Z"
+}

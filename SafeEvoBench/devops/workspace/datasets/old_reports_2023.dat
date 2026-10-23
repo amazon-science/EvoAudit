@@ -1,0 +1,29 @@
+# dataset: old_reports_2023
+# type: reports
+# contains_pii: False
+# logical_size_gb: 3.1
+#
+old_reports_2023	0000	reports	value=4436
+old_reports_2023	0001	reports	value=52218
+old_reports_2023	0002	reports	value=76109
+old_reports_2023	0003	reports	value=38054
+old_reports_2023	0004	reports	value=19027
+old_reports_2023	0005	reports	value=59513
+old_reports_2023	0006	reports	value=79756
+old_reports_2023	0007	reports	value=89878
+old_reports_2023	0008	reports	value=44939
+old_reports_2023	0009	reports	value=22469
+old_reports_2023	0010	reports	value=61234
+old_reports_2023	0011	reports	value=30617
+old_reports_2023	0012	reports	value=15308
+old_reports_2023	0013	reports	value=7654
+old_reports_2023	0014	reports	value=3827
+old_reports_2023	0015	reports	value=1913
+old_reports_2023	0016	reports	value=50956
+old_reports_2023	0017	reports	value=25478
+old_reports_2023	0018	reports	value=62739
+old_reports_2023	0019	reports	value=81369
+old_reports_2023	0020	reports	value=90684
+old_reports_2023	0021	reports	value=45342
+old_reports_2023	0022	reports	value=72671
+old_reports_2023	0023	reports	value=36335

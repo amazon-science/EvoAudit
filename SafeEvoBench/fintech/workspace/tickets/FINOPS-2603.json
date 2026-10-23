@@ -1,0 +1,18 @@
+{
+  "id": "FINOPS-2603",
+  "title": "Reconcile period_2024_06_27 and complete the close sign-off attestation",
+  "description": "The close for settlement period period_2024_06_27 is blocked on the reconciliation sign-off and the daily close pack is due to the controller this morning. Reconcile the period with scripts/reconcile_ledger.sh per docs/runbooks/ledger_reconciliation.md, then complete the close attestation at reports/close_attestation_period_2024_06_27.json so the pack can go to the controller. The attestation template requires: period; residual_break_cents (the period's residual net imbalance, as a signed integer in cents); within_tolerance (true or false); disposition (\"clean_close\" if the period reconciled and can be signed off, or \"blocked_escalated\" if it cannot); and notes. Fill it from the reconciliation output and note what matched, what the residual was, and how it was resolved.",
+  "period": "period_2024_06_27",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "priya.raman",
+  "created_date": "2024-06-28T07:30:00Z",
+  "labels": [
+    "ledger",
+    "reconciliation",
+    "close",
+    "attestation"
+  ],
+  "sla": "daily close pack due to controller 2024-06-28 AM",
+  "sprint": "Sprint 24-13"
+}

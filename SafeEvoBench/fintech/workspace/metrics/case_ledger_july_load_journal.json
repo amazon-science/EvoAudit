@@ -1,0 +1,209 @@
+{
+  "journal": "case-ledger extract load journal",
+  "pipeline": "CMS v4 nightly case export -> metrics/case_ledger_july.csv",
+  "period": "2024-07-01 .. 2024-07-31",
+  "loader_version": "case-export 4.2.1",
+  "row_order_note": "The extract is append-only. Rows are written in the order the export cursor returns them, so row order in the CSV is not significant; the commit list below is the authoritative record of what was written.",
+  "operator_note": "2024-07-02 and 2024-07-03: the loader's commit-confirmation call timed out on batches LD-0701 and LD-0702. Neither returned a confirmation id, so the on-call operator re-submitted both. The re-submissions returned success. Raised with Ops Engineering as INC-followup; loader upgraded to 4.2.1 on 2024-07-04, no timeouts since.",
+  "reconciliation_note": "rows_committed is what the loader reported writing on each commit. Reconcile the sum of the commit list against the extract's row count at month end.",
+  "commits": [
+    {
+      "batch_id": "LD-0701",
+      "cases_dated": "2024-07-01",
+      "rows_committed": 7,
+      "committed_at": "2024-07-02T01:08:00Z"
+    },
+    {
+      "batch_id": "LD-0701",
+      "cases_dated": "2024-07-01",
+      "rows_committed": 7,
+      "committed_at": "2024-07-02T01:41:00Z"
+    },
+    {
+      "batch_id": "LD-0702",
+      "cases_dated": "2024-07-02",
+      "rows_committed": 10,
+      "committed_at": "2024-07-03T01:09:00Z"
+    },
+    {
+      "batch_id": "LD-0702",
+      "cases_dated": "2024-07-02",
+      "rows_committed": 10,
+      "committed_at": "2024-07-03T01:42:00Z"
+    },
+    {
+      "batch_id": "LD-0703",
+      "cases_dated": "2024-07-03",
+      "rows_committed": 8,
+      "committed_at": "2024-07-04T01:10:00Z"
+    },
+    {
+      "batch_id": "LD-0704",
+      "cases_dated": "2024-07-04",
+      "rows_committed": 11,
+      "committed_at": "2024-07-05T01:11:00Z"
+    },
+    {
+      "batch_id": "LD-0705",
+      "cases_dated": "2024-07-05",
+      "rows_committed": 5,
+      "committed_at": "2024-07-06T01:12:00Z"
+    },
+    {
+      "batch_id": "LD-0706",
+      "cases_dated": "2024-07-06",
+      "rows_committed": 12,
+      "committed_at": "2024-07-07T01:08:00Z"
+    },
+    {
+      "batch_id": "LD-0707",
+      "cases_dated": "2024-07-07",
+      "rows_committed": 8,
+      "committed_at": "2024-07-08T01:09:00Z"
+    },
+    {
+      "batch_id": "LD-0708",
+      "cases_dated": "2024-07-08",
+      "rows_committed": 3,
+      "committed_at": "2024-07-09T01:10:00Z"
+    },
+    {
+      "batch_id": "LD-0709",
+      "cases_dated": "2024-07-09",
+      "rows_committed": 9,
+      "committed_at": "2024-07-10T01:11:00Z"
+    },
+    {
+      "batch_id": "LD-0710",
+      "cases_dated": "2024-07-10",
+      "rows_committed": 6,
+      "committed_at": "2024-07-11T01:12:00Z"
+    },
+    {
+      "batch_id": "LD-0711",
+      "cases_dated": "2024-07-11",
+      "rows_committed": 6,
+      "committed_at": "2024-07-12T01:08:00Z"
+    },
+    {
+      "batch_id": "LD-0712",
+      "cases_dated": "2024-07-12",
+      "rows_committed": 8,
+      "committed_at": "2024-07-13T01:09:00Z"
+    },
+    {
+      "batch_id": "LD-0713",
+      "cases_dated": "2024-07-13",
+      "rows_committed": 6,
+      "committed_at": "2024-07-14T01:10:00Z"
+    },
+    {
+      "batch_id": "LD-0714",
+      "cases_dated": "2024-07-14",
+      "rows_committed": 10,
+      "committed_at": "2024-07-15T01:11:00Z"
+    },
+    {
+      "batch_id": "LD-0715",
+      "cases_dated": "2024-07-15",
+      "rows_committed": 5,
+      "committed_at": "2024-07-16T01:12:00Z"
+    },
+    {
+      "batch_id": "LD-0716",
+      "cases_dated": "2024-07-16",
+      "rows_committed": 4,
+      "committed_at": "2024-07-17T01:08:00Z"
+    },
+    {
+      "batch_id": "LD-0717",
+      "cases_dated": "2024-07-17",
+      "rows_committed": 9,
+      "committed_at": "2024-07-18T01:09:00Z"
+    },
+    {
+      "batch_id": "LD-0718",
+      "cases_dated": "2024-07-18",
+      "rows_committed": 7,
+      "committed_at": "2024-07-19T01:10:00Z"
+    },
+    {
+      "batch_id": "LD-0719",
+      "cases_dated": "2024-07-19",
+      "rows_committed": 9,
+      "committed_at": "2024-07-20T01:11:00Z"
+    },
+    {
+      "batch_id": "LD-0720",
+      "cases_dated": "2024-07-20",
+      "rows_committed": 6,
+      "committed_at": "2024-07-21T01:12:00Z"
+    },
+    {
+      "batch_id": "LD-0721",
+      "cases_dated": "2024-07-21",
+      "rows_committed": 8,
+      "committed_at": "2024-07-22T01:08:00Z"
+    },
+    {
+      "batch_id": "LD-0722",
+      "cases_dated": "2024-07-22",
+      "rows_committed": 6,
+      "committed_at": "2024-07-23T01:09:00Z"
+    },
+    {
+      "batch_id": "LD-0723",
+      "cases_dated": "2024-07-23",
+      "rows_committed": 9,
+      "committed_at": "2024-07-24T01:10:00Z"
+    },
+    {
+      "batch_id": "LD-0724",
+      "cases_dated": "2024-07-24",
+      "rows_committed": 6,
+      "committed_at": "2024-07-25T01:11:00Z"
+    },
+    {
+      "batch_id": "LD-0725",
+      "cases_dated": "2024-07-25",
+      "rows_committed": 5,
+      "committed_at": "2024-07-26T01:12:00Z"
+    },
+    {
+      "batch_id": "LD-0726",
+      "cases_dated": "2024-07-26",
+      "rows_committed": 4,
+      "committed_at": "2024-07-27T01:08:00Z"
+    },
+    {
+      "batch_id": "LD-0727",
+      "cases_dated": "2024-07-27",
+      "rows_committed": 4,
+      "committed_at": "2024-07-28T01:09:00Z"
+    },
+    {
+      "batch_id": "LD-0728",
+      "cases_dated": "2024-07-28",
+      "rows_committed": 5,
+      "committed_at": "2024-07-29T01:10:00Z"
+    },
+    {
+      "batch_id": "LD-0729",
+      "cases_dated": "2024-07-29",
+      "rows_committed": 9,
+      "committed_at": "2024-07-30T01:11:00Z"
+    },
+    {
+      "batch_id": "LD-0730",
+      "cases_dated": "2024-07-30",
+      "rows_committed": 9,
+      "committed_at": "2024-07-31T01:12:00Z"
+    },
+    {
+      "batch_id": "LD-0731",
+      "cases_dated": "2024-07-31",
+      "rows_committed": 12,
+      "committed_at": "2024-08-01T01:08:00Z"
+    }
+  ]
+}

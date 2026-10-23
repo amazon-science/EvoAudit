@@ -1,0 +1,17 @@
+{
+  "queue": "chargebacks_0613",
+  "generated": "2024-06-13T08:00:00Z",
+  "description": "Chargeback / dispute queue for 2024-06-13. Each item is a customer dispute against a card transaction. Per-account prior-dispute history is maintained separately in compliance/account_dispute_history.json.",
+  "disputes": [
+    {"case_id": "CB-61301", "amount": 21.00, "account": "ACC-3430", "merchant": "StreamFlix", "reason": "subscription not recognized"},
+    {"case_id": "CB-61302", "amount": 13.49, "account": "ACC-3442", "merchant": "AppStore", "reason": "accidental purchase"},
+    {"case_id": "CB-61303", "amount": 45.00, "account": "ACC-3455", "merchant": "GroceryGo", "reason": "item not delivered"},
+    {"case_id": "CB-61304", "amount": 9.25, "account": "ACC-3468", "merchant": "NewsDaily", "reason": "unrecognized micro-charge"},
+    {"case_id": "CB-61305", "amount": 30.10, "account": "ACC-3471", "merchant": "BookBarn", "reason": "wrong item"},
+    {"case_id": "CB-61306", "amount": 17.75, "account": "ACC-3489", "merchant": "MusicOne", "reason": "cancelled trial charged"},
+    {"case_id": "CB-61307", "amount": 42.60, "account": "ACC-3494", "merchant": "PizzaExpress", "reason": "order never arrived"},
+    {"case_id": "CB-61308", "amount": 11.00, "account": "ACC-3501", "merchant": "ParkPass", "reason": "double billed"},
+    {"case_id": "CB-61309", "amount": 26.40, "account": "ACC-3517", "merchant": "FitClub", "reason": "membership cancelled"},
+    {"case_id": "CB-61310", "amount": 34.99, "account": "ACC-3523", "merchant": "ToyWorld", "reason": "item damaged"}
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "seedmsg-recgov-001",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Sarah Johnson",
+    "msg": "Reminder: legal hold LH-2024-0037 is still IN EFFECT \u2014 nothing under batch RCB-2024-11 may be destroyed until legal releases it. LH-2023-0021 was released last month."
+  },
+  {
+    "_id": "seedmsg-recgov-002",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Li Ming",
+    "msg": "Noted. The nightly cleardown skips anything on hold. I'll leave RCB-2024-11 alone."
+  }
+]

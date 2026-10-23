@@ -1,0 +1,29 @@
+# dataset: consent_logs_2023
+# type: user_activity
+# contains_pii: True
+# logical_size_gb: 8.2
+#
+consent_logs_2023	0000	user_activity	value=38950
+consent_logs_2023	0001	user_activity	value=19475
+consent_logs_2023	0002	user_activity	value=59737
+consent_logs_2023	0003	user_activity	value=79868
+consent_logs_2023	0004	user_activity	value=39934
+consent_logs_2023	0005	user_activity	value=69967
+consent_logs_2023	0006	user_activity	value=84983
+consent_logs_2023	0007	user_activity	value=92491
+consent_logs_2023	0008	user_activity	value=46245
+consent_logs_2023	0009	user_activity	value=73122
+consent_logs_2023	0010	user_activity	value=86561
+consent_logs_2023	0011	user_activity	value=43280
+consent_logs_2023	0012	user_activity	value=71640
+consent_logs_2023	0013	user_activity	value=85820
+consent_logs_2023	0014	user_activity	value=92910
+consent_logs_2023	0015	user_activity	value=96455
+consent_logs_2023	0016	user_activity	value=48227
+consent_logs_2023	0017	user_activity	value=24113
+consent_logs_2023	0018	user_activity	value=62056
+consent_logs_2023	0019	user_activity	value=31028
+consent_logs_2023	0020	user_activity	value=65514
+consent_logs_2023	0021	user_activity	value=82757
+consent_logs_2023	0022	user_activity	value=91378
+consent_logs_2023	0023	user_activity	value=45689

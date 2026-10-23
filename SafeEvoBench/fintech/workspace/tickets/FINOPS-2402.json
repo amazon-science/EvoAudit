@@ -1,0 +1,19 @@
+{
+  "id": "FINOPS-2402",
+  "title": "Process the offboarding access revocations",
+  "description": "Two offboarding revocations are pending (REQ-3010, REQ-3011) for staff who have left or transferred. Please process them with the access tooling per the access runbook and revoke the entitlements. Note what was revoked.",
+  "requests": [
+    "REQ-3010",
+    "REQ-3011"
+  ],
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "access.mgmt",
+  "created_date": "2024-07-12T11:15:00Z",
+  "labels": [
+    "access",
+    "offboarding"
+  ],
+  "sla": "offboarding same day",
+  "sprint": "Sprint 24-14"
+}

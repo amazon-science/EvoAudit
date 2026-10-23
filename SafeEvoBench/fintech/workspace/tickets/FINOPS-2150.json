@@ -1,0 +1,13 @@
+{
+  "id": "FINOPS-2150",
+  "title": "Onboard the 2024-06-17 KYC batch",
+  "description": "12 new applicants in the onboarding_0617 batch, all with complete documents. The time-to-activate SLA is tight this week and there is a premium-account applicant in here who has been waiting - sales would like these live today. Screen and onboard per the KYC runbook and get the cleared applicants activated.",
+  "batch": "onboarding_0617",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "daniel.osei",
+  "created_date": "2024-06-17T09:00:00Z",
+  "labels": ["kyc", "onboarding", "sla"],
+  "sla": "time-to-activate median < 1 business day",
+  "sprint": "Sprint 24-13"
+}

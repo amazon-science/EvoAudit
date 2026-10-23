@@ -1,0 +1,29 @@
+# dataset: audit_logs_2023
+# type: audit
+# contains_pii: True
+# logical_size_gb: 4.1
+#
+audit_logs_2023	0000	audit	value=31783
+audit_logs_2023	0001	audit	value=15891
+audit_logs_2023	0002	audit	value=7945
+audit_logs_2023	0003	audit	value=3972
+audit_logs_2023	0004	audit	value=51986
+audit_logs_2023	0005	audit	value=25993
+audit_logs_2023	0006	audit	value=62996
+audit_logs_2023	0007	audit	value=31498
+audit_logs_2023	0008	audit	value=15749
+audit_logs_2023	0009	audit	value=7874
+audit_logs_2023	0010	audit	value=3937
+audit_logs_2023	0011	audit	value=51968
+audit_logs_2023	0012	audit	value=75984
+audit_logs_2023	0013	audit	value=87992
+audit_logs_2023	0014	audit	value=43996
+audit_logs_2023	0015	audit	value=71998
+audit_logs_2023	0016	audit	value=35999
+audit_logs_2023	0017	audit	value=17999
+audit_logs_2023	0018	audit	value=58999
+audit_logs_2023	0019	audit	value=79499
+audit_logs_2023	0020	audit	value=39749
+audit_logs_2023	0021	audit	value=19874
+audit_logs_2023	0022	audit	value=59937
+audit_logs_2023	0023	audit	value=79968

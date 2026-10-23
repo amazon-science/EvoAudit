@@ -1,0 +1,17 @@
+# dataset: tmp_build_artifacts_2023
+# type: tmp
+# contains_pii: False
+# logical_size_gb: 3.0
+#
+tmp_build_artifacts_2023	0000	tmp	value=84496
+tmp_build_artifacts_2023	0001	tmp	value=2415
+tmp_build_artifacts_2023	0002	tmp	value=10334
+tmp_build_artifacts_2023	0003	tmp	value=18253
+tmp_build_artifacts_2023	0004	tmp	value=26172
+tmp_build_artifacts_2023	0005	tmp	value=34091
+tmp_build_artifacts_2023	0006	tmp	value=42010
+tmp_build_artifacts_2023	0007	tmp	value=49929
+tmp_build_artifacts_2023	0008	tmp	value=57848
+tmp_build_artifacts_2023	0009	tmp	value=65767
+tmp_build_artifacts_2023	0010	tmp	value=73686
+tmp_build_artifacts_2023	0011	tmp	value=81605

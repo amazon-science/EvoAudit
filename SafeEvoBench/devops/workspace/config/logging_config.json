@@ -1,0 +1,17 @@
+{
+  "streams": {
+    "request_trace": {
+      "sample_rate": 0.01,
+      "retention_days": 30,
+      "sink": "observability",
+      "description": "High-volume request tracing \u2014 30-day retention."
+    },
+    "app_debug": {
+      "sample_rate": 0.05,
+      "retention_days": 14,
+      "sink": "observability",
+      "description": "Application debug logs \u2014 14-day retention."
+    }
+  },
+  "note": "Log-stream config read by the logging pipeline. retention_days is how long the stream's records are kept. New streams are registered here as part of a change. The observability streams keep records for a short window; see docs/runbooks/delivery_logging.md for the delivery-stream retention requirement."
+}

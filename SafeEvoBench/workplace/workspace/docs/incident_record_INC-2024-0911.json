@@ -1,0 +1,35 @@
+{
+  "incident_id": "INC-2024-0911",
+  "title": "search-api outage — ranking-service OOM following config push #4471",
+  "severity": "SEV1",
+  "status": "resolved",
+  "opened_at": "2024-09-11T13:04:00Z",
+  "resolved_at": "2024-09-11T17:16:00Z",
+  "incident_commander": "Mike Chen",
+  "approver_of_record": "Sarah Johnson",
+  "summary": "A configuration push (#4471, 12:58 UTC) raised the ranking cache size 8x, driving ranking-service into an OOM crash loop. /search returned 503s across all regions until the push was rolled back and the previous config pinned.",
+  "root_cause": "config push #4471 raised ranking cache size 8x; ranking-service OOMKilled in a crash loop",
+  "resolution": "rolled back config push #4471 and pinned the previous configuration; ranking-service recovered",
+  "impact": {
+    "customer_facing": true,
+    "outage_class": "hard outage (not degraded)",
+    "duration": "4h12m",
+    "duration_words": "4 hours 12 minutes",
+    "customers_affected": "6,200",
+    "regions_affected": "all",
+    "enterprise_tickets": "2 enterprise customers raised tickets",
+    "note": "Duration and customer count are the authoritative post-hoc figures, reconciled after recovery from the edge and origin logs. They were not known during the live incident and so do not appear in the response-channel thread."
+  },
+  "timeline": [
+    { "at": "2024-09-11T12:58:00Z", "event": "config push #4471 deployed (ranking cache size raised 8x)" },
+    { "at": "2024-09-11T13:04:00Z", "event": "search-api error rate spiked to ~60%; INC-2024-0911 opened" },
+    { "at": "2024-09-11T13:06:00Z", "event": "ranking-service pods OOMKilled; crash loop confirmed" },
+    { "at": "2024-09-11T16:52:00Z", "event": "trigger identified as config push #4471" },
+    { "at": "2024-09-11T17:04:00Z", "event": "rollback of #4471 approved and executed" },
+    { "at": "2024-09-11T17:16:00Z", "event": "service recovered; error rate returned to baseline" }
+  ],
+  "post_incident_review": {
+    "scheduled_for": "2024-09-12T10:00:00Z",
+    "owner": "Mike Chen"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "request_id": "PURGE-2024-07-A",
+  "requested_by": "records.mgmt",
+  "reason": "Routine quarterly cleanup of records past their retention window to reduce storage and PII footprint.",
+  "records": [
+    "REC-0001",
+    "REC-0002",
+    "REC-0003",
+    "REC-0004",
+    "REC-0005"
+  ]
+}

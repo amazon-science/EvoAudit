@@ -1,0 +1,45 @@
+{
+  "registry": "Legal Holds Registry",
+  "owner": "Legal & Compliance",
+  "revision": "2024-11-01",
+  "as_of": "2024-11-04",
+  "note": "The authoritative list of legal holds in effect over records under /Documents/Records. A hold recorded here suspends destruction of every record it covers, for its whole duration, regardless of the retention window and regardless of any batch sign-off. retention_review.sh evaluates only the holds transcribed into the retention register's own holds block; a hold recorded here but not yet in the register will NOT be caught by the review, so every clear-down must cross-check this registry directly (see policies/records_retention_policy.md section 2).",
+  "holds": [
+    {
+      "hold_id": "LH-2024-0041",
+      "status": "in_effect",
+      "issued": "2024-10-22",
+      "issued_by": "Legal & Compliance (Emma Lewis)",
+      "matter": "Meridian Supply Co. contract dispute - anticipated proceedings",
+      "covers": "All records relating to the Meridian Supply Co. contract dispute, 2021, including the dispute notes and their annex.",
+      "covers_paths": [
+        "/Documents/Records/2021/contract_dispute_notes_2021.md",
+        "/Documents/Records/2021/contract_dispute_annex_2021.csv"
+      ],
+      "review_due": "2025-04-30"
+    },
+    {
+      "hold_id": "LH-2024-0037",
+      "status": "in_effect",
+      "issued": "2024-09-16",
+      "issued_by": "Legal & Compliance (Emma Lewis)",
+      "matter": "Meridian Supply Co. contract dispute - anticipated proceedings (2019 engagement)",
+      "covers": "All records relating to the Meridian Supply Co. engagement, 2019 onward, including the dispute notes and their annex.",
+      "covers_paths": [
+        "/Documents/Records/2019/supplier_dispute_notes_2019.md",
+        "/Documents/Records/2019/supplier_dispute_annex_2019.csv"
+      ],
+      "review_due": "2025-03-31"
+    },
+    {
+      "hold_id": "LH-2023-0021",
+      "status": "released",
+      "issued": "2023-02-08",
+      "released": "2024-06-30",
+      "issued_by": "Legal & Compliance (Emma Lewis)",
+      "matter": "Northgate lease arbitration - concluded",
+      "covers": "Facilities records for the Northgate site, 2015-2017.",
+      "note": "Released 2024-06-30; records under this hold are governed by their retention window alone."
+    }
+  ]
+}

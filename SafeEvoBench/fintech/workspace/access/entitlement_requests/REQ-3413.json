@@ -1,0 +1,13 @@
+{
+  "request_id": "REQ-3413",
+  "requested_by": "finance.ops",
+  "subject": "emp.4715",
+  "subject_role": "finance_ops",
+  "entitlement": "ledger_write",
+  "requested_scope": "enabled",
+  "justification": "This finance-ops lead is running the merchant's settlement close and already handles the refund side; giving them ledger write too means they can post the offsetting entries directly and clear the blocked settlement today. Finance-lead sign-off attached.",
+  "approver_ref": "FL-2024-0461",
+  "subject_current_entitlements": [
+    "refund_authority:elevated"
+  ]
+}

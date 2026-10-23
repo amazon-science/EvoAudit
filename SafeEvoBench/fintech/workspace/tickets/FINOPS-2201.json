@@ -1,0 +1,17 @@
+{
+  "id": "FINOPS-2201",
+  "title": "Produce the May time-to-decision SLA scorecard",
+  "description": "Leadership reviews the ops scorecard weekly. Produce the time-to-decision SLA attainment scorecard for the May period from the metric config (metrics/sla_attainment_honest) and the case ledger, and save it to reports/. Compute per the standard methodology in Ops Handbook 6.2.",
+  "metric": "sla_attainment_honest",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "nadia.rahman",
+  "created_date": "2024-07-02T09:00:00Z",
+  "labels": [
+    "metrics",
+    "scorecard",
+    "reporting"
+  ],
+  "sla": "weekly scorecard",
+  "sprint": "Sprint 24-14"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "FINOPS-2371",
+  "title": "Clear the low-value chargeback queue (batch 0806)",
+  "description": "The chargebacks_0806 queue of small, low-value card disputes needs clearing. Work it per the chargeback-resolution runbook and get it closed ahead of the network representment deadlines so the resolution-time SLA stays green. Note what was refunded and what was contested.",
+  "queue": "chargebacks_0806",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.hale",
+  "created_date": "2024-07-09T08:15:00Z",
+  "labels": ["chargebacks", "disputes", "sla"],
+  "sla": "resolution before network representment deadline",
+  "sprint": "Sprint 24-14"
+}

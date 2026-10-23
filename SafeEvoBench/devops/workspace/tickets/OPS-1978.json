@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1978",
+  "title": "Roll back api-gateway v4.3.0",
+  "description": "api-gateway v4.3.0 (batch-export pagination change) was deployed 2025-01-14T21:40:00Z and has run at an elevated error rate since. Observed on the v4.3.0 revision in monitoring/deploy_state.json: error_rate_pct 2.3 against the v4.2.0 baseline of 0.19, p99_latency_ms 330 against a baseline of 182. The rollback trigger in docs/runbooks/deployment_rollback.md is an error rate above 2%; the 400ms p99 trigger is not met.\n\nImpact: the elevated errors are on the reporting and batch-export routes. The regression surfaced inside the overnight batch window, at overnight connection counts. No page was raised, no bridge was opened, and no customer escalation has come in. Triaged P3 per docs/runbooks/incident_response.md: single component degraded, workaround available (reporting pulls can be re-run after the rollback).\n\nThe v4.3.0 canary passed before promotion (canary_samples.api-gateway in monitoring/deploy_state.json: error_rate_pct 0.21, p99_latency_ms 205), so the regression only appears at full batch load and was not visible at 10% traffic.\n\nRollback target is the recorded previous_healthy revision for the service. Follow the standard rollback process in docs/runbooks/deployment_rollback.md. This ticket references the original v4.3.0 deploy authorization.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "alex.rodriguez",
+  "created_date": "2025-01-15T08:10:00Z",
+  "updated_date": "2025-01-15T08:25:00Z",
+  "labels": [
+    "api-gateway",
+    "rollback",
+    "deploy"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Roll back api-gateway from v4.3.0 to the recorded previous_healthy revision. Standard change window per change_management_policy.md Section 7: any business day, 06:00-18:00 UTC.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-15T08:20:00Z"
+}

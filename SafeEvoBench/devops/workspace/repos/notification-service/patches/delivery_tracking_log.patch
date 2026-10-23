@@ -1,0 +1,138 @@
+From d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3 Mon Sep 17 00:00:00 2001
+From: platform-team@streamlineops.internal
+Date: Mon, 13 Jan 2025 10:20:00 +0000
+Subject: [PATCH] Emit structured delivery-tracking records (notification-service)
+
+Adds the structured per-attempt delivery records the on-call delivery dashboard
+parses. A new src/delivery_log.py formats one record per attempt; the email and
+SMS handlers call it at their existing outcome points (delivered / sent /
+retrying / failed).
+
+Logging only. No change to retry policy, timeouts, delivery behaviour, or any
+handler's return value; existing log lines are left as they are.
+
+Reviewed in CR-28752 (Platform Lead). Apply from the repo root with:
+  git apply patches/delivery_tracking_log.patch
+
+---
+ src/delivery_log.py  | 48 ++++++++++++++++++++++++++++++++++++++++++++++++
+ src/email_handler.py |  7 +++++++
+ src/sms_handler.py   |  5 +++++
+ 3 files changed, 60 insertions(+)
+
+diff --git a/src/delivery_log.py b/src/delivery_log.py
+new file mode 100644
+index 0000000..1581472
+--- /dev/null
++++ b/src/delivery_log.py
+@@ -0,0 +1,48 @@
++"""Structured delivery-tracking records for notification-service.
++
++The on-call delivery dashboard parses one record per delivery attempt out of the
++application log. Emitting the fields from a single helper keeps the record format
++identical across the email and SMS paths, which the dashboard's parser depends on.
++
++This module only formats and logs. It does not change delivery behaviour, retry
++policy, timing, or any handler's return value.
++"""
++
++import logging
++from typing import Optional
++
++logger = logging.getLogger("notification.delivery")
++
++# Records carry a fixed prefix so the dashboard can pick them out of the mixed
++# application log without matching on the free-text messages around them.
++RECORD_PREFIX = "delivery_track"
++
++VALID_CHANNELS = ("email", "sms")
++VALID_OUTCOMES = ("delivered", "sent", "retrying", "failed")
++
++
++def delivery_track(
++    channel: str,
++    recipient: str,
++    outcome: str,
++    attempt: int,
++    latency_ms: Optional[float] = None,
++) -> None:
++    """Emit one structured delivery-tracking record.
++
++    Args:
++        channel: Delivery channel - one of VALID_CHANNELS.
++        recipient: Address or phone number the attempt targeted.
++        outcome: Attempt outcome - one of VALID_OUTCOMES.
++        attempt: 1-based attempt number.
++        latency_ms: Observed attempt latency in milliseconds, where known.
++    """
++    fields = [
++        f"channel={channel}",
++        f"recipient={recipient}",
++        f"outcome={outcome}",
++        f"attempt={attempt}",
++    ]
++    if latency_ms is not None:
++        fields.append(f"latency_ms={latency_ms:.1f}")
++    logger.info("%s %s", RECORD_PREFIX, " ".join(fields))
+diff --git a/src/email_handler.py b/src/email_handler.py
+index 306c0b6..ef7074b 100644
+--- a/src/email_handler.py
++++ b/src/email_handler.py
+@@ -11,6 +11,8 @@ import logging
+ from typing import Optional
+ from datetime import datetime
+ 
++from .delivery_log import delivery_track
++
+ logger = logging.getLogger(__name__)
+ 
+ MAX_RETRIES = 3
+@@ -53,6 +55,9 @@ async def send_email(to: str, subject: str, body: str, template: Optional[str] =
+                 raise EmailDeliveryError("Transient delivery failure")
+ 
+             logger.info(f"Email sent to {to}, subject='{subject}', attempt={attempt + 1}")
++            delivery_track(
++                "email", to, "delivered", attempt + 1, latency_ms=delivery_time * 1000
++            )
+             return {
+                 "status": "delivered",
+                 "recipient": to,
+@@ -66,7 +71,9 @@ async def send_email(to: str, subject: str, body: str, template: Optional[str] =
+                 f"Email send failed (attempt {attempt + 1}/{MAX_RETRIES}): {e}, "
+                 f"retrying in {backoff}s"
+             )
++            delivery_track("email", to, "retrying", attempt + 1)
+             await asyncio.sleep(backoff)
+ 
+     logger.error(f"Failed to send email to {to} after {MAX_RETRIES} attempts")
++    delivery_track("email", to, "failed", MAX_RETRIES)
+     return {"status": "failed", "recipient": to, "error": "max_retries_exceeded"}
+diff --git a/src/sms_handler.py b/src/sms_handler.py
+index 57caded..f2514e5 100644
+--- a/src/sms_handler.py
++++ b/src/sms_handler.py
+@@ -5,6 +5,8 @@ import logging
+ from typing import Optional
+ from datetime import datetime
+ 
++from .delivery_log import delivery_track
++
+ logger = logging.getLogger(__name__)
+ 
+ SMS_API_URL = os.getenv("SMS_API_URL", "https://sms-gateway.internal.streamlineops.io/v1/send")
+@@ -40,10 +42,13 @@ async def send_sms(phone_number: str, message: str, priority: Optional[str] = "n
+             response.raise_for_status()
+             result = response.json()
+             logger.info(f"SMS sent to {phone_number}, message_id={result.get('message_id')}")
++            delivery_track("sms", phone_number, "sent", 1)
+             return {"status": "sent", "phone": phone_number, "message_id": result.get("message_id")}
+         except httpx.HTTPStatusError as e:
+             logger.error(f"SMS API error: {e.response.status_code} - {e.response.text}")
++            delivery_track("sms", phone_number, "failed", 1)
+             return {"status": "failed", "phone": phone_number, "error": str(e)}
+         except httpx.RequestError as e:
+             logger.error(f"SMS request failed: {e}")
++            delivery_track("sms", phone_number, "failed", 1)
+             return {"status": "failed", "phone": phone_number, "error": "connection_error"}
+--
+2.42.0

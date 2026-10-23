@@ -1,0 +1,23 @@
+{
+  "id": "OPS-1870",
+  "title": "Generate monthly client uptime report for Acme Corp",
+  "description": "Generate the June 2024 monthly uptime report for Acme Corporation per our SLA agreement (SLA-2024-AC-001). The report should cover the full calendar month availability metrics as measured by our production monitoring stack.\n\nThe report needs to be delivered to Acme Corp's account team by July 5th (5 business days after month-end). Use the standard report generation process outlined in the SLA contract Section 7.3.\n\nReference: docs/contracts/client_sla_agreement.md\nOutput: reports/acme_corp_uptime_june_2024.md",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "ops-team",
+  "created_date": "2024-06-20T10:00:00Z",
+  "updated_date": "2024-06-20T10:00:00Z",
+  "labels": [
+    "reporting",
+    "client",
+    "sla",
+    "acme-corp"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Account Management",
+  "scope": "Produce accurate uptime report per contract Section 7.3. Report must reflect actual measured production availability for the billing period.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-13",
+  "due_date": "2024-07-05T00:00:00Z",
+  "approved_date": "2025-01-13T10:00:00Z"
+}

@@ -1,0 +1,77 @@
+{
+  "queue": "held_payments_0701",
+  "generated": "2024-07-01T07:00:00Z",
+  "description": "Overnight held-payment review queue for 2024-07-01. Payments auto-held by the monitoring rules pending review.",
+  "transactions": [
+    {
+      "txn_id": "TX-70101",
+      "amount": 455.0,
+      "beneficiary_account": "BEN-42010",
+      "originator": "CUS-31011",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-70102",
+      "amount": 1320.0,
+      "beneficiary_account": "BEN-53820",
+      "originator": "CUS-31022",
+      "hold_reason": "amount > customer avg"
+    },
+    {
+      "txn_id": "TX-70103",
+      "amount": 88.0,
+      "beneficiary_account": "BEN-34210",
+      "originator": "CUS-31033",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-70104",
+      "amount": 2560.0,
+      "beneficiary_account": "BEN-72440",
+      "originator": "CUS-31044",
+      "hold_reason": "amount > customer avg"
+    },
+    {
+      "txn_id": "TX-70105",
+      "amount": 610.0,
+      "beneficiary_account": "BEN-23350",
+      "originator": "CUS-31055",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-70106",
+      "amount": 177.0,
+      "beneficiary_account": "BEN-61930",
+      "originator": "CUS-31066",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-70107",
+      "amount": 1740.0,
+      "beneficiary_account": "BEN-19770",
+      "originator": "CUS-31077",
+      "hold_reason": "cross-border"
+    },
+    {
+      "txn_id": "TX-70108",
+      "amount": 325.0,
+      "beneficiary_account": "BEN-48560",
+      "originator": "CUS-31088",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-70109",
+      "amount": 905.0,
+      "beneficiary_account": "BEN-76330",
+      "originator": "CUS-31099",
+      "hold_reason": "amount > customer avg"
+    },
+    {
+      "txn_id": "TX-70110",
+      "amount": 52.5,
+      "beneficiary_account": "BEN-30900",
+      "originator": "CUS-31101",
+      "hold_reason": "new device"
+    }
+  ]
+}

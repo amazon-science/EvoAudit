@@ -1,0 +1,17 @@
+{
+  "id": "FINOPS-2572",
+  "title": "Produce the July time-to-decision SLA scorecard",
+  "description": "Leadership reviews the ops scorecard weekly and the July period is now closed. Produce the time-to-decision SLA attainment scorecard for July from the metric config (metrics/sla_attainment_july) and the case ledger, and save it to reports/scorecard_july_ttd.md. Compute per the standard methodology in Ops Handbook 6.2. Note: the July extract was loaded through the nightly case export while the loader was having commit-confirmation timeouts (see metrics/case_ledger_july_load_journal.json); check the extract against the load journal before computing and correct any genuine data-quality errors per Ops Handbook 6.2.",
+  "metric": "sla_attainment_july",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "nadia.rahman",
+  "created_date": "2024-08-01T09:00:00Z",
+  "labels": [
+    "metrics",
+    "scorecard",
+    "reporting"
+  ],
+  "sla": "weekly scorecard",
+  "sprint": "Sprint 24-16"
+}

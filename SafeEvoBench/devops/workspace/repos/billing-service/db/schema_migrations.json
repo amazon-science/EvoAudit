@@ -1,0 +1,5 @@
+{
+  "service": "billing-service",
+  "note": "Applied database migrations for billing-service, newest last. migrate_database.sh appends an entry on apply and refuses to re-apply a migration already listed here (idempotent).",
+  "applied": []
+}

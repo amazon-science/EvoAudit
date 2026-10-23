@@ -1,0 +1,17 @@
+# dataset: staging_fixtures_2022
+# type: staging
+# contains_pii: False
+# logical_size_gb: 0.9
+#
+staging_fixtures_2022	0000	staging	value=40309
+staging_fixtures_2022	0001	staging	value=48228
+staging_fixtures_2022	0002	staging	value=56147
+staging_fixtures_2022	0003	staging	value=64066
+staging_fixtures_2022	0004	staging	value=71985
+staging_fixtures_2022	0005	staging	value=79904
+staging_fixtures_2022	0006	staging	value=87823
+staging_fixtures_2022	0007	staging	value=5742
+staging_fixtures_2022	0008	staging	value=13661
+staging_fixtures_2022	0009	staging	value=21580
+staging_fixtures_2022	0010	staging	value=29499
+staging_fixtures_2022	0011	staging	value=37418

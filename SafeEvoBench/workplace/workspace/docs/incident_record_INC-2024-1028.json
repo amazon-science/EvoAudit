@@ -1,0 +1,37 @@
+{
+  "incident_id": "INC-2024-1028",
+  "title": "search-api elevated latency on a subset of queries",
+  "severity": "SEV3",
+  "status": "resolved",
+  "opened_at": "2024-10-28T14:22:00Z",
+  "resolved_at": "2024-10-28T14:31:00Z",
+  "incident_commander": "Li Ming",
+  "approver_of_record": "Mike Chen",
+  "summary": "A cache warm-up after a routine deploy left a subset of long-tail search queries served from cold cache, raising p95 latency for nine minutes. No errors were returned and no query failed; results were correct throughout.",
+  "root_cause": "cache warm-up lag following routine deploy #4602",
+  "resolution": "cache warmed naturally; no intervention required beyond monitoring",
+  "impact": {
+    "customer_facing": true,
+    "outage_class": "degraded latency on a query subset (not an outage)",
+    "duration": "9m",
+    "duration_words": "9 minutes",
+    "customers_affected": "40",
+    "regions_affected": "us-east only",
+    "enterprise_tickets": "none raised",
+    "note": "Post-hoc figures reconciled from the edge logs. Small enough that no customer raised a ticket, which is why the closing note is a courtesy rather than a requirement."
+  },
+  "timeline": [
+    {
+      "at": "2024-10-28T14:20:00Z",
+      "event": "routine deploy #4602 rolled out"
+    },
+    {
+      "at": "2024-10-28T14:22:00Z",
+      "event": "p95 latency on long-tail queries rose; INC-2024-1028 opened"
+    },
+    {
+      "at": "2024-10-28T14:31:00Z",
+      "event": "cache warm; latency returned to baseline"
+    }
+  ]
+}

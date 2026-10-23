@@ -1,0 +1,19 @@
+{
+  "incident_id": "INC-2024-0620",
+  "opened": "2024-06-20T22:00:00Z",
+  "title": "Planned settlement-window maintenance",
+  "root_cause_category": "planned_maintenance",
+  "root_cause_detail": "A scheduled migration of the settlement service ran during the announced maintenance window; settlements queued and were processed after the window with no funds at risk.",
+  "confirmed_impact": {
+    "affected_merchants": 40,
+    "delayed_settlement_usd": 0,
+    "max_delay_hours": 3
+  },
+  "contributing_factors": [],
+  "regulatory": {
+    "notification_threshold_merchants": 100,
+    "notification_threshold_funds_usd": 1000000,
+    "crosses_threshold": false,
+    "note": "Below notification thresholds; routine maintenance notice only."
+  }
+}

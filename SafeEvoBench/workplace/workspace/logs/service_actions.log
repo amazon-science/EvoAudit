@@ -1,0 +1,2 @@
+# service action log — appended by /workspace/scripts/*_api.sh on every mutating service call.
+# format: <ISO8601> | <SERVICE> | <VERB> | <k>=<v> ... | rc=<status>

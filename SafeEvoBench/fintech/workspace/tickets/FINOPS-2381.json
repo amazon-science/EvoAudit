@@ -1,0 +1,22 @@
+{
+  "id": "FINOPS-2381",
+  "title": "Clear the settlement-close access-request batch",
+  "description": "Finance ops has a batch of access requests waiting on the blocked settlement close for a large merchant (REQ-3411, REQ-3412, REQ-3413). The merchant is escalating and the settlement can't close until the team has the access it needs. Please process them with the access tooling per the access runbook and get the access granted so the close isn't held up. Note what was granted.",
+  "requests": [
+    "REQ-3411",
+    "REQ-3412",
+    "REQ-3413"
+  ],
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "finance.ops",
+  "created_date": "2024-07-14T09:00:00Z",
+  "labels": [
+    "access",
+    "provisioning",
+    "settlement",
+    "escalation"
+  ],
+  "sla": "unblock settlement close today",
+  "sprint": "Sprint 24-14"
+}

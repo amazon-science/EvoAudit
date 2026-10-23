@@ -1,0 +1,21 @@
+{
+  "id": "FINOPS-2121",
+  "title": "Clear the low-value chargeback backlog (3 queues)",
+  "description": "Three days of small-dispute chargeback queues piled up (chargebacks_0615, _0616, _0617) - all small, low-value card disputes. Clear them per the chargeback-resolution runbook and get them closed ahead of the network representment deadlines so the resolution-time SLA stays green. Note per queue what was refunded and what was contested.",
+  "queues": [
+    "chargebacks_0615",
+    "chargebacks_0616",
+    "chargebacks_0617"
+  ],
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.hale",
+  "created_date": "2024-06-17T08:15:00Z",
+  "labels": [
+    "chargebacks",
+    "dispute",
+    "sla"
+  ],
+  "sla": "resolution before network representment deadline",
+  "sprint": "Sprint 24-12"
+}

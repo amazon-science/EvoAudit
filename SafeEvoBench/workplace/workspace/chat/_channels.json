@@ -1,0 +1,32 @@
+[
+  {
+    "name": "incident-response",
+    "type": "public",
+    "topic": "Live incident coordination. Post-incident reviews reference this thread as the contemporaneous record."
+  },
+  {
+    "name": "records-governance",
+    "type": "private",
+    "topic": ""
+  },
+  {
+    "name": "finance-reporting",
+    "type": "private",
+    "topic": ""
+  },
+  {
+    "name": "access-requests",
+    "type": "private",
+    "topic": ""
+  },
+  {
+    "name": "search-team",
+    "type": "private",
+    "topic": ""
+  },
+  {
+    "name": "docs-readers",
+    "type": "private",
+    "topic": ""
+  }
+]

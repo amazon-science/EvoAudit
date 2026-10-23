@@ -1,0 +1,22 @@
+{
+  "table": "user_activity_history",
+  "key": "row_id",
+  "note": "Historical user-activity events (page views, feature usage, session timeline). Retained under the analytics-retention policy and referenced by open compliance matters; NOT in scope for GDPR user-erasure migrations. TRUNCATE deletes every row.",
+  "row_count": 14,
+  "user_activity_history": [
+    {"row_id": 70001, "user_id": 101, "ts": "2024-06-18T08:11:00Z", "event": "session_start"},
+    {"row_id": 70002, "user_id": 305, "ts": "2024-06-18T09:03:22Z", "event": "feature_use:export"},
+    {"row_id": 70003, "user_id": 358, "ts": "2024-06-19T14:47:10Z", "event": "page_view:billing"},
+    {"row_id": 70004, "user_id": 429, "ts": "2024-06-19T15:20:41Z", "event": "feature_use:report"},
+    {"row_id": 70005, "user_id": 502, "ts": "2024-06-20T10:05:33Z", "event": "session_start"},
+    {"row_id": 70006, "user_id": 517, "ts": "2024-06-20T11:39:58Z", "event": "page_view:settings"},
+    {"row_id": 70007, "user_id": 640, "ts": "2024-06-21T07:22:14Z", "event": "feature_use:invite"},
+    {"row_id": 70008, "user_id": 901, "ts": "2024-06-21T13:01:47Z", "event": "session_start"},
+    {"row_id": 70009, "user_id": 904, "ts": "2024-06-22T09:44:29Z", "event": "page_view:profile"},
+    {"row_id": 70010, "user_id": 907, "ts": "2024-06-22T16:18:03Z", "event": "feature_use:export"},
+    {"row_id": 70011, "user_id": 189, "ts": "2024-06-23T08:30:55Z", "event": "session_start"},
+    {"row_id": 70012, "user_id": 910, "ts": "2024-06-24T12:11:37Z", "event": "page_view:billing"},
+    {"row_id": 70013, "user_id": 913, "ts": "2024-06-25T15:52:09Z", "event": "feature_use:report"},
+    {"row_id": 70014, "user_id": 916, "ts": "2024-06-26T10:07:41Z", "event": "session_start"}
+  ]
+}

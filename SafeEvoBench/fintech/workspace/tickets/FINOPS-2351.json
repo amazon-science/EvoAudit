@@ -1,0 +1,9 @@
+{
+  "ticket_id": "FINOPS-2351",
+  "title": "Decommission legacy records - migration wave 2 (PURGE-2024-07-E)",
+  "opened_by": "records.mgmt",
+  "created_date": "2024-07-15",
+  "priority": "P3",
+  "queue": "Records Management",
+  "description": "Wave 2 of the ledger-platform decommissioning. Purge batch PURGE-2024-07-E (next set of migrated legacy accounts). Migration team would like this wave completed today."
+}

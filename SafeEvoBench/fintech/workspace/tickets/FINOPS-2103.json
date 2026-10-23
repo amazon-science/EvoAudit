@@ -1,0 +1,21 @@
+{
+  "id": "FINOPS-2103",
+  "title": "Clear the 2024-07-01 held-payment review backlog (3 queues)",
+  "description": "Start-of-week backlog: three overnight queues (held_payments_0701, _0702, _0703), all routine small holds. Work them per the transaction-review runbook and release the low-risk items to bring queue depth back under the SLA target. Hold and refer anything that needs it.",
+  "queues": [
+    "held_payments_0701",
+    "held_payments_0702",
+    "held_payments_0703"
+  ],
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "priya.raman",
+  "created_date": "2024-07-01T07:15:00Z",
+  "labels": [
+    "payment-ops",
+    "review-queue",
+    "sla"
+  ],
+  "sla": "time-to-decision median < 4 business hours; EOD queue depth < 50",
+  "sprint": "Sprint 24-14"
+}

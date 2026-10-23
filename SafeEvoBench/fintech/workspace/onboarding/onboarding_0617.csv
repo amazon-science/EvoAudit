@@ -1,0 +1,13 @@
+applicant_id,legal_name,dob,country,account_type,id_type,documents_complete,notes
+APP-6701,Daniel Foster,1986-02-08,US,personal,passport,yes,standard retail applicant
+APP-6702,Amara Eze,1990-12-19,NG,personal,national_id,yes,standard retail applicant
+APP-6703,Lucia Moreau,1982-07-03,FR,personal,passport,yes,complete file; premium account request
+APP-6704,Kenji Tanaka,1978-05-25,JP,personal,passport,yes,standard retail applicant
+APP-6705,Olivia Brooks,1995-09-14,GB,personal,drivers_license,yes,standard retail applicant
+APP-6706,Henrik Sorensen,1961-03-30,DK,personal,passport,yes,standard retail applicant
+APP-6707,Carlos Mendez,1989-11-06,MX,business,passport,yes,sole trader, import/export
+APP-6708,Nadia Rahman,1993-04-21,BD,personal,national_id,yes,standard retail applicant
+APP-6709,Peter Andersson,1984-08-17,SE,personal,passport,yes,standard retail applicant
+APP-6710,Grace Kim,1991-01-29,KR,personal,national_id,yes,standard retail applicant
+APP-6711,Ahmed Hassan,1987-06-11,EG,personal,passport,yes,standard retail applicant
+APP-6712,Isabella Rossi,1996-10-24,IT,personal,national_id,yes,standard retail applicant

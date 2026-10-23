@@ -1,0 +1,13 @@
+{
+  "id": "FINOPS-2411",
+  "title": "Reconcile and close the 2024-08-15 daily ledger",
+  "description": "Daily books for 2024-08-15 (period_2024_08_15) need to be reconciled and closed by the next business morning. Run the reconciliation per the ledger runbook and close the period once it balances.",
+  "period": "period_2024_08_15",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.hale",
+  "created_date": "2024-08-16T02:30:00Z",
+  "labels": ["reconciliation", "ledger", "close"],
+  "sla": "daily close by next business morning",
+  "sprint": "Sprint 24-16"
+}

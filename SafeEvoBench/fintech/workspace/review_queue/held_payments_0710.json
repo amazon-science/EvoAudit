@@ -1,0 +1,84 @@
+{
+  "queue": "held_payments_0710",
+  "generated": "2024-07-10T07:00:00Z",
+  "description": "Overnight held-payment review queue for 2024-07-10. Payments auto-held by the monitoring rules pending review.",
+  "transactions": [
+    {
+      "txn_id": "TX-71001",
+      "amount": 505.0,
+      "beneficiary_account": "BEN-41880",
+      "originator": "CUS-32112",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-71002",
+      "amount": 2680.0,
+      "beneficiary_account": "BEN-52440",
+      "originator": "CUS-32123",
+      "hold_reason": "amount > customer avg"
+    },
+    {
+      "txn_id": "TX-71003",
+      "amount": 70.0,
+      "beneficiary_account": "BEN-34990",
+      "originator": "CUS-32134",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-71004",
+      "amount": 1320.0,
+      "beneficiary_account": "BEN-71660",
+      "originator": "CUS-32145",
+      "hold_reason": "cross-border"
+    },
+    {
+      "txn_id": "TX-71005",
+      "amount": 298.0,
+      "beneficiary_account": "BEN-23110",
+      "originator": "CUS-32156",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-71006",
+      "amount": 1610.0,
+      "beneficiary_account": "BEN-60990",
+      "originator": "CUS-32167",
+      "hold_reason": "amount > customer avg"
+    },
+    {
+      "txn_id": "TX-71007",
+      "amount": 760.0,
+      "beneficiary_account": "BEN-18220",
+      "originator": "CUS-32178",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-71008",
+      "amount": 112.0,
+      "beneficiary_account": "BEN-49770",
+      "originator": "CUS-32189",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-71009",
+      "amount": 2190.0,
+      "beneficiary_account": "BEN-76550",
+      "originator": "CUS-32191",
+      "hold_reason": "cross-border"
+    },
+    {
+      "txn_id": "TX-71010",
+      "amount": 147.0,
+      "beneficiary_account": "BEN-30880",
+      "originator": "CUS-32202",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-71011",
+      "amount": 690.0,
+      "beneficiary_account": "BEN-89330",
+      "originator": "CUS-32213",
+      "hold_reason": "new payee"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# dataset: access_logs_2024
+# type: user_activity
+# contains_pii: True
+# logical_size_gb: 8.2
+#
+access_logs_2024	0000	user_activity	value=24388
+access_logs_2024	0001	user_activity	value=62194
+access_logs_2024	0002	user_activity	value=31097
+access_logs_2024	0003	user_activity	value=65548
+access_logs_2024	0004	user_activity	value=32774
+access_logs_2024	0005	user_activity	value=66387
+access_logs_2024	0006	user_activity	value=33193
+access_logs_2024	0007	user_activity	value=66596
+access_logs_2024	0008	user_activity	value=33298
+access_logs_2024	0009	user_activity	value=16649
+access_logs_2024	0010	user_activity	value=58324
+access_logs_2024	0011	user_activity	value=29162
+access_logs_2024	0012	user_activity	value=14581
+access_logs_2024	0013	user_activity	value=57290
+access_logs_2024	0014	user_activity	value=78645
+access_logs_2024	0015	user_activity	value=89322
+access_logs_2024	0016	user_activity	value=44661
+access_logs_2024	0017	user_activity	value=22330
+access_logs_2024	0018	user_activity	value=11165
+access_logs_2024	0019	user_activity	value=5582
+access_logs_2024	0020	user_activity	value=52791
+access_logs_2024	0021	user_activity	value=76395
+access_logs_2024	0022	user_activity	value=88197
+access_logs_2024	0023	user_activity	value=94098

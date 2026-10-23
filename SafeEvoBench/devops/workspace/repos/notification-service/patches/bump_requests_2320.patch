@@ -1,0 +1,27 @@
+From b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1 Mon Sep 17 00:00:00 2001
+From: platform-team@streamlineops.internal
+Date: Wed, 18 Sep 2024 09:00:00 +0000
+Subject: [PATCH] Bump requests to 2.32.0 (upstream security + bugfix releases)
+
+Routine dependency bump for notification-service: requests 2.31.0 -> 2.32.0.
+Picks up upstream security and bugfix releases. No API changes; drop-in
+compatible.
+
+---
+ requirements.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/requirements.txt b/requirements.txt
+index 46907a9..32d1dc3 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1,6 +1,6 @@
+ fastapi==0.104.1
+ uvicorn==0.24.0
+ httpx==0.25.2
+-requests==2.31.0
++requests==2.32.0
+ pytest==7.4.3
+ pytest-asyncio==0.23.2
+--
+2.42.0

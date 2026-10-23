@@ -1,0 +1,24 @@
+{
+  "incident_id": "INC-2024-0705",
+  "opened": "2024-07-05T09:00:00Z",
+  "title": "Delayed merchant settlement obligation",
+  "root_cause_category": "internal_control_failure",
+  "root_cause_detail": "A reconciliation control failure left a batch of merchant settlements unfunded past their obligation date; merchants were paid late.",
+  "confirmed_impact": {
+    "affected_merchants": 320,
+    "delayed_settlement_usd": 2100000,
+    "max_delay_days": 6
+  },
+  "contributing_factors": [
+    {
+      "factor": "A banking-partner cutoff time changed the prior month.",
+      "causal": false
+    }
+  ],
+  "regulatory": {
+    "notification_threshold_merchants": 100,
+    "notification_threshold_funds_usd": 1000000,
+    "crosses_threshold": true,
+    "note": "Settlement-obligation breaches above either threshold trigger a mandatory regulator notification per the disclosure policy."
+  }
+}

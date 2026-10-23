@@ -1,0 +1,124 @@
+EvoAudit - Third-Party Notices
+==============================================================================
+
+EvoAudit is licensed under CC BY-NC 4.0 (see LICENSE). It includes or adapts
+material from the third-party projects listed below. That material remains
+subject to its original license, reproduced in full in this file. Where the
+original license and CC BY-NC 4.0 differ, the original license governs the
+third-party material.
+
+  1. continual-harness   (MIT License)
+  2. TheAgentCompany     (MIT License)
+
+==============================================================================
+1. continual-harness
+==============================================================================
+
+Project:    Continual Harness: Online Adaptation for Self-Improving
+            Foundation Agents
+Source:     https://github.com/sethkarten/continual-harness
+Compared against upstream commit:
+            bbab97ad73e460b7cd7c08527d10ced30cc03fbe
+License:    MIT
+Copyright:  Copyright (c) 2026 Seth Karten, Tersoo Upaa Jr, Jake Grigsby,
+            Stephanie Milani, Kiran Vodrahalli, Amy Zhang, Fei Fang,
+            Yuke Zhu, Chi Jin
+
+How it is used here: the continual_harness/ package in this repository is
+derived from and modeled on the upstream project, and has been modified for
+this benchmark (relocated modules, a different LLM client and agent loop,
+and additional evolution and meta-evolution components). The following
+files contain substantial portions of upstream source code, in original or
+modified form:
+
+  continual_harness/stores/base_store.py
+      <- utils/stores/base_store.py
+  continual_harness/stores/bootstrap.py
+      <- utils/stores/bootstrap.py
+  continual_harness/stores/skills.py
+      <- utils/stores/skills.py
+  continual_harness/stores/subagents.py
+      <- utils/stores/subagents.py
+  continual_harness/stores/memory.py
+      <- utils/stores/memory.py
+  continual_harness/evolver/harness_evolver.py
+      <- agents/utils/harness_evolver.py
+  continual_harness/evolver/prompt_optimizer.py
+      <- agents/utils/prompt_optimizer.py
+  continual_harness/evolver/trajectory_window.py
+      <- agents/subagents/utils/trajectory_window.py
+
+License text:
+
+MIT License
+
+Copyright (c) 2026 Seth Karten, Tersoo Upaa Jr, Jake Grigsby, Stephanie Milani, Kiran Vodrahalli, Amy Zhang, Fei Fang, Yuke Zhu, Chi Jin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. 
+
+==============================================================================
+2. TheAgentCompany
+==============================================================================
+
+Project:    TheAgentCompany: Benchmarking LLM Agents on Consequential Real
+            World Tasks (Xu et al., 2024; arXiv:2412.14161)
+Source:     https://github.com/TheAgentCompany/TheAgentCompany
+License:    MIT
+Copyright:  Copyright (c) 2024 TheAgentCompany
+
+How it is used here: the SafeEvoBench/workplace/ domain adapts elements of
+TheAgentCompany's synthetic benchmark environment: its fictional company
+setting, fictional employee names and roles, service account names, the
+shape of its chat (Rocket.Chat) and file-storage (ownCloud) interactions, and
+its task structure. No TheAgentCompany source code is included. The
+workplace domain replaces TheAgentCompany's live services with independent,
+local Python engines (SafeEvoBench/workplace/workspace/scripts/); no code
+from Rocket.Chat, ownCloud, GitLab, or Plane is included. Rocket.Chat,
+ownCloud, GitLab, and Plane are trademarks of their respective owners and
+are named only to describe the interfaces emulated.
+
+The harness also contains optional, disabled-by-default command-line options
+for running against TheAgentCompany's live service stack
+(benchmarks/safeevobench/run.py, run_pairs.py, run_cold.py). Those options
+were not used for the results reported in the associated publication, and
+the scripts they reference are not part of this release.
+
+License text:
+
+MIT License
+
+Copyright (c) 2024 TheAgentCompany
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

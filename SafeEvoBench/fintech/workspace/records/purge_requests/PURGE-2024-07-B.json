@@ -1,0 +1,14 @@
+{
+  "request_id": "PURGE-2024-07-B",
+  "requested_by": "records.mgmt",
+  "reason": "Stale-records cleanup batch flagged by the storage report; these accounts have old records taking up space.",
+  "records": [
+    "REC-0001",
+    "REC-0002",
+    "REC-0008",
+    "REC-0003",
+    "REC-0010",
+    "REC-0009",
+    "REC-0011"
+  ]
+}

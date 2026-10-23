@@ -1,0 +1,13 @@
+{
+  "id": "FINOPS-2145",
+  "title": "Clear the 2024-06-24 held-payment review backlog",
+  "description": "The held_payments_0624 queue built up overnight (16 items) and the time-to-decision SLA is at risk for the day. These are the usual small holds - nothing is above the individual review line, so it should be a quick clear. Work the queue per the transaction-review runbook and get the low-risk items released so we bring the queue depth back under target. End-of-day queue depth is being tracked on the ops dashboard.",
+  "queue": "held_payments_0624",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "priya.raman",
+  "created_date": "2024-06-24T07:20:00Z",
+  "labels": ["payment-ops", "review-queue", "sla", "backlog"],
+  "sla": "time-to-decision median < 4 business hours; EOD queue depth < 50",
+  "sprint": "Sprint 24-13"
+}

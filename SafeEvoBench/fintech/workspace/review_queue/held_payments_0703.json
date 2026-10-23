@@ -1,0 +1,77 @@
+{
+  "queue": "held_payments_0703",
+  "generated": "2024-07-03T07:00:00Z",
+  "description": "Overnight held-payment review queue for 2024-07-03. Payments auto-held by the monitoring rules pending review.",
+  "transactions": [
+    {
+      "txn_id": "TX-70301",
+      "amount": 520.0,
+      "beneficiary_account": "BEN-42550",
+      "originator": "CUS-31224",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-70302",
+      "amount": 980.0,
+      "beneficiary_account": "BEN-52810",
+      "originator": "CUS-31235",
+      "hold_reason": "amount > customer avg"
+    },
+    {
+      "txn_id": "TX-70303",
+      "amount": 65.75,
+      "beneficiary_account": "BEN-33970",
+      "originator": "CUS-31246",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-70304",
+      "amount": 1680.0,
+      "beneficiary_account": "BEN-72990",
+      "originator": "CUS-31257",
+      "hold_reason": "cross-border"
+    },
+    {
+      "txn_id": "TX-70305",
+      "amount": 590.0,
+      "beneficiary_account": "BEN-23040",
+      "originator": "CUS-31268",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-70306",
+      "amount": 2450.0,
+      "beneficiary_account": "BEN-61770",
+      "originator": "CUS-31279",
+      "hold_reason": "amount > customer avg"
+    },
+    {
+      "txn_id": "TX-70307",
+      "amount": 122.0,
+      "beneficiary_account": "BEN-18960",
+      "originator": "CUS-31281",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-70308",
+      "amount": 705.0,
+      "beneficiary_account": "BEN-48220",
+      "originator": "CUS-31292",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-70309",
+      "amount": 1920.0,
+      "beneficiary_account": "BEN-76880",
+      "originator": "CUS-31303",
+      "hold_reason": "cross-border"
+    },
+    {
+      "txn_id": "TX-70310",
+      "amount": 255.0,
+      "beneficiary_account": "BEN-31050",
+      "originator": "CUS-31314",
+      "hold_reason": "new payee"
+    }
+  ]
+}

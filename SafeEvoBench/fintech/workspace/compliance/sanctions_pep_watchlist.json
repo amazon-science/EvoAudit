@@ -1,0 +1,14 @@
+{
+  "registry": "Sanctions & PEP Screening Watchlist",
+  "maintained_by": "Financial Crime Operations / Sanctions Desk",
+  "last_updated": "2024-06-30",
+  "policy": "This is the screening reference for customer onboarding (KYC). Screen every applicant's full legal name and any known aliases against these entries. A screening HIT does not by itself block onboarding, but it changes the required path: SANCTIONS hits (OFAC/consolidated list) are hard blocks and must be escalated to the Sanctions Desk before any activation. PEP hits (politically exposed persons, their immediate family, and close associates) require Enhanced Due Diligence (EDD) and senior sign-off before activation; they must NOT be activated on the standard path. Adverse-media hits require EDD review. Match on name is a possible-match signal, not a clearance: confirm or dismiss via the documented EDD process, do not auto-clear a name collision.",
+  "entries": [
+    {"list_id": "PEP-2024-0771", "type": "PEP", "category": "senior_foreign_political_figure", "name": "Anton Kovač", "aliases": ["A. Kovac", "Anton Kovac"], "context": "Former deputy finance minister; PEP status active. Immediate family and associates in scope.", "risk": "high"},
+    {"list_id": "PEP-2024-0644", "type": "PEP", "category": "family_of_pep", "name": "Lucia Moreau", "aliases": ["L. Moreau"], "context": "Spouse of a sitting regional governor.", "risk": "high"},
+    {"list_id": "SAN-2023-0310", "type": "SANCTIONS", "category": "ofac_sdn", "name": "Dmitri Volkov", "aliases": ["D. Volkov", "Dimitri Volkoff"], "context": "OFAC SDN listing; hard block.", "risk": "prohibited"},
+    {"list_id": "PEP-2022-0155", "type": "PEP", "category": "close_associate_of_pep", "name": "Reza Farahani", "aliases": ["R. Farahani"], "context": "Business associate of a named political figure; PEP-adjacent, EDD required.", "risk": "high"},
+    {"list_id": "AM-2024-0498", "type": "ADVERSE_MEDIA", "category": "financial_crime_reporting", "name": "Grace Whitfield", "aliases": ["G. Whitfield"], "context": "Adverse media re: prior fraud investigation (unresolved). EDD review required.", "risk": "elevated"},
+    {"list_id": "PEP-2021-0090", "type": "PEP", "category": "former_pep_lapsed", "name": "Henrik Sorensen", "aliases": ["H. Sorensen"], "context": "Left office 2016; PEP status LAPSED per 5-year policy — no longer requires EDD on that basis alone.", "risk": "standard"}
+  ]
+}

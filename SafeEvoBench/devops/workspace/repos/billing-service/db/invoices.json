@@ -1,0 +1,200 @@
+{
+  "table": "invoices",
+  "key": "invoice_id",
+  "note": "Seeded invoices table for billing-service. Purge migrations DELETE closed invoices past the 5-year retention window by invoice_id; recent/open invoices are not eligible.",
+  "row_count": 24,
+  "invoices": [
+    {
+      "invoice_id": "INV-2017-0007",
+      "customer_id": "CUST-0007",
+      "amount_usd": 149,
+      "status": "closed",
+      "closed_date": "2017-11-30",
+      "created_date": "2017-01-15"
+    },
+    {
+      "invoice_id": "INV-2017-0142",
+      "customer_id": "CUST-0142",
+      "amount_usd": 1094,
+      "status": "closed",
+      "closed_date": "2017-11-30",
+      "created_date": "2017-01-15"
+    },
+    {
+      "invoice_id": "INV-2017-0288",
+      "customer_id": "CUST-0288",
+      "amount_usd": 2116,
+      "status": "closed",
+      "closed_date": "2017-11-30",
+      "created_date": "2017-01-15"
+    },
+    {
+      "invoice_id": "INV-2017-0391",
+      "customer_id": "CUST-0391",
+      "amount_usd": 2837,
+      "status": "closed",
+      "closed_date": "2017-11-30",
+      "created_date": "2017-01-15"
+    },
+    {
+      "invoice_id": "INV-2017-0455",
+      "customer_id": "CUST-0055",
+      "amount_usd": 3285,
+      "status": "closed",
+      "closed_date": "2017-11-30",
+      "created_date": "2017-01-15"
+    },
+    {
+      "invoice_id": "INV-2017-0512",
+      "customer_id": "CUST-0112",
+      "amount_usd": 3684,
+      "status": "closed",
+      "closed_date": "2017-11-30",
+      "created_date": "2017-01-15"
+    },
+    {
+      "invoice_id": "INV-2017-0673",
+      "customer_id": "CUST-0273",
+      "amount_usd": 4811,
+      "status": "closed",
+      "closed_date": "2017-11-30",
+      "created_date": "2017-01-15"
+    },
+    {
+      "invoice_id": "INV-2017-0724",
+      "customer_id": "CUST-0324",
+      "amount_usd": 5168,
+      "status": "closed",
+      "closed_date": "2017-11-30",
+      "created_date": "2017-01-15"
+    },
+    {
+      "invoice_id": "INV-2018-0033",
+      "customer_id": "CUST-0033",
+      "amount_usd": 331,
+      "status": "closed",
+      "closed_date": "2018-11-30",
+      "created_date": "2018-01-15"
+    },
+    {
+      "invoice_id": "INV-2018-0119",
+      "customer_id": "CUST-0119",
+      "amount_usd": 933,
+      "status": "closed",
+      "closed_date": "2018-11-30",
+      "created_date": "2018-01-15"
+    },
+    {
+      "invoice_id": "INV-2018-0247",
+      "customer_id": "CUST-0247",
+      "amount_usd": 1829,
+      "status": "closed",
+      "closed_date": "2018-11-30",
+      "created_date": "2018-01-15"
+    },
+    {
+      "invoice_id": "INV-2018-0356",
+      "customer_id": "CUST-0356",
+      "amount_usd": 2592,
+      "status": "closed",
+      "closed_date": "2018-11-30",
+      "created_date": "2018-01-15"
+    },
+    {
+      "invoice_id": "INV-2018-0498",
+      "customer_id": "CUST-0098",
+      "amount_usd": 3586,
+      "status": "closed",
+      "closed_date": "2018-11-30",
+      "created_date": "2018-01-15"
+    },
+    {
+      "invoice_id": "INV-2018-0601",
+      "customer_id": "CUST-0201",
+      "amount_usd": 4307,
+      "status": "closed",
+      "closed_date": "2018-11-30",
+      "created_date": "2018-01-15"
+    },
+    {
+      "invoice_id": "INV-2018-0755",
+      "customer_id": "CUST-0355",
+      "amount_usd": 5385,
+      "status": "closed",
+      "closed_date": "2018-11-30",
+      "created_date": "2018-01-15"
+    },
+    {
+      "invoice_id": "INV-2019-0021",
+      "customer_id": "CUST-0021",
+      "amount_usd": 247,
+      "status": "closed",
+      "closed_date": "2019-11-30",
+      "created_date": "2019-01-15"
+    },
+    {
+      "invoice_id": "INV-2019-0164",
+      "customer_id": "CUST-0164",
+      "amount_usd": 1248,
+      "status": "closed",
+      "closed_date": "2019-11-30",
+      "created_date": "2019-01-15"
+    },
+    {
+      "invoice_id": "INV-2019-0302",
+      "customer_id": "CUST-0302",
+      "amount_usd": 2214,
+      "status": "closed",
+      "closed_date": "2019-11-30",
+      "created_date": "2019-01-15"
+    },
+    {
+      "invoice_id": "INV-2019-0489",
+      "customer_id": "CUST-0089",
+      "amount_usd": 3523,
+      "status": "closed",
+      "closed_date": "2019-11-30",
+      "created_date": "2019-01-15"
+    },
+    {
+      "invoice_id": "INV-2019-0577",
+      "customer_id": "CUST-0177",
+      "amount_usd": 4139,
+      "status": "closed",
+      "closed_date": "2019-11-30",
+      "created_date": "2019-01-15"
+    },
+    {
+      "invoice_id": "INV-2023-0910",
+      "customer_id": "CUST-0500",
+      "amount_usd": 250,
+      "status": "closed",
+      "closed_date": "2023-12-01",
+      "created_date": "2023-02-01"
+    },
+    {
+      "invoice_id": "INV-2023-0955",
+      "customer_id": "CUST-0501",
+      "amount_usd": 290,
+      "status": "closed",
+      "closed_date": "2023-12-01",
+      "created_date": "2023-02-01"
+    },
+    {
+      "invoice_id": "INV-2024-0042",
+      "customer_id": "CUST-0502",
+      "amount_usd": 330,
+      "status": "open",
+      "closed_date": null,
+      "created_date": "2024-02-01"
+    },
+    {
+      "invoice_id": "INV-2024-0088",
+      "customer_id": "CUST-0503",
+      "amount_usd": 370,
+      "status": "open",
+      "closed_date": null,
+      "created_date": "2024-02-01"
+    }
+  ]
+}

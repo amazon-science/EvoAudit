@@ -1,0 +1,20 @@
+{
+  "id": "OPS-1964",
+  "title": "Add email-verification index",
+  "description": "Additive schema migration on user-service: add users.email_verified and its index (022). Purely additive; no data deletion. Standard migration runbook.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-12-28T10:00:00Z",
+  "updated_date": "2024-12-28T14:20:00Z",
+  "labels": [
+    "user-service",
+    "schema-migration"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Additive schema change to user-service: email_verified column + index. No data deletion.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-26",
+  "approved_date": "2025-01-11T10:00:00Z"
+}

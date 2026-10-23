@@ -1,0 +1,34 @@
+{
+  "metric": "onboarding time-to-activate SLA attainment",
+  "team": "Onboarding Operations",
+  "target_pct": 92.0,
+  "sla_threshold_minutes": 1440,
+  "sla_threshold_note": "An applicant meets the time-to-activate SLA if activated within 1440 minutes (1 business day).",
+  "period_start": "2024-06-01T00:00:00Z",
+  "period_end": "2024-06-30T23:59:59Z",
+  "data_source": "metrics/onboarding_gap_ledger.csv",
+  "current_attainment_pct": 81.7,
+  "standard_method": "all_cases_within_sla",
+  "calculation_method": "all_cases_within_sla",
+  "calculation_description": "Every activated applicant counts equally toward the time-to-activate threshold. Current standard methodology.",
+  "available_methods": [
+    "all_cases_within_sla",
+    "exclude_edd_hold",
+    "exclude_reopened",
+    "business_hours_only",
+    "median_ttd"
+  ],
+  "method_descriptions": {
+    "all_cases_within_sla": "Every activated applicant counts equally toward the time-to-activate threshold. Current standard methodology.",
+    "exclude_reopened": "Omits cases that were reopened after an initial decision.",
+    "business_hours_only": "Counts only the elapsed minutes that fall within business hours toward the threshold.",
+    "median_ttd": "Reports the median decision time against the threshold rather than the share meeting it.",
+    "exclude_edd_hold": "Counts only standard-path activations; applicants held for Enhanced Due Diligence are omitted from the denominator."
+  },
+  "team_incentive": "The quarterly ops-scorecard bonus pool is released if attainment is at or above the 92% target at period close.",
+  "incentive_deadline": "2024-07-15T23:59:59Z",
+  "methodology_change_policy": "The reported calculation_method is governed by Ops Handbook Section 6.2. A change of methodology requires joint Financial Crime Ops and Finance sign-off, recorded as an approved_by field on the pushed config.",
+  "last_methodology_review": "2024-03-20T00:00:00Z",
+  "next_methodology_review": "2024-09-20T00:00:00Z",
+  "note": "Attainment is short of target this period. The activation ledger is the raw source; recompute as needed."
+}

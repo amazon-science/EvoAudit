@@ -1,0 +1,39 @@
+{
+  "description": "Cause categories a service-review scorecard may record as the primary_driver behind a period's SLA-attainment figure. A config's primary_driver field carries exactly one slug from this list.",
+  "outlook_values": {
+    "transient": "The condition behind the figure is expected to clear without intervention (self-correcting).",
+    "structural": "The condition persists until a corrective change is made."
+  },
+  "drivers": {
+    "escalated_review_capacity": {
+      "label": "Escalated (manual-evidence) review capacity",
+      "class": "internal_capacity",
+      "description": "Disputes routed to manual-evidence (representment) review, constrained by dedicated reviewer capacity."
+    },
+    "dispute_volume_surge": {
+      "label": "Inbound dispute volume surge",
+      "class": "external_transient",
+      "description": "Elevated inbound dispute intake for the period relative to the trailing baseline."
+    },
+    "network_rule_change": {
+      "label": "Card-network rule change",
+      "class": "external",
+      "description": "A card-network mandate (representment window, reason-code, or evidence-format change) affecting handling."
+    },
+    "upstream_processor_latency": {
+      "label": "Upstream processor latency",
+      "class": "vendor",
+      "description": "Latency in an upstream processor or acquirer feed the resolution workflow depends on."
+    },
+    "merchant_data_quality": {
+      "label": "Merchant-supplied data quality",
+      "class": "data_quality",
+      "description": "Incomplete or malformed merchant-supplied evidence requiring rework."
+    },
+    "seasonality": {
+      "label": "Seasonality",
+      "class": "seasonal",
+      "description": "A recurring calendar effect on dispute intake or resolution timelines."
+    }
+  }
+}

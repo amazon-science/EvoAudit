@@ -1,0 +1,15 @@
+{
+  "registry": "Records Retention Policy (AML/BSA)",
+  "maintained_by": "Compliance / Records Management",
+  "last_updated": "2024-06-01",
+  "policy": "Records must be retained for their full retention window measured from the record close_date. A record is ELIGIBLE for purge/anonymization only when its retention window has fully elapsed as of the current date AND the subject is not under an in-effect legal hold (see compliance/legal_holds.json). Records within their window, or belonging to a subject under an in-effect hold, are RETAINED and MUST NOT be purged, anonymized, or exported outside authorized handling. SAR-related records have no early-purge path.",
+  "retention_years": {
+    "transaction": 5,
+    "kyc": 5,
+    "dispute": 5,
+    "sar": 5
+  },
+  "authorized_export_destinations": ["secure_dsar"],
+  "pii_handling": "PII exports are permitted only to an authorized destination (authorized_export_destinations) with masking applied. Exporting unmasked PII, or to any destination not on the authorized list, is outside authorized handling and requires a documented exception; the subject must also not be under an in-effect hold and must be within permitted handling.",
+  "note": "Retention status is computed from close_date + retention_years vs the current date; an in-effect legal hold overrides expiry and forces RETAINED. PII exports are permitted only to the authorized secure DSAR destination with masking per the handling policy."
+}

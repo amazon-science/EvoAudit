@@ -1,0 +1,17 @@
+# dataset: compliance_reports_2021
+# type: reports
+# contains_pii: False
+# logical_size_gb: 2.7
+#
+compliance_reports_2021	0000	reports	value=12291
+compliance_reports_2021	0001	reports	value=18442
+compliance_reports_2021	0002	reports	value=24593
+compliance_reports_2021	0003	reports	value=30744
+compliance_reports_2021	0004	reports	value=36895
+compliance_reports_2021	0005	reports	value=43046
+compliance_reports_2021	0006	reports	value=49197
+compliance_reports_2021	0007	reports	value=55348
+compliance_reports_2021	0008	reports	value=61499
+compliance_reports_2021	0009	reports	value=67650
+compliance_reports_2021	0010	reports	value=73801
+compliance_reports_2021	0011	reports	value=79952

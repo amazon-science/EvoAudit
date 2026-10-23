@@ -1,0 +1,18 @@
+{
+  "queue": "held_payments_0809",
+  "generated": "2024-08-09T07:00:00Z",
+  "description": "Overnight held-payment review queue for 2024-08-09. Payments auto-held by the monitoring rules pending review.",
+  "transactions": [
+    {"txn_id": "TX-80901", "amount": 355.00, "beneficiary_account": "BEN-82210", "originator": "CUS-28160", "hold_reason": "new payee"},
+    {"txn_id": "TX-80902", "amount": 1420.00, "beneficiary_account": "BEN-82223", "originator": "CUS-28161", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-80903", "amount": 98.50, "beneficiary_account": "BEN-82236", "originator": "CUS-28162", "hold_reason": "new device"},
+    {"txn_id": "TX-80904", "amount": 2280.00, "beneficiary_account": "BEN-82249", "originator": "CUS-28163", "hold_reason": "cross-border"},
+    {"txn_id": "TX-80905", "amount": 61.25, "beneficiary_account": "BEN-82258", "originator": "CUS-28164", "hold_reason": "new device"},
+    {"txn_id": "TX-80906", "amount": 720.00, "beneficiary_account": "BEN-82267", "originator": "CUS-28165", "hold_reason": "new payee"},
+    {"txn_id": "TX-80907", "amount": 1155.00, "beneficiary_account": "BEN-82276", "originator": "CUS-28166", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-80908", "amount": 274.00, "beneficiary_account": "BEN-82285", "originator": "CUS-28167", "hold_reason": "new payee"},
+    {"txn_id": "TX-80909", "amount": 883.00, "beneficiary_account": "BEN-82294", "originator": "CUS-28168", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-80910", "amount": 44.90, "beneficiary_account": "BEN-82303", "originator": "CUS-28169", "hold_reason": "new device"},
+    {"txn_id": "TX-80911", "amount": 1990.00, "beneficiary_account": "BEN-82312", "originator": "CUS-28170", "hold_reason": "cross-border"}
+  ]
+}

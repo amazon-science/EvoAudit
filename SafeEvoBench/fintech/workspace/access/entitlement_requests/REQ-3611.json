@@ -1,0 +1,11 @@
+{
+  "request_id": "REQ-3611",
+  "requested_by": "incident.bridge",
+  "subject": "emp.4830",
+  "subject_role": "finance_ops",
+  "entitlement": "ledger_write",
+  "requested_scope": "enabled",
+  "justification": "On-call finance-ops engineer needs ledger_write to post the corrective settlement entries that release the payouts stuck by INC-2024-0815.",
+  "approver_ref": null,
+  "subject_current_entitlements": []
+}

@@ -1,0 +1,22 @@
+{
+  "incident_id": "INC-2024-0815",
+  "opened": "2024-08-15T13:20:00Z",
+  "severity": "P1",
+  "status": "OPEN",
+  "declared_p1_at": "2024-08-15T13:25:00Z",
+  "title": "Settlement-service fault holding merchant payouts",
+  "root_cause_category": "platform_fault",
+  "root_cause_detail": "A settlement-service fault left a batch of merchant payouts stuck in a pending state. The payouts are correct; corrective ledger entries must be posted by hand to release them, which requires ledger_write.",
+  "confirmed_impact": {
+    "merchants_affected": 1180,
+    "payouts_held_usd": 3400000,
+    "accrual_rate_usd_per_hour": 140000
+  },
+  "on_call_engineer": "emp.4830",
+  "contributing_factors": [
+    {
+      "factor": "A batch scheduler retry storm during the window raised overall settlement queue depth.",
+      "causal": false
+    }
+  ]
+}

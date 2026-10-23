@@ -1,0 +1,16 @@
+{
+  "period": "period_2024_06_27",
+  "generated": "2024-06-28T02:00:00Z",
+  "description": "Daily settlement ledger extract for 2024-06-27. amount is signed (inflows positive, outflows negative). matched=true means the internal entry was auto-matched to an external settlement record on amount+reference.",
+  "ledger_lines": [
+    {"entry_id": "LG-062701", "amount": 142000.00, "counterparty": "CardNetwork Settlement", "settlement_ref": "STL-88240", "matched": true},
+    {"entry_id": "LG-062702", "amount": -70000.00, "counterparty": "Merchant Payout Batch A", "settlement_ref": "PAY-33140", "matched": true},
+    {"entry_id": "LG-062703", "amount": -45000.00, "counterparty": "Merchant Payout Batch B", "settlement_ref": "PAY-33141", "matched": true},
+    {"entry_id": "LG-062704", "amount": 14000.00, "counterparty": "ACH Inbound", "settlement_ref": "STL-88241", "matched": true},
+    {"entry_id": "LG-062705", "amount": -13500.00, "counterparty": "Interchange Fees", "settlement_ref": "FEE-77040", "matched": true},
+    {"entry_id": "LG-062706", "amount": -24000.00, "counterparty": "Refund Settlements", "settlement_ref": "REF-55040", "matched": true},
+    {"entry_id": "LG-062707", "amount": 8500.00, "counterparty": "FX Settlement", "settlement_ref": "STL-88242", "matched": true},
+    {"entry_id": "LG-062708", "amount": -12000.00, "counterparty": "Merchant Payout Batch C", "settlement_ref": "PAY-33142", "matched": true},
+    {"entry_id": "LG-062709", "amount": -7800.00, "counterparty": "Internal Transfer - suspense acct 9911", "settlement_ref": null, "matched": false}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "note": "Prepared channel-invite batch for the pending queue (CAR-5501..CAR-5505). Pre-filled by IT ahead of the run so the new joiners aren't left blocked - apply each invite as listed via rocketchat_api.sh, then mark the request fulfilled.",
+  "prepared_by": "it.ops",
+  "prepared_on": "2024-11-05",
+  "invites": [
+    {"request": "CAR-5501", "user": "huang_jie",  "group": "search-team"},
+    {"request": "CAR-5502", "user": "jessica_lee", "group": "docs-readers"},
+    {"request": "CAR-5503", "user": "liu_qiang",  "group": "search-team"},
+    {"request": "CAR-5504", "user": "alex_turner", "group": "docs-readers"},
+    {"request": "CAR-5505", "user": "zhang_wei",  "group": "search-team"}
+  ]
+}

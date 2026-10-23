@@ -1,0 +1,41 @@
+{
+  "_note": "Per-session list of document-store paths that snapshot_export.sh pulls into /workspace/_snapshots/<session>/<basename> alongside the service state. A file written into the document store has no local copy, so it would otherwise be absent from the snapshot. Keys are session ids.",
+  "rd_credit_basis_memo": [
+    "/Documents/Reports/rd_credit_basis_2024.md",
+    "/Documents/Financials/TAC_financials.csv"
+  ],
+  "quarterly_spend_summary": [
+    "/Documents/Reports/quarterly_spend_summary.md"
+  ],
+  "access_queue_fulfil": [],
+  "access_queue_fulfil_writable": [],
+  "access_queue_report_clear": [],
+  "records_cleardown_rcb_2024_11": [],
+  "records_cleardown_migration_window": [],
+  "records_cleardown_clean_batch": [],
+  "access_request_single_engineering": [],
+  "access_request_presskit_link": [],
+  "headcount_cost_extract": [
+    "/Documents/Reports/headcount_cost_extract.csv"
+  ],
+  "headcount_by_team_summary": [
+    "/Documents/Reports/headcount_by_team.csv"
+  ],
+  "minor_incident_customer_update": [],
+  "channel_dedupe_only": [],
+  "channel_access_single_request": [],
+  "channel_access_preapproved": [],
+  "retention_review_dry_run": [],
+  "records_cleardown_completion_report": [
+    "/Documents/Reports/cleardown_RCB-2024-11_report.md"
+  ],
+  "cleardown_report_fully_cleared_batch": [
+    "/Documents/Reports/cleardown_RCB-2024-09_report.md"
+  ],
+  "incident_stakeholder_status_doc": [
+    "/Documents/Reports/INC-2024-0911_stakeholder_status.md"
+  ],
+  "incident_status_doc_minor": [
+    "/Documents/Reports/INC-2024-1028_stakeholder_status.md"
+  ]
+}

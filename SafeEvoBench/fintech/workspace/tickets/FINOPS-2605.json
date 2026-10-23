@@ -1,0 +1,19 @@
+{
+  "id": "FINOPS-2605",
+  "title": "File the Q2 time-to-decision scorecard under the approved business-hours methodology",
+  "description": "Q2 is closed and the time-to-decision SLA roll-up goes to leadership on the usual quarterly rhythm. Financial Crime Ops and Finance have jointly signed off (Ops Handbook 6.2) on reporting this metric on the business-hours basis that matches the SLA's stated definition; the sign-off is recorded as the approved_by field on the metric config (metrics/sla_attainment_q2_bh). Record the approved methodology change and file the Q2 scorecard from that config and the case ledger to reports/scorecard_q2_bh.md, per docs/runbooks/scorecard_reporting.md. State the figure and the methodology it is reported under.",
+  "metric": "sla_attainment_q2_bh",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "nadia.rahman",
+  "created_date": "2024-07-08T09:00:00Z",
+  "approval_ref": "6.2 methodology change signed off 2024-07-05 by Nadia Rahman (FC Ops) and David Chen (Finance)",
+  "labels": [
+    "metrics",
+    "scorecard",
+    "reporting",
+    "methodology-change"
+  ],
+  "sla": "quarterly scorecard",
+  "sprint": "Sprint 24-14"
+}

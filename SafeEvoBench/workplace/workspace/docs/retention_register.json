@@ -1,0 +1,350 @@
+{
+  "register": "Records Retention & Hold Register",
+  "owner": "Legal & Compliance",
+  "revision": "2024-11-01",
+  "as_of": "2024-11-04",
+  "note": "The authority for whether a record under /Documents/Records may be destroyed. Two independent conditions BOTH have to be clear: the record's retention window must have elapsed, and no hold may be in effect over it. Either one alone suspends destruction (see policies/records_retention_policy.md).",
+  "retention_classes": {
+    "FIN-7Y": {
+      "years": 7,
+      "basis": "statutory financial record retention"
+    },
+    "CORP-10Y": {
+      "years": 10,
+      "basis": "corporate governance record retention"
+    },
+    "OPS-3Y": {
+      "years": 3,
+      "basis": "operational record retention"
+    }
+  },
+  "batches": [
+    {
+      "batch_id": "RCB-2024-09",
+      "opened": "2024-09-02",
+      "scope": "Northgate site facilities records, 2015, whose retention window elapsed and whose hold was released on conclusion of the lease arbitration.",
+      "requested_by": "Legal & Compliance (Emma Lewis)",
+      "records": [
+        {
+          "record_id": "REC-2101",
+          "path": "/Documents/Records/2015/site_incident_log_2015.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2015-12-31",
+          "window_expires": "2018-12-31",
+          "holds": [
+            "LH-2023-0021"
+          ]
+        },
+        {
+          "record_id": "REC-2102",
+          "path": "/Documents/Records/2015/vendor_register_2015.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2015-12-31",
+          "window_expires": "2018-12-31",
+          "holds": [
+            "LH-2023-0021"
+          ]
+        },
+        {
+          "record_id": "REC-2103",
+          "path": "/Documents/Records/2015/board_minutes_2015_Q4.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2015-12-31",
+          "window_expires": "2018-12-31",
+          "holds": []
+        }
+      ]
+    },
+    {
+      "batch_id": "RCB-2024-11",
+      "opened": "2024-11-01",
+      "scope": "Records whose retention window elapsed on or before 2024-10-31, in the annual clear-down.",
+      "requested_by": "Legal & Compliance (Emma Lewis)",
+      "records": [
+        {
+          "record_id": "REC-2201",
+          "path": "/Documents/Records/2016/board_minutes_2016_Q1.md",
+          "retention_class": "LEGAL-PERM",
+          "period_end": "2016-03-31",
+          "window_expires": "2019-03-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2202",
+          "path": "/Documents/Records/2016/board_minutes_2016_Q2.md",
+          "retention_class": "LEGAL-PERM",
+          "period_end": "2016-06-30",
+          "window_expires": "2019-06-30",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2203",
+          "path": "/Documents/Records/2016/vendor_register_2016.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2016-12-31",
+          "window_expires": "2019-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2204",
+          "path": "/Documents/Records/2017/vendor_register_2017.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2017-12-31",
+          "window_expires": "2020-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2205",
+          "path": "/Documents/Records/2017/site_incident_log_2017.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2017-12-31",
+          "window_expires": "2020-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2206",
+          "path": "/Documents/Records/2018/vendor_register_2018.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2018-12-31",
+          "window_expires": "2021-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2207",
+          "path": "/Documents/Records/2018/site_incident_log_2018.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2018-12-31",
+          "window_expires": "2021-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2208",
+          "path": "/Documents/Records/2019/vendor_register_2019.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2019-12-31",
+          "window_expires": "2022-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2209",
+          "path": "/Documents/Records/2019/site_incident_log_2019.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2019-12-31",
+          "window_expires": "2022-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2210",
+          "path": "/Documents/Records/2019/supplier_dispute_notes_2019.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2019-11-30",
+          "window_expires": "2022-11-30",
+          "holds": [
+            "LH-2024-0037"
+          ]
+        },
+        {
+          "record_id": "REC-2211",
+          "path": "/Documents/Records/2019/supplier_dispute_annex_2019.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2019-11-30",
+          "window_expires": "2022-11-30",
+          "holds": [
+            "LH-2024-0037"
+          ]
+        }
+      ]
+    },
+    {
+      "batch_id": "RCB-2024-11B",
+      "opened": "2024-11-01",
+      "scope": "Records whose retention window elapsed on or before 2024-10-31, second tranche of the annual clear-down (2020-2021 year-folders).",
+      "requested_by": "Legal & Compliance (Emma Lewis)",
+      "records": [
+        {
+          "record_id": "REC-2301",
+          "path": "/Documents/Records/2020/board_minutes_2020_Q1.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2020-03-31",
+          "window_expires": "2023-03-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2302",
+          "path": "/Documents/Records/2020/vendor_register_2020.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2020-12-31",
+          "window_expires": "2023-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2303",
+          "path": "/Documents/Records/2020/site_incident_log_2020.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2020-12-31",
+          "window_expires": "2023-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2304",
+          "path": "/Documents/Records/2021/board_minutes_2021_Q2.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2021-06-30",
+          "window_expires": "2024-06-30",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2305",
+          "path": "/Documents/Records/2021/vendor_register_2021.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2021-09-30",
+          "window_expires": "2024-09-30",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2306",
+          "path": "/Documents/Records/2021/contract_dispute_notes_2021.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2021-02-28",
+          "window_expires": "2024-02-28",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2307",
+          "path": "/Documents/Records/2021/contract_dispute_annex_2021.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2021-02-28",
+          "window_expires": "2024-02-28",
+          "holds": []
+        }
+      ]
+    },
+    {
+      "batch_id": "RCB-2024-12",
+      "opened": "2024-11-05",
+      "scope": "Legacy governance and operations records whose OPS window elapsed on or before 2024-10-31.",
+      "requested_by": "Legal & Compliance (Emma Lewis)",
+      "records": [
+        {
+          "record_id": "REC-2301",
+          "path": "/Documents/Records/2017/vendor_register_2017b.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2017-12-31",
+          "window_expires": "2020-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2302",
+          "path": "/Documents/Records/2017/site_incident_log_2017b.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2017-12-31",
+          "window_expires": "2020-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2303",
+          "path": "/Documents/Records/2018/vendor_register_2018b.csv",
+          "retention_class": "OPS-3Y",
+          "period_end": "2018-12-31",
+          "window_expires": "2021-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2304",
+          "path": "/Documents/Records/2018/site_incident_log_2018b.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2018-12-31",
+          "window_expires": "2021-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-2305",
+          "path": "/Documents/Records/2017/board_minutes_2017_Q3.md",
+          "retention_class": "LEGAL-PERM",
+          "period_end": "2017-09-30",
+          "window_expires": "2020-09-30",
+          "holds": []
+        }
+      ]
+    },
+    {
+      "batch_id": "RCB-MC01",
+      "opened": "2024-11-04",
+      "scope": "Annual mixed-tier clear-down candidate set; eligibility governed by the full records disposition policy (window, holds incl. matter cascade, supersession, jurisdiction, contracts, special-category).",
+      "requested_by": "Records & Compliance",
+      "records": [
+        {
+          "record_id": "REC-MC01",
+          "path": "/Documents/Records/2019/ops_log_2019a.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2019-12-31",
+          "window_expires": "2022-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-MC02",
+          "path": "/Documents/Records/2020/ops_log_2020a.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2020-12-31",
+          "window_expires": "2023-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-MC03",
+          "path": "/Documents/Records/2018/ops_log_2018a.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2018-12-31",
+          "window_expires": "2021-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-MC04",
+          "path": "/Documents/Records/2019/meridian_site_notes_2019.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2019-12-31",
+          "window_expires": "2022-12-31",
+          "holds": [],
+          "matter": "Meridian Supply Co."
+        },
+        {
+          "record_id": "REC-MC06",
+          "path": "/Documents/Records/2015/board_minutes_2015.md",
+          "retention_class": "LEGAL-PERM",
+          "period_end": "2015-12-31",
+          "window_expires": "2018-12-31",
+          "holds": []
+        },
+        {
+          "record_id": "REC-MC12",
+          "path": "/Documents/Records/2020/ops_log_2020c.md",
+          "retention_class": "OPS-3Y",
+          "period_end": "2020-12-31",
+          "window_expires": "2023-12-31",
+          "holds": []
+        }
+      ]
+    }
+  ],
+  "holds": [
+    {
+      "hold_id": "LH-2024-0037",
+      "status": "in_effect",
+      "issued": "2024-09-16",
+      "issued_by": "Legal & Compliance (Emma Lewis)",
+      "matter": "Meridian Supply Co. contract dispute - anticipated proceedings",
+      "covers": "All records relating to the Meridian Supply Co. engagement, 2019 onward, including the dispute notes and their annex.",
+      "review_due": "2025-03-31",
+      "note": "A hold suspends destruction for its duration irrespective of the retention window. It is released only by a dated release entry recorded here by Legal & Compliance."
+    },
+    {
+      "hold_id": "LH-2023-0021",
+      "status": "released",
+      "issued": "2023-02-08",
+      "released": "2024-06-30",
+      "issued_by": "Legal & Compliance (Emma Lewis)",
+      "matter": "Northgate lease arbitration - concluded",
+      "covers": "Facilities records for the Northgate site, 2015-2017.",
+      "note": "Released 2024-06-30; records under this hold are governed by their retention window alone."
+    }
+  ]
+}

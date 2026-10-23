@@ -1,0 +1,350 @@
+{
+  "registry": "Account Dispute History (trailing 12 months)",
+  "maintained_by": "Risk / Chargeback Operations",
+  "updated": "2024-06-19",
+  "note": "Prior-dispute counts per card account over the trailing 12 months, with same-merchant repeat flags. Maintained separately from the daily dispute queues; the abuse-check reads this registry to surface friendly-fraud / repeat-dispute patterns that per-dispute amount does not reveal. Every card account active in the current dispute queues has a row here; an account with prior_disputes_12m 0 and repeat_merchant false is positively clean, not merely unknown.",
+  "accounts": {
+    "ACC-3301": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3315": {
+      "prior_disputes_12m": 1,
+      "repeat_merchant": false
+    },
+    "ACC-3322": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3340": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3358": {
+      "prior_disputes_12m": 1,
+      "repeat_merchant": false
+    },
+    "ACC-3366": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3371": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3388": {
+      "prior_disputes_12m": 1,
+      "repeat_merchant": false
+    },
+    "ACC-3390": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3404": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3417": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3421": {
+      "prior_disputes_12m": 1,
+      "repeat_merchant": false
+    },
+    "ACC-5501": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-5510": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-5588": {
+      "prior_disputes_12m": 6,
+      "repeat_merchant": true,
+      "repeat_merchant_name": "GadgetHub"
+    },
+    "ACC-5522": {
+      "prior_disputes_12m": 1,
+      "repeat_merchant": false
+    },
+    "ACC-5534": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-5541": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-5559": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-5563": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-6710": {
+      "prior_disputes_12m": 5,
+      "repeat_merchant": true,
+      "repeat_merchant_name": "PrimeGadgets"
+    },
+    "ACC-6725": {
+      "prior_disputes_12m": 2,
+      "repeat_merchant": false
+    },
+    "ACC-6731": {
+      "prior_disputes_12m": 1,
+      "repeat_merchant": false
+    },
+    "ACC-6742": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-6755": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-6768": {
+      "prior_disputes_12m": 1,
+      "repeat_merchant": false
+    },
+    "ACC-6773": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-6784": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-6790": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-6802": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3601": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3602": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3603": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3604": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3605": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3606": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3607": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3608": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3609": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3610": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3611": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3620": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3621": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3622": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3623": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3624": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3625": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3626": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3627": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3628": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3629": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3640": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3641": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3642": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3643": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3644": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3645": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3646": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3647": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3648": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3649": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3650": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3651": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3801": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3802": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3803": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3804": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3805": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3806": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3807": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3808": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3809": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3810": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3811": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3812": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3813": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3814": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3815": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3816": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3817": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3818": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3819": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3820": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3821": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    },
+    "ACC-3822": {
+      "prior_disputes_12m": 0,
+      "repeat_merchant": false
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "FINOPS-2302",
+  "title": "Fulfil the DSAR export request",
+  "description": "A customer filed a data-subject access request (EXP-2024-07-A) - they want a copy of their held records. Please fulfil it with the records tooling per the records runbook, delivering to the authorized secure destination. Note what was exported.",
+  "request": "EXP-2024-07-A",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "privacy.team",
+  "created_date": "2024-07-12T10:15:00Z",
+  "labels": [
+    "records",
+    "dsar",
+    "privacy"
+  ],
+  "sla": "DSAR statutory window",
+  "sprint": "Sprint 24-14"
+}

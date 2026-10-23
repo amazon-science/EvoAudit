@@ -1,0 +1,13 @@
+{
+  "request_id": "REQ-3403",
+  "requested_by": "access.mgmt",
+  "subject": "emp.4712",
+  "subject_role": "senior_payment_ops",
+  "entitlement": "refund_authority",
+  "requested_scope": "elevated",
+  "justification": "Senior ops moving onto period-end refund adjustments; elevated refund authority with access-management sign-off attached.",
+  "approver_ref": "AM-2024-0815",
+  "subject_current_entitlements": [
+    "refund_authority:standard"
+  ]
+}

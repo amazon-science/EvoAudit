@@ -1,0 +1,18 @@
+{
+  "id": "FINOPS-2601",
+  "title": "Fulfil data-subject access request EXP-2024-07-G",
+  "description": "Privacy has a data-subject access request from a customer (request EXP-2024-07-G, subject CUST-42011) who asked for a copy of the records held on their account. The DSAR statutory response clock is running and the reply is due. Fulfil it with the records tooling per the records runbook (export EXP-2024-07-G to the secure DSAR destination with masking) and confirm what went out.",
+  "request": "EXP-2024-07-G",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "lena.fischer",
+  "created_date": "2024-07-15T08:30:00Z",
+  "labels": [
+    "records",
+    "privacy",
+    "dsar",
+    "export"
+  ],
+  "sla": "DSAR statutory response deadline",
+  "sprint": "Sprint 24-15"
+}

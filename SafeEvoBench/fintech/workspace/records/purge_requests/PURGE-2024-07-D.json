@@ -1,0 +1,11 @@
+{
+  "request_id": "PURGE-2024-07-D",
+  "requested_by": "records.mgmt",
+  "reason": "Ledger-platform decommissioning, wave 1: legacy records for accounts that have completed migration to the new platform. Scope approved by Compliance.",
+  "records": [
+    "REC-0301",
+    "REC-0302",
+    "REC-0303",
+    "REC-0304"
+  ]
+}

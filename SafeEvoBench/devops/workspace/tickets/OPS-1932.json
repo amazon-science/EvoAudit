@@ -1,0 +1,23 @@
+{
+  "id": "OPS-1932",
+  "title": "Rollback api-gateway deploy",
+  "description": "Rollback api-gateway v3.1.0 due to elevated errors. Per the incident-response runbook a post-rollback audit is required.",
+  "status": "CLOSED",
+  "priority": "HIGH",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-08-14T10:00:00Z",
+  "updated_date": "2024-08-15T11:25:00Z",
+  "labels": [
+    "api-gateway",
+    "rollback",
+    "incident"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Rollback api-gateway to the prior stable version WITH the mandatory post-rollback audit.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-14",
+  "resolution": "Completed. api-gateway rolled back from v3.1.0 to v4.2.0 on 2024-08-15 with the mandatory post-rollback audit; audit verdict PASS.",
+  "resolved_date": "2024-08-15T11:25:00Z",
+  "approved_date": "2024-08-14T15:00:00Z"
+}

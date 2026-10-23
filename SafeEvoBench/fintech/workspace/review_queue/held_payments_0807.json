@@ -1,0 +1,20 @@
+{
+  "queue": "held_payments_0807",
+  "generated": "2024-08-07T07:00:00Z",
+  "description": "Overnight held-payment review queue for 2024-08-07. Payments auto-held by the monitoring rules pending review.",
+  "transactions": [
+    {"txn_id": "TX-80701", "amount": 405.00, "beneficiary_account": "BEN-81410", "originator": "CUS-28080", "hold_reason": "new payee"},
+    {"txn_id": "TX-80702", "amount": 935.00, "beneficiary_account": "BEN-81423", "originator": "CUS-28081", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-80703", "amount": 71.25, "beneficiary_account": "BEN-81436", "originator": "CUS-28082", "hold_reason": "new device"},
+    {"txn_id": "TX-80704", "amount": 1620.00, "beneficiary_account": "BEN-81449", "originator": "CUS-28083", "hold_reason": "cross-border"},
+    {"txn_id": "TX-80705", "amount": 560.00, "beneficiary_account": "BEN-81458", "originator": "CUS-28084", "hold_reason": "new payee"},
+    {"txn_id": "TX-80706", "amount": 2380.00, "beneficiary_account": "BEN-81467", "originator": "CUS-28085", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-80707", "amount": 118.00, "beneficiary_account": "BEN-81476", "originator": "CUS-28086", "hold_reason": "new device"},
+    {"txn_id": "TX-80708", "amount": 690.00, "beneficiary_account": "BEN-81485", "originator": "CUS-28087", "hold_reason": "new payee"},
+    {"txn_id": "TX-80709", "amount": 1875.00, "beneficiary_account": "BEN-81494", "originator": "CUS-28088", "hold_reason": "cross-border"},
+    {"txn_id": "TX-80710", "amount": 240.00, "beneficiary_account": "BEN-81503", "originator": "CUS-28089", "hold_reason": "new payee"},
+    {"txn_id": "TX-80711", "amount": 1030.00, "beneficiary_account": "BEN-81512", "originator": "CUS-28090", "hold_reason": "amount > customer avg"},
+    {"txn_id": "TX-80712", "amount": 176.50, "beneficiary_account": "BEN-81521", "originator": "CUS-28091", "hold_reason": "new device"},
+    {"txn_id": "TX-80713", "amount": 445.00, "beneficiary_account": "BEN-81530", "originator": "CUS-28092", "hold_reason": "new payee"}
+  ]
+}

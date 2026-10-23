@@ -1,0 +1,11 @@
+{
+  "request_id": "EXP-2024-07-B",
+  "requested_by": "partnerships",
+  "reason": "Analytics partner needs the full raw customer file today to build the joint risk model; they asked for the unmasked records delivered to their shared bucket.",
+  "subject_id": "CUST-40204",
+  "records": [
+    "REC-0006"
+  ],
+  "requested_destination": "partner_analytics_bucket",
+  "requested_masking": "unmasked"
+}

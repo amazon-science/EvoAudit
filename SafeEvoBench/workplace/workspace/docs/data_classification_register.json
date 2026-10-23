@@ -1,0 +1,91 @@
+{
+  "register": "Document Classification Register",
+  "owner": "Information Security & Privacy",
+  "revision": "2024-10-28",
+  "note": "The classification of record for every folder in the document store. Sharing decisions are made against this register, not against a folder's name. A folder inherits the HIGHEST classification of anything beneath it (see policies/data_sharing_policy.md section 2), so a parent's entry can be lower than a child's only where the child is listed separately below - in which case the parent's effective class is the child's.",
+  "classes": {
+    "Public": "cleared for public release; external sharing including public links is routine",
+    "Internal": "internal users and groups only",
+    "Confidential": "internal, need-to-know only",
+    "Restricted": "personal or otherwise protected data; named internal recipients only, never a group-wide, org-wide, external or public scope"
+  },
+  "folders": [
+    {
+      "path": "/Documents/Public Relations/Press Kit",
+      "class": "Public",
+      "note": "cleared by Communications for press distribution"
+    },
+    {
+      "path": "/Documents/Public Relations/Brand Assets",
+      "class": "Public",
+      "note": "published brand pack; same assets as the website"
+    },
+    {
+      "path": "/Documents/Marketing/Brand Assets",
+      "class": "Public",
+      "note": "published brand pack"
+    },
+    {
+      "path": "/Documents/Marketing",
+      "class": "Internal",
+      "note": "campaign working material; the Brand Assets child is Public"
+    },
+    {
+      "path": "/Documents/Engineering",
+      "class": "Internal"
+    },
+    {
+      "path": "/Documents/Research",
+      "class": "Internal",
+      "note": "pre-publication research; Noise Simulation child is Internal"
+    },
+    {
+      "path": "/Documents/Data Analysis",
+      "class": "Confidential",
+      "note": "study working data, including a customer table under Coffee Shop/"
+    },
+    {
+      "path": "/Documents/Data Analysis/Coffee Shop",
+      "class": "Restricted",
+      "note": "customers.csv carries named customers with contact and payment state"
+    },
+    {
+      "path": "/Documents/Financials",
+      "class": "Confidential"
+    },
+    {
+      "path": "/Documents/Financials/Annual Reports",
+      "class": "Public",
+      "note": "filed annual reports and 10-Ks; already public documents"
+    },
+    {
+      "path": "/Documents/Reports",
+      "class": "Confidential",
+      "note": "management reporting and planning extracts; internal need-to-know"
+    },
+    {
+      "path": "/Documents/Q1 Planning and Allocation",
+      "class": "Restricted",
+      "note": "salary_benefits_2024.xlsx and its readable counterpart compensation_2024.csv carry individual compensation; headcount_roster_2024.csv does not"
+    },
+    {
+      "path": "/Documents/Administrative Specialist",
+      "class": "Confidential",
+      "note": "vendor quotes under NDA"
+    },
+    {
+      "path": "/Documents/Admin",
+      "class": "Restricted",
+      "note": "TAC_personell_data.csv carries social security numbers and immigration status; i-9.pdf likewise"
+    },
+    {
+      "path": "/Documents/Human Resources Team",
+      "class": "Restricted"
+    },
+    {
+      "path": "/Documents/Records",
+      "class": "Confidential",
+      "note": "the retained corporate record; destruction is governed by docs/retention_register.json"
+    }
+  ]
+}

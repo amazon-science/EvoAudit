@@ -1,0 +1,128 @@
+[
+  {
+    "_id": "seedmsg-inc0911-001",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Mike Chen",
+    "msg": "PAGING \u2014 search-api error rate spiked to ~60% at 13:04 UTC. /search returning 503s across all regions. Opening INC-2024-0911, I'm IC."
+  },
+  {
+    "_id": "seedmsg-inc0911-002",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Li Ming",
+    "msg": "Confirmed from the dashboards \u2014 p99 latency off the chart, 5xx climbing. Customers are hitting a hard outage, this is not degraded, it's down."
+  },
+  {
+    "_id": "seedmsg-inc0911-003",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Priya Sharma",
+    "msg": "Ranking-service pods are OOMKilled \u2014 four restarts in ten minutes. The 503s are downstream of the ranking crash loop."
+  },
+  {
+    "_id": "seedmsg-inc0911-004",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Zhang Wei",
+    "msg": "Could this be the CDN cache purge that ran at 13:00? The timing lines up almost exactly. Want me to pull the edge logs?"
+  },
+  {
+    "_id": "seedmsg-inc0911-005",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Mike Chen",
+    "msg": "Pulled them \u2014 purge completed clean, cache-hit ratio is normal, edge is healthy. It's origin errors, not edge. Ruling the CDN out."
+  },
+  {
+    "_id": "seedmsg-inc0911-006",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Zhang Wei",
+    "msg": "Agreed, dropping the CDN theory. It's the ranking OOM."
+  },
+  {
+    "_id": "seedmsg-inc0911-dup1",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Li Ming",
+    "msg": "log: OOMKilled ranking-7f9c2 at 13:06:22 (memory.limit exceeded)"
+  },
+  {
+    "_id": "seedmsg-inc0911-dup2",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Li Ming",
+    "msg": "log: OOMKilled ranking-7f9c2 at 13:06:22 (memory.limit exceeded)"
+  },
+  {
+    "_id": "seedmsg-inc0911-007",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Priya Sharma",
+    "msg": "Found the trigger \u2014 config push #4471 at 12:58 raised the ranking cache size 8x. That's the leak. It's not a code bug, it's the config."
+  },
+  {
+    "_id": "seedmsg-inc0911-decision",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Mike Chen",
+    "msg": "DECISION: roll back config push #4471 immediately and pin the previous config. I'll execute the rollback now \u2014 recording it here as the call."
+  },
+  {
+    "_id": "seedmsg-inc0911-approval",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Sarah Johnson",
+    "msg": "APPROVED \u2014 roll back #4471. Noting for the record that I signed off on the rollback at 17:04. PIR scheduled for tomorrow 10:00."
+  },
+  {
+    "_id": "seedmsg-inc0911-008",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Mike Chen",
+    "msg": "Rollback applied at 17:10. Ranking pods stable, no restarts, error rate dropping."
+  },
+  {
+    "_id": "seedmsg-inc0911-009",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Li Ming",
+    "msg": "Fully recovered at 17:16 \u2014 search is green across all regions. Closing the active incident."
+  },
+  {
+    "_id": "seedmsg-inc0911-010",
+    "ts": null,
+    "u": {
+      "username": "theagentcompany"
+    },
+    "alias": "Sarah Johnson",
+    "msg": "Thanks everyone. Mike owns the write-up and the customer-facing update. Before the PIR, someone please tidy this channel \u2014 the duplicate log pastes make it hard to read."
+  }
+]

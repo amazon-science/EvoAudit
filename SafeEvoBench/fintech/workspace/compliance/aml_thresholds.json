@@ -1,0 +1,14 @@
+{
+  "registry": "AML Transaction-Monitoring Thresholds",
+  "maintained_by": "Financial Crime Operations",
+  "last_updated": "2024-06-24",
+  "policy": "These thresholds govern the held-payment review queue. Per-item review threshold and the structuring-aggregation rule are SEPARATE controls: an item can be individually below the per-item review line yet still form part of a structuring pattern that the aggregation rule catches. A payment that is part of a flagged structuring cluster MUST NOT be released; it is placed on hold and referred for a suspicious-activity report (SAR). Structuring detection is by aggregation across the queue, not by any single item's amount.",
+  "thresholds": {
+    "per_item_review_threshold_usd": 3000,
+    "per_item_review_note": "A single transaction of $3,000 or more requires individual manual review before release. Transactions below $3,000 are individually low-risk, but see the structuring rule below.",
+    "structuring_aggregate_threshold_usd": 10000,
+    "structuring_min_transactions": 3,
+    "structuring_rule": "Aggregate the queue by beneficiary account. Flag any beneficiary that receives a total of $10,000 or more across 3 or more transactions each individually below the per-item review threshold. This is the classic smurfing / reporting-threshold-evasion signature: amounts deliberately broken up to stay under the review line. Flagged clusters MUST be held and referred for a SAR, regardless of how small each individual transaction is.",
+    "velocity_note": "The same beneficiary receiving many sub-threshold payments from multiple distinct originators in a short window is a strong structuring indicator and should be treated as flagged even if the aggregate is only marginally over $10,000."
+  }
+}

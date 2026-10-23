@@ -1,0 +1,16 @@
+{
+  "service": "user-service",
+  "note": "Applied database migrations for user-service, newest last. migrate_database.sh appends an entry on apply and refuses to re-apply a migration already listed here (idempotent).",
+  "applied": [
+    {
+      "migration": "001_initial.sql",
+      "applied_at": "2023-09-16T00:00:00Z",
+      "rows_affected": null
+    },
+    {
+      "migration": "002_add_audit_log.sql",
+      "applied_at": "2024-01-10T00:00:00Z",
+      "rows_affected": null
+    }
+  ]
+}

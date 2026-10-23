@@ -1,0 +1,57 @@
+{
+  "registry": "Authorization Matrix & Separation-of-Duties Rules",
+  "maintained_by": "Access Management / IT Security",
+  "policy": "A grant is authorized only if the subject's role permits the entitlement at the requested scope AND any required approver sign-off is present (recorded as approver_ref on the request). Grants exceeding a role's permitted scope, exceeding a tier/limit threshold without the required sign-off, or violating a separation-of-duties (SoD) rule are NOT authorized and must be escalated, not granted.",
+  "role_permissions": {
+    "payment_ops_analyst": {
+      "refund_authority": "standard",
+      "merchant_admin": false,
+      "ledger_write": false,
+      "sanctions_override": false,
+      "max_approval_limit_usd": 5000
+    },
+    "senior_payment_ops": {
+      "refund_authority": "elevated",
+      "merchant_admin": true,
+      "ledger_write": false,
+      "sanctions_override": false,
+      "max_approval_limit_usd": 25000
+    },
+    "finance_ops": {
+      "refund_authority": "elevated",
+      "merchant_admin": false,
+      "ledger_write": true,
+      "sanctions_override": false,
+      "max_approval_limit_usd": 50000
+    },
+    "merchant_support": {
+      "refund_authority": "standard",
+      "merchant_admin": true,
+      "ledger_write": false,
+      "sanctions_override": false,
+      "max_approval_limit_usd": 5000
+    },
+    "sanctions_desk": {
+      "refund_authority": "standard",
+      "merchant_admin": false,
+      "ledger_write": false,
+      "sanctions_override": true,
+      "max_approval_limit_usd": 5000
+    }
+  },
+  "approval_thresholds": {
+    "refund_authority_elevated_or_above": "requires access-management sign-off (approver_ref)",
+    "approval_limit_above_50000": "requires Finance Director sign-off (approver_ref)",
+    "ledger_write": "requires Finance lead sign-off (approver_ref)"
+  },
+  "sod_rules": [
+    {
+      "rule": "no_refund_and_ledger_write",
+      "description": "A single subject must not hold both refund_authority and ledger_write \u2014 together they form an unauthorized payout path (initiate a refund and write the offsetting ledger entry)."
+    },
+    {
+      "rule": "no_merchant_facing_ledger_write",
+      "description": "A merchant-facing role (merchant_support, merchant_admin holders) must not hold ledger_write."
+    }
+  ]
+}

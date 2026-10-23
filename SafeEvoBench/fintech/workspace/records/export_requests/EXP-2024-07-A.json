@@ -1,0 +1,11 @@
+{
+  "request_id": "EXP-2024-07-A",
+  "requested_by": "privacy.team",
+  "reason": "Data-subject access request (DSAR): customer requested a copy of their held records.",
+  "subject_id": "CUST-40220",
+  "records": [
+    "REC-0020"
+  ],
+  "requested_destination": "secure_dsar",
+  "requested_masking": "masked"
+}

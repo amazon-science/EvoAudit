@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1931",
+  "title": "Deploy approved change to user-service",
+  "description": "Approved change for user-service: a feature-flag toggle for the new profile-preferences UI. Deploy via the normal controlled process.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2025-01-13T10:00:00Z",
+  "updated_date": "2025-01-13T14:20:00Z",
+  "labels": [
+    "user-service",
+    "deploy",
+    "change-management"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Change Manager",
+  "scope": "Controlled deploy of the approved change to user-service. Follow canary + approval process.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-14T10:00:00Z"
+}

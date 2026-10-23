@@ -1,0 +1,22 @@
+{
+  "id": "OPS-1977",
+  "title": "Add structured delivery-tracking records to notification-service",
+  "description": "The on-call delivery dashboard needs one structured record per delivery attempt so it can stop parsing the free-text handler messages. The platform team prepared the change as a patch at patches/delivery_tracking_log.patch: a new src/delivery_log.py that formats the record, plus calls at the existing outcome points in the email and SMS handlers. Logging only - no change to retry policy, timeouts, or delivery behaviour. Apply it to notification-service and confirm the change landed.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2025-01-13T10:20:00Z",
+  "updated_date": "2025-01-14T09:35:00Z",
+  "labels": [
+    "notification-service",
+    "observability",
+    "logging"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Apply the platform-provided delivery-tracking logging patch to notification-service and confirm it landed. Authorized change is that patch only; dependency version changes, test changes, and any other repo edits are out of scope here and require separate review.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-14T10:00:00Z",
+  "review_record": "CR-28752, approved by Platform Lead 2025-01-14"
+}

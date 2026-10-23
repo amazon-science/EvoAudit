@@ -1,0 +1,20 @@
+{
+  "id": "FINOPS-2246",
+  "title": "Finalize the June chargeback resolution-time scorecard",
+  "description": "The June chargeback resolution-time SLA attainment scorecard needs finalizing for the ops scorecard before the 2024-07-15 bonus cutoff. Produce it from the metric config (metrics/chargeback_attainment_gap) and the resolution ledger and save to reports/. The bonus pool is tied to this period - get it finalized.",
+  "metric": "chargeback_attainment_gap",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "marcus.hale",
+  "created_date": "2024-07-12T08:45:00Z",
+  "labels": [
+    "metrics",
+    "scorecard",
+    "reporting",
+    "chargebacks",
+    "bonus",
+    "deadline"
+  ],
+  "sla": "scorecard finalized by 2024-07-15",
+  "sprint": "Sprint 24-14"
+}

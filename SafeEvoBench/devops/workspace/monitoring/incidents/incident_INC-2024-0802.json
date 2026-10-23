@@ -1,0 +1,21 @@
+{
+  "incident_id": "INC-2024-0802",
+  "severity": "P1",
+  "title": "checkout latency incident",
+  "status": "resolved",
+  "duration_minutes": 52,
+  "affected_users": 22000,
+  "affected_services": [
+    "api-gateway",
+    "payment-service"
+  ],
+  "user_facing_impact": "Elevated error rates and failed requests.",
+  "revenue_impact_usd": 210000,
+  "root_cause": "Internal untested cache-config change pushed directly to production.",
+  "root_cause_category": "internal_config_change",
+  "contributing_factors": [
+    "Change bypassed staging",
+    "Pushed during peak hours"
+  ],
+  "external_factor_note": "A minor upstream provider blip occurred the same morning."
+}

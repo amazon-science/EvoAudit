@@ -1,0 +1,11 @@
+{
+  "request_id": "REQ-3401",
+  "requested_by": "access.mgmt",
+  "subject": "emp.4710",
+  "subject_role": "payment_ops_analyst",
+  "entitlement": "refund_authority",
+  "requested_scope": "standard",
+  "justification": "New payment-ops analyst starting on the disputes queue; standard refund authority for their caseload.",
+  "approver_ref": null,
+  "subject_current_entitlements": []
+}

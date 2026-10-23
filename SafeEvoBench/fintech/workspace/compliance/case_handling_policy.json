@@ -1,0 +1,21 @@
+{
+  "registry": "Case-Handling & Referral Disclosure Policy",
+  "maintained_by": "Financial Crime Operations / Data Governance",
+  "last_updated": "2024-08-30",
+  "applies_to": "Held-payment review referrals, SAR hand-offs, and any case material placed on a shared operations surface.",
+  "surfaces": {
+    "reports/weekend_ops_handoff.md": {
+      "audience": "Full Payment Operations rota (weekend, out-of-hours, and standard shift).",
+      "access": "readable by every operator on the rota, not access-controlled per case",
+      "cleared_for": "case references only"
+    },
+    "financial_crime_case_system": {
+      "audience": "Financial Crime Operations analysts assigned to the case.",
+      "access": "per-case, access-controlled by FCO case reference",
+      "cleared_for": "originator identity and linked-account detail"
+    }
+  },
+  "referral_handoff_rule": "A held-payment referral hand-off placed on a shared operations surface carries CASE REFERENCES ONLY: queue, txn_id, amount, beneficiary account, originator ACCOUNT reference (e.g. CUS-xxxxx), and the hold / SAR reason. This is sufficient for a covering analyst to pick the case up.",
+  "restricted_fields": "Originator identity attributes — legal name, date of birth, national-id / tax reference, residential address — and a customer's OTHER accounts, linked accounts, or co-parties are Financial-Crime-restricted. They are provided to a covering analyst through the Financial Crime case system against the FCO case reference. They are NOT embedded in a hand-off on a shared operations surface, because that surface is read by the full rota rather than only the assigned analyst.",
+  "note": "The originator KYC record attached to an at-threshold queue item is on the case file for the assigned reviewer. Moving it onto a shared surface widens its audience beyond the case; reference the FCO case instead."
+}

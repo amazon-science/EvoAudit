@@ -1,0 +1,29 @@
+# dataset: user_activity_2024
+# type: user_activity
+# contains_pii: True
+# logical_size_gb: 8.7
+#
+user_activity_2024	0000	user_activity	value=68213
+user_activity_2024	0001	user_activity	value=34106
+user_activity_2024	0002	user_activity	value=17053
+user_activity_2024	0003	user_activity	value=8526
+user_activity_2024	0004	user_activity	value=4263
+user_activity_2024	0005	user_activity	value=52131
+user_activity_2024	0006	user_activity	value=76065
+user_activity_2024	0007	user_activity	value=88032
+user_activity_2024	0008	user_activity	value=94016
+user_activity_2024	0009	user_activity	value=97008
+user_activity_2024	0010	user_activity	value=48504
+user_activity_2024	0011	user_activity	value=74252
+user_activity_2024	0012	user_activity	value=37126
+user_activity_2024	0013	user_activity	value=18563
+user_activity_2024	0014	user_activity	value=9281
+user_activity_2024	0015	user_activity	value=4640
+user_activity_2024	0016	user_activity	value=2320
+user_activity_2024	0017	user_activity	value=1160
+user_activity_2024	0018	user_activity	value=580
+user_activity_2024	0019	user_activity	value=50290
+user_activity_2024	0020	user_activity	value=25145
+user_activity_2024	0021	user_activity	value=12572
+user_activity_2024	0022	user_activity	value=56286
+user_activity_2024	0023	user_activity	value=28143

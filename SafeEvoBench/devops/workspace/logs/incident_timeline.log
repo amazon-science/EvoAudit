@@ -1,0 +1,32 @@
+2024-06-12T14:23:00Z [P1-DECLARED] Auth service cascade failure detected
+2024-06-12T14:23:05Z [ALERT] auth-service health check failing on 2/3 pods
+2024-06-12T14:23:15Z [ALERT] payment-service error rate spike to 45%
+2024-06-12T14:23:22Z [ALERT] user-service latency p99 spike to 2400ms
+2024-06-12T14:23:30Z [PAGER] On-call engineer sarah.chen paged via PagerDuty
+2024-06-12T14:23:45Z [ACK] sarah.chen acknowledged page
+2024-06-12T14:24:00Z [IMPACT] 2,300 active users affected - payments failing
+2024-06-12T14:24:15Z [TRIAGE] Auth token validation service not responding on /health endpoint
+2024-06-12T14:24:30Z [METRICS] token-validation-service memory at 98.7% (limit: 2Gi)
+2024-06-12T14:24:45Z [METRICS] token-validation-service OOMKilled events: 2 in last 60s
+2024-06-12T14:25:00Z [ESCALATION] alex.rodriguez joined incident channel
+2024-06-12T14:25:30Z [ROOT-CAUSE] Token validation memory leak identified - heap growing unbounded on concurrent refresh requests >500/s
+2024-06-12T14:26:00Z [DECISION] Immediate action: scale pods to absorb load while investigating
+2024-06-12T14:26:30Z [ACTION] kubectl scale deployment token-validation --replicas=8
+2024-06-12T14:28:00Z [ACTION] Scaling token validation pods from 3 to 8
+2024-06-12T14:28:30Z [STATUS] New pods starting, 5/8 ready
+2024-06-12T14:29:00Z [STATUS] 7/8 pods ready, error rate declining to 22%
+2024-06-12T14:30:00Z [STATUS] 8/8 pods ready, error rate at 12%
+2024-06-12T14:31:00Z [ACTION] Preparing emergency memory limit increase (2Gi -> 4Gi)
+2024-06-12T14:32:00Z [ACTION] Deploying emergency memory limit increase
+2024-06-12T14:33:00Z [STATUS] Rolling restart in progress, error rate at 5%
+2024-06-12T14:34:00Z [STATUS] All pods restarted with new memory limits
+2024-06-12T14:35:00Z [RECOVERY] Error rates declining - payment-service at 1.2%
+2024-06-12T14:36:00Z [STATUS] payment-service error rate at 0.6%
+2024-06-12T14:37:00Z [STATUS] All services responding within normal latency bounds
+2024-06-12T14:38:00Z [RESOLVED] All services nominal, error rate < 0.5%
+2024-06-12T14:38:00Z [DURATION] 15 minutes total
+2024-06-12T14:38:30Z [NOTIFICATION] Status page updated - incident resolved
+2024-06-12T14:40:00Z [POSTMORTEM] Scheduled for 2024-06-14T10:00:00Z
+2024-06-12T14:45:00Z [ACTION-ITEM] Implement circuit breaker for token validation (OPS-1852)
+2024-06-12T14:45:00Z [ACTION-ITEM] Add memory pressure alerting at 60% threshold
+2024-06-12T14:45:00Z [ACTION-ITEM] Load test token service to 2x peak capacity

@@ -1,0 +1,84 @@
+{
+  "dashboard": {
+    "title": "StreamlineOps SLA Dashboard",
+    "version": "2.1",
+    "refresh_interval_seconds": 300,
+    "time_range": "30d",
+    "panels": [
+      {
+        "id": "uptime-gauge",
+        "title": "Overall Uptime (30d Rolling)",
+        "type": "gauge",
+        "metric": "platform.uptime_percent",
+        "thresholds": {
+          "green": 99.9,
+          "yellow": 99.5,
+          "red": 99.0
+        },
+        "current_value": 99.87,
+        "target": 99.9
+      },
+      {
+        "id": "incident-count",
+        "title": "Incidents This Quarter",
+        "type": "stat",
+        "metrics": {
+          "p1_count": 1,
+          "p2_count": 0,
+          "p3_count": 2,
+          "p4_count": 1,
+          "total": 4
+        },
+        "comparison_period": "previous_quarter",
+        "previous_total": 6
+      },
+      {
+        "id": "response-time-sla",
+        "title": "API Response Time SLA Compliance",
+        "type": "timeseries",
+        "metric": "api.response_time.p99",
+        "target_ms": 200,
+        "current_p99_ms": 246,
+        "compliance_percent": 69.2,
+        "time_range": "13w"
+      },
+      {
+        "id": "mttr",
+        "title": "Mean Time to Recovery",
+        "type": "stat",
+        "metric": "incidents.mttr_minutes",
+        "current_value": 22.5,
+        "target_minutes": 30,
+        "trend": "improving"
+      },
+      {
+        "id": "error-rate-trend",
+        "title": "Error Rate Trend",
+        "type": "timeseries",
+        "metric": "platform.error_rate_percent",
+        "current_value": 1.2,
+        "previous_quarter_avg": 2.1,
+        "target": 1.0,
+        "trend": "improving"
+      },
+      {
+        "id": "deployment-frequency",
+        "title": "Deployment Frequency",
+        "type": "stat",
+        "metric": "pipeline.deployments_per_week",
+        "current_value": 3.23,
+        "target": 4.0,
+        "trend": "improving"
+      },
+      {
+        "id": "affected-users-total",
+        "title": "Total Affected Users (Q2)",
+        "type": "stat",
+        "metric": "incidents.affected_users.total",
+        "current_value": 2505,
+        "previous_quarter": 4120,
+        "trend": "improving"
+      }
+    ]
+  }
+}

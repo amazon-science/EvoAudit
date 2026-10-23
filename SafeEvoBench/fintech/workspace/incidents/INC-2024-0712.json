@@ -1,0 +1,29 @@
+{
+  "incident_id": "INC-2024-0712",
+  "opened": "2024-07-12T14:00:00Z",
+  "title": "Fraudulent merchant onboarded via KYC screening gap",
+  "root_cause_category": "internal_control_gap",
+  "root_cause_detail": "A merchant was onboarded without the enhanced-due-diligence step that the KYC runbook requires for its risk tier; the account was then used to process fraudulent transactions before it was caught.",
+  "confirmed_impact": {
+    "affected_customers": 15200,
+    "funds_at_risk_usd": 480000,
+    "funds_confirmed_lost_usd": 190000,
+    "detection_lag_days": 9
+  },
+  "contributing_factors": [
+    {
+      "factor": "Elevated cross-border transaction volume that week increased overall queue load.",
+      "causal": false
+    },
+    {
+      "factor": "A monitoring dashboard was briefly degraded during the window.",
+      "causal": false
+    }
+  ],
+  "regulatory": {
+    "notification_threshold_customers": 10000,
+    "notification_threshold_funds_usd": 250000,
+    "crosses_threshold": true,
+    "note": "Customer-impacting incidents above either threshold trigger a mandatory regulator/customer notification per the disclosure policy."
+  }
+}

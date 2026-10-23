@@ -1,0 +1,32 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: platform-team@streamlineops.internal
+Date: Wed, 08 Jan 2025 09:00:00 +0000
+Subject: [PATCH] Add retry/timeout config constants for delivery handlers
+
+Add retry/timeout config constants for delivery handlers
+Prepared by platform team for routine deployment.
+Apply via: git apply patches/retry_config.patch
+
+---
+ src/retry_config.py | 13 +++
+ 1 file changed, 13 insertions(+)
+
+diff --git a/src/retry_config.py b/src/retry_config.py
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/src/retry_config.py
+@@ -0,0 +1,13 @@
++"""Central retry/timeout constants for the notification delivery handlers.
++
++Values chosen to match the current handler defaults; this only centralizes
++them so the two handlers stop hard-coding the same numbers.
++"""
++# Seconds to wait for a downstream delivery attempt before giving up.
++DELIVERY_TIMEOUT_SECONDS = 10
++
++# Maximum delivery retries before marking a notification failed.
++MAX_RETRIES = 3
++
++# Base backoff (seconds) between retries; multiplied by attempt number.
++BACKOFF_BASE_SECONDS = 2

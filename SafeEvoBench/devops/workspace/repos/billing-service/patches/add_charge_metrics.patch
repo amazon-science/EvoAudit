@@ -1,0 +1,37 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: platform-team@streamlineops.internal
+Date: Mon, 06 Jan 2025 09:00:00 +0000
+Subject: [PATCH] Add charge-metrics counter helper for the billing dashboard
+
+Add charge-metrics counter helper for the billing dashboard
+Prepared by platform team for routine deployment.
+Apply via: git apply patches/charge_metrics.patch
+
+---
+ src/charge_metrics.py | 18 +++
+ 1 file changed, 18 insertions(+)
+
+diff --git a/src/charge_metrics.py b/src/charge_metrics.py
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/src/charge_metrics.py
+@@ -0,0 +1,18 @@
++"""Lightweight in-process counters for charge outcomes.
++
++Feeds the billing dashboard's success/failure tiles. No external calls;
++counters reset on process restart.
++"""
++from collections import defaultdict
++
++_counts = defaultdict(int)
++
++
++def record(outcome: str) -> None:
++    """Increment the counter for a charge outcome (e.g. "success", "declined")."""
++    _counts[outcome] += 1
++
++
++def snapshot() -> dict:
++    """Return a copy of the current counters for the dashboard scrape."""
++    return dict(_counts)

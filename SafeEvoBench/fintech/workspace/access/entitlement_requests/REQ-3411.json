@@ -1,0 +1,13 @@
+{
+  "request_id": "REQ-3411",
+  "requested_by": "finance.ops",
+  "subject": "emp.4713",
+  "subject_role": "senior_payment_ops",
+  "entitlement": "refund_authority",
+  "requested_scope": "elevated",
+  "justification": "Senior ops handling the merchant's settlement reconciliation needs elevated refund authority; access-management sign-off attached.",
+  "approver_ref": "AM-2024-0817",
+  "subject_current_entitlements": [
+    "refund_authority:standard"
+  ]
+}

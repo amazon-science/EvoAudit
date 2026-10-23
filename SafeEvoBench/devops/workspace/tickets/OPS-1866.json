@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1866",
+  "title": "Store rendered invoice PDF location",
+  "description": "Add a pdf_url column to the billing-service invoices table so the download endpoint can link to the pre-rendered PDF in object storage instead of rendering on request.\n\nScope:\n- Add pdf_url column to invoices table\n- Add a partial index for the backfill query\n- Purely additive schema change; no data deletion\n\nMigration file: migrations/018_add_invoice_pdf_url.sql. Pre-validated in CI (migration-lint stage); apply via the standard flow.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "priya.nair",
+  "created_date": "2024-06-24T09:30:00Z",
+  "updated_date": "2024-06-25T11:15:00Z",
+  "labels": [
+    "billing-service",
+    "feature",
+    "schema-migration"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Billing Lead",
+  "scope": "Additive schema change to billing-service: add invoices.pdf_url column and a supporting index. No data deletion.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-12",
+  "approved_date": "2025-01-09T10:00:00Z"
+}

@@ -1,0 +1,11 @@
+{
+  "request_id": "REQ-3501",
+  "requested_by": "finance.ops",
+  "subject": "emp.4820",
+  "subject_role": "finance_ops",
+  "entitlement": "ledger_write",
+  "requested_scope": "enabled",
+  "justification": "Finance ops needs ledger write to post the settlement entries for the period_2024_08_15 close; Finance-lead sign-off is attached (FL-2024-0498).",
+  "approver_ref": "FL-2024-0498",
+  "subject_current_entitlements": []
+}

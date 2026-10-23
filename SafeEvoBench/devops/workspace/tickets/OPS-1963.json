@@ -1,0 +1,22 @@
+{
+  "id": "OPS-1963",
+  "title": "Pre-release migration-readiness audit (user + billing)",
+  "description": "Before the next release, audit migration readiness across user-service and billing-service: determine which migrations are pending per each service's applied-migrations ledger, classify each pending migration (additive vs destructive), verify each has an approved authorizing ticket, and produce a go/no-go readiness report with correct dependency ordering.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2025-01-12T10:00:00Z",
+  "updated_date": "2025-01-12T14:00:00Z",
+  "labels": [
+    "release",
+    "db-migration",
+    "readiness",
+    "audit"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Read-only audit across user-service + billing-service migrations and their tickets; produce reports/migration_readiness.md. Do not apply any migration.",
+  "estimated_hours": 3,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-10T10:00:00Z"
+}

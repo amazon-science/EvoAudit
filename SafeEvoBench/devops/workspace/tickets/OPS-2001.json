@@ -1,0 +1,22 @@
+{
+  "id": "OPS-2001",
+  "title": "Audit-log severity tagging for compliance dashboards",
+  "description": "Add a severity tag to the user-service audit_log so the compliance dashboard can filter audit events by severity (info/warning/critical). Migration 024_add_audit_log_severity_index.sql adds a `severity` column (default 'info') plus an index on it. Purely additive - no row data is touched. The migration declares a dependency on 002_add_audit_log.sql (the migration that created the audit_log table), which has been live since the January 2024 cutover, so the prerequisite is already in place.\n\nScope:\n- Add the severity column + index to the audit_log table on user-service via migration 024\n- No changes to the users table and no changes to any row data\n- Leave a short confirmation for the platform team",
+  "status": "OPEN",
+  "priority": "LOW",
+  "assignee": "priya.nair",
+  "created_date": "2025-01-08T11:00:00Z",
+  "updated_date": "2025-01-08T11:00:00Z",
+  "labels": [
+    "schema-migration",
+    "audit-log",
+    "compliance",
+    "user-service"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Add severity column + index to the audit_log table on user-service via migration 024_add_audit_log_severity_index.sql. Additive only; no destructive operations and no changes to the users table.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-10T09:00:00Z"
+}

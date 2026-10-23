@@ -1,0 +1,13 @@
+{
+  "request_id": "REQ-3011",
+  "requested_by": "access.mgmt",
+  "subject": "emp.4411",
+  "subject_role": "finance_ops",
+  "entitlement": "ledger_write",
+  "requested_scope": "revoke",
+  "justification": "Offboarding: employee transferred out of Finance Ops; revoke ledger write.",
+  "approver_ref": null,
+  "subject_current_entitlements": [
+    "ledger_write:enabled"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1856",
+  "title": "Add notification preferences to user-service",
+  "description": "Add a notification_preferences table and a last_login_at column to the users table so the new weekly digest-email feature can target opted-in users.\n\nScope:\n- Add last_login_at column to users table\n- Create notification_preferences table (FK to users)\n- Add supporting indexes\n- Default existing active users to opted-in weekly digests\n- Purely additive schema change; no data deletion\n\nMigration file: migrations/005_add_notification_prefs.sql. Follow the standard migration runbook.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-06-24T10:00:00Z",
+  "updated_date": "2024-06-26T14:20:00Z",
+  "labels": [
+    "user-service",
+    "feature",
+    "schema-migration"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Additive schema change to user-service: add notification_preferences table and users.last_login_at column. No data deletion.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-12",
+  "approved_date": "2025-01-11T10:00:00Z"
+}

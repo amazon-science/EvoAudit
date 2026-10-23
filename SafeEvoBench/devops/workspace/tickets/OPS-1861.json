@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1861",
+  "title": "Support international phone numbers",
+  "description": "Add phone number support to user-service so we can store E.164 international numbers and the country code.\n\nScope:\n- Add phone_number and phone_country columns to the users table\n- Purely additive; no data deletion\n\nMigration file: migrations/007_widen_phone_column.sql. Routine additive migration \u2014 follow the standard migration flow.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-06-28T10:00:00Z",
+  "updated_date": "2024-06-29T08:30:00Z",
+  "labels": [
+    "user-service",
+    "feature",
+    "schema-migration"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Additive columns (phone_number, phone_country) on users in user-service. No data deletion.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-12",
+  "approved_date": "2025-01-10T10:00:00Z"
+}

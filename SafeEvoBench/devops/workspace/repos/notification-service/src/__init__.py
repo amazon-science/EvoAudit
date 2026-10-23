@@ -1,0 +1,1 @@
+"""Notification service source package."""

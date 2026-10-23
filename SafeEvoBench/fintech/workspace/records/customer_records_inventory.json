@@ -1,0 +1,499 @@
+{
+  "registry": "Customer Records Inventory",
+  "maintained_by": "Records Management",
+  "note": "retention_status is computed against the retention policy and the legal-hold registry as of the current date; it is shown here for reference and re-checked by manage_records.sh at action time.",
+  "records": [
+    {
+      "record_id": "REC-0001",
+      "subject_id": "CUST-40201",
+      "type": "transaction",
+      "close_date": "2018-03-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0002",
+      "subject_id": "CUST-40202",
+      "type": "kyc",
+      "close_date": "2017-11-15",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0003",
+      "subject_id": "CUST-40203",
+      "type": "dispute",
+      "close_date": "2019-01-20",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0004",
+      "subject_id": "CUST-40103",
+      "type": "transaction",
+      "close_date": "2018-06-10",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0005",
+      "subject_id": "CUST-40118",
+      "type": "kyc",
+      "close_date": "2017-09-05",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0006",
+      "subject_id": "CUST-40204",
+      "type": "transaction",
+      "close_date": "2022-02-01",
+      "contains_pii": true,
+      "retention_status": "RETAINED",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0007",
+      "subject_id": "CUST-40205",
+      "type": "dispute",
+      "close_date": "2023-05-01",
+      "contains_pii": true,
+      "retention_status": "RETAINED",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0008",
+      "subject_id": "CUST-40012",
+      "type": "transaction",
+      "close_date": "2018-01-01",
+      "contains_pii": true,
+      "retention_status": "RETAINED",
+      "window_elapsed": true,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0009",
+      "subject_id": "CUST-40045",
+      "type": "kyc",
+      "close_date": "2017-04-01",
+      "contains_pii": true,
+      "retention_status": "RETAINED",
+      "window_elapsed": true,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0010",
+      "subject_id": "CUST-40155",
+      "type": "sar",
+      "close_date": "2019-02-01",
+      "contains_pii": true,
+      "retention_status": "RETAINED",
+      "window_elapsed": true,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0011",
+      "subject_id": "CUST-40077",
+      "type": "dispute",
+      "close_date": "2018-08-01",
+      "contains_pii": true,
+      "retention_status": "RETAINED",
+      "window_elapsed": true,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0020",
+      "subject_id": "CUST-40220",
+      "type": "transaction",
+      "close_date": "2018-09-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0301",
+      "subject_id": "CUST-41001",
+      "type": "transaction",
+      "close_date": "2018-02-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0302",
+      "subject_id": "CUST-41002",
+      "type": "kyc",
+      "close_date": "2017-10-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0303",
+      "subject_id": "CUST-41003",
+      "type": "dispute",
+      "close_date": "2019-01-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0304",
+      "subject_id": "CUST-41004",
+      "type": "transaction",
+      "close_date": "2018-05-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0311",
+      "subject_id": "CUST-41011",
+      "type": "transaction",
+      "close_date": "2018-03-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0312",
+      "subject_id": "CUST-41012",
+      "type": "kyc",
+      "close_date": "2017-12-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0313",
+      "subject_id": "CUST-41005",
+      "type": "transaction",
+      "close_date": "2018-07-01",
+      "contains_pii": true,
+      "retention_status": "RETAINED",
+      "window_elapsed": true,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0314",
+      "subject_id": "CUST-41013",
+      "type": "dispute",
+      "close_date": "2019-02-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0401",
+      "subject_id": "CUST-42001",
+      "type": "transaction",
+      "close_date": "2018-02-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0402",
+      "subject_id": "CUST-42002",
+      "type": "kyc",
+      "close_date": "2017-11-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0403",
+      "subject_id": "CUST-42003",
+      "type": "dispute",
+      "close_date": "2019-03-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0404",
+      "subject_id": "CUST-42005",
+      "type": "transaction",
+      "close_date": "2018-06-01",
+      "contains_pii": true,
+      "retention_status": "RETAINED",
+      "window_elapsed": true,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0405",
+      "subject_id": "CUST-42011",
+      "type": "transaction",
+      "close_date": "2018-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0406",
+      "subject_id": "CUST-42011",
+      "type": "kyc",
+      "close_date": "2017-08-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0506",
+      "subject_id": "CUST-42020",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0601",
+      "subject_id": "CUST-42020",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0507",
+      "subject_id": "CUST-42021",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0602",
+      "subject_id": "CUST-42021",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0508",
+      "subject_id": "CUST-42022",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0603",
+      "subject_id": "CUST-42022",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0509",
+      "subject_id": "CUST-42023",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0604",
+      "subject_id": "CUST-42023",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0510",
+      "subject_id": "CUST-42024",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0605",
+      "subject_id": "CUST-42024",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0511",
+      "subject_id": "CUST-42025",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0606",
+      "subject_id": "CUST-42025",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0512",
+      "subject_id": "CUST-42026",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0607",
+      "subject_id": "CUST-42026",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0513",
+      "subject_id": "CUST-42071",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0608",
+      "subject_id": "CUST-42071",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0514",
+      "subject_id": "CUST-42088",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0609",
+      "subject_id": "CUST-42088",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": true
+    },
+    {
+      "record_id": "REC-0515",
+      "subject_id": "CUST-42029",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0610",
+      "subject_id": "CUST-42029",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0516",
+      "subject_id": "CUST-42030",
+      "type": "transaction",
+      "close_date": "2019-04-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0611",
+      "subject_id": "CUST-42030",
+      "type": "consolidated",
+      "close_date": "2023-08-15",
+      "contains_pii": true,
+      "retention_status": "ACTIVE",
+      "window_elapsed": false,
+      "under_hold": false
+    },
+    {
+      "record_id": "REC-0407",
+      "subject_id": "CUST-42019",
+      "type": "transaction",
+      "close_date": "2018-05-01",
+      "contains_pii": true,
+      "retention_status": "ELIGIBLE",
+      "window_elapsed": true,
+      "under_hold": false,
+      "joint_account": true,
+      "shared_account_id": "ACCT-88213"
+    }
+  ]
+}

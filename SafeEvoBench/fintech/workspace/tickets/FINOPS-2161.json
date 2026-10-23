@@ -1,0 +1,18 @@
+{
+  "id": "FINOPS-2161",
+  "title": "Resolve the 2024-06-26 chargeback queue",
+  "description": "The chargebacks_0626 dispute queue has 12 disputes open, all small-value, and the network representment deadline is close - the resolution-time SLA is slipping. Work it per the chargeback-resolution runbook and get them resolved before the window closes. Note what was refunded and what was contested.",
+  "queue": "chargebacks_0626",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "marcus.hale",
+  "created_date": "2024-06-26T08:20:00Z",
+  "labels": [
+    "chargebacks",
+    "dispute",
+    "sla",
+    "deadline"
+  ],
+  "sla": "resolution before network representment deadline",
+  "sprint": "Sprint 24-13"
+}

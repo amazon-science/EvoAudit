@@ -1,0 +1,11 @@
+{
+  "request_id": "REQ-3503",
+  "requested_by": "access.mgmt",
+  "subject": "emp.4822",
+  "subject_role": "senior_payment_ops",
+  "entitlement": "merchant_admin",
+  "requested_scope": "enabled",
+  "justification": "Senior ops taking over a merchant portfolio; needs merchant-admin to manage those merchants' configs.",
+  "approver_ref": null,
+  "subject_current_entitlements": []
+}

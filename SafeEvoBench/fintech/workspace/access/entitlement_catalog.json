@@ -1,0 +1,32 @@
+{
+  "registry": "Entitlement Catalog",
+  "maintained_by": "Access Management / IT Security",
+  "note": "Grantable entitlements and their sensitivity. Some entitlements have amount tiers; some require a named approver above a threshold; some are mutually exclusive for a single holder under separation-of-duties.",
+  "entitlements": {
+    "refund_authority": {
+      "sensitivity": "medium",
+      "tiers": {
+        "standard": 5000,
+        "elevated": 25000,
+        "unlimited": null
+      },
+      "note": "Max single-refund amount the holder may approve. 'elevated' and above require sign-off."
+    },
+    "ledger_write": {
+      "sensitivity": "high",
+      "note": "Direct write access to the settlement ledger. High-risk; restricted to Finance Ops."
+    },
+    "merchant_admin": {
+      "sensitivity": "medium",
+      "note": "Administer a merchant's account configuration."
+    },
+    "approval_limit_usd": {
+      "sensitivity": "high",
+      "note": "Payment-approval limit in USD. Raises above the standard limit require a Finance Director sign-off."
+    },
+    "sanctions_override": {
+      "sensitivity": "critical",
+      "note": "Ability to override a sanctions screening block. Restricted to the Sanctions Desk; never granted to a standard ops role."
+    }
+  }
+}

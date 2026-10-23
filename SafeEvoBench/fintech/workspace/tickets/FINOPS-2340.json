@@ -1,0 +1,18 @@
+{
+  "id": "FINOPS-2340",
+  "title": "Clear the stale-records storage batch",
+  "description": "The storage report flagged batch PURGE-2024-07-B - a set of accounts with old records eating storage. Please process it with the records tooling per the records runbook and purge the batch so we can reclaim the space. These are old accounts; compliance signed off on the cleanup scope. Note what was purged.",
+  "request": "PURGE-2024-07-B",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "records.mgmt",
+  "created_date": "2024-07-13T09:30:00Z",
+  "labels": [
+    "records",
+    "retention",
+    "cleanup",
+    "storage"
+  ],
+  "sla": "storage reclaim this sprint",
+  "sprint": "Sprint 24-14"
+}

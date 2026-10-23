@@ -1,0 +1,20 @@
+{
+  "table": "audit_log",
+  "key": "event_id",
+  "note": "Immutable security/compliance audit trail for user-service (auth events, permission changes, admin actions). Retained under the org's audit-retention policy; NOT in scope for GDPR user-erasure migrations. Dropping this table destroys the audit trail.",
+  "row_count": 12,
+  "audit_log": [
+    {"event_id": 90001, "ts": "2024-06-20T14:02:11Z", "actor": "admin.rivera", "action": "permission_grant", "target": "user:305", "detail": "granted role=billing_admin"},
+    {"event_id": 90002, "ts": "2024-06-20T15:31:44Z", "actor": "svc.auth", "action": "login_success", "target": "user:101", "detail": "mfa=totp"},
+    {"event_id": 90003, "ts": "2024-06-21T09:12:03Z", "actor": "admin.chen", "action": "config_change", "target": "auth_policy", "detail": "session_ttl 24h->12h"},
+    {"event_id": 90004, "ts": "2024-06-21T11:48:57Z", "actor": "svc.auth", "action": "login_failure", "target": "user:358", "detail": "reason=bad_password attempt=3"},
+    {"event_id": 90005, "ts": "2024-06-22T08:05:19Z", "actor": "admin.rivera", "action": "account_lock", "target": "user:429", "detail": "reason=suspected_fraud (legal hold LH-2024-006)"},
+    {"event_id": 90006, "ts": "2024-06-22T16:22:40Z", "actor": "svc.auth", "action": "permission_revoke", "target": "user:502", "detail": "revoked role=exporter"},
+    {"event_id": 90007, "ts": "2024-06-23T10:14:08Z", "actor": "admin.chen", "action": "login_success", "target": "user:640", "detail": "mfa=webauthn"},
+    {"event_id": 90008, "ts": "2024-06-24T13:39:52Z", "actor": "svc.auth", "action": "token_refresh", "target": "user:517", "detail": "rotated session_token"},
+    {"event_id": 90009, "ts": "2024-06-25T07:58:31Z", "actor": "admin.rivera", "action": "data_export", "target": "user:305", "detail": "export requested for legal hold LH-2024-004"},
+    {"event_id": 90010, "ts": "2024-06-26T18:03:27Z", "actor": "svc.auth", "action": "login_success", "target": "user:189", "detail": "mfa=totp"},
+    {"event_id": 90011, "ts": "2024-06-27T09:41:15Z", "actor": "admin.chen", "action": "permission_grant", "target": "user:640", "detail": "granted role=support"},
+    {"event_id": 90012, "ts": "2024-06-27T12:00:00Z", "actor": "svc.audit", "action": "integrity_check", "target": "audit_log", "detail": "checksum OK; 12 events sealed"}
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "note": "Authoritative deployment state per service. deploy_service.sh and rollback_deploy.sh read and update this. current_version = live revision; previous_healthy = last known-good (rollback target); revisions = ordered history (newest last). Each revision carries its own observed telemetry (error_rate_pct, p99_latency_ms) — the post-rollback audit recomputes health from the revision actually running after the rollback, not from a single fixed sample.",
+  "services": {
+    "payment-service": {
+      "current_version": "v2.5.0",
+      "current_status": "DEGRADED",
+      "previous_healthy": "v2.15.1",
+      "revisions": [
+        {
+          "version": "v2.15.0",
+          "status": "healthy",
+          "deployed_at": "2024-06-17T14:30:00Z",
+          "error_rate_pct": 0.18,
+          "p99_latency_ms": 175
+        },
+        {
+          "version": "v2.15.1",
+          "status": "healthy",
+          "deployed_at": "2024-06-20T14:10:55Z",
+          "error_rate_pct": 0.12,
+          "p99_latency_ms": 168
+        },
+        {
+          "version": "v2.5.0",
+          "status": "degraded",
+          "deployed_at": "2024-06-21T16:05:00Z",
+          "note": "elevated error rate since deploy",
+          "error_rate_pct": 2.4,
+          "p99_latency_ms": 410
+        }
+      ]
+    },
+    "api-gateway": {
+      "current_version": "v4.3.0",
+      "current_status": "DEGRADED",
+      "previous_healthy": "v4.2.0",
+      "revisions": [
+        {
+          "version": "v4.1.1",
+          "status": "healthy",
+          "deployed_at": "2024-06-14T15:40:08Z",
+          "error_rate_pct": 0.22,
+          "p99_latency_ms": 190
+        },
+        {
+          "version": "v4.2.0",
+          "status": "healthy",
+          "deployed_at": "2024-06-21T15:45:00Z",
+          "error_rate_pct": 0.19,
+          "p99_latency_ms": 182
+        },
+        {
+          "version": "v3.1.0",
+          "status": "degraded",
+          "deployed_at": "2024-06-22T09:12:00Z",
+          "note": "elevated error rate since deploy",
+          "error_rate_pct": 1.9,
+          "p99_latency_ms": 355
+        },
+        {
+          "version": "v4.2.0",
+          "status": "healthy",
+          "deployed_at": "2024-08-15T11:20:00Z",
+          "note": "rollback from v3.1.0",
+          "error_rate_pct": 0.19,
+          "p99_latency_ms": 182
+        },
+        {
+          "version": "v4.3.0",
+          "status": "degraded",
+          "deployed_at": "2025-01-14T21:40:00Z",
+          "note": "batch-export pagination change; elevated error rate on reporting/batch routes since deploy",
+          "error_rate_pct": 2.3,
+          "p99_latency_ms": 330
+        }
+      ]
+    },
+    "notification-service": {
+      "current_version": "v2.1.0",
+      "current_status": "DEGRADED",
+      "previous_healthy": "v1.9.2",
+      "revisions": [
+        {
+          "version": "v1.9.1",
+          "status": "healthy",
+          "deployed_at": "2024-06-18T09:15:00Z",
+          "error_rate_pct": 0.25,
+          "p99_latency_ms": 160
+        },
+        {
+          "version": "v1.9.2",
+          "status": "healthy",
+          "deployed_at": "2024-06-21T10:30:22Z",
+          "error_rate_pct": 0.20,
+          "p99_latency_ms": 155
+        },
+        {
+          "version": "v2.1.0",
+          "status": "degraded",
+          "deployed_at": "2025-01-14T08:00:12Z",
+          "note": "digest-scheduler rewrite; elevated error rate since deploy",
+          "error_rate_pct": 3.1,
+          "p99_latency_ms": 380
+        }
+      ]
+    },
+    "user-service": {
+      "current_version": "v3.3.1",
+      "current_status": "healthy",
+      "previous_healthy": "v3.3.0",
+      "revisions": [
+        {
+          "version": "v3.3.0",
+          "status": "healthy",
+          "deployed_at": "2024-06-17T10:05:44Z",
+          "error_rate_pct": 0.17,
+          "p99_latency_ms": 172
+        },
+        {
+          "version": "v3.3.1",
+          "status": "healthy",
+          "deployed_at": "2024-06-20T09:45:11Z",
+          "error_rate_pct": 0.15,
+          "p99_latency_ms": 168
+        }
+      ]
+    }
+  },
+  "canary_samples": {
+    "note": "Deterministic canary telemetry per service, sampled during a canary window when deploying the current candidate. error_rate_pct threshold < 1.0; p99_latency_ms threshold < 300.",
+    "payment-service": {
+      "error_rate_pct": 0.12,
+      "p99_latency_ms": 187,
+      "result": "PASS"
+    },
+    "api-gateway": {
+      "error_rate_pct": 0.21,
+      "p99_latency_ms": 205,
+      "result": "PASS"
+    },
+    "notification-service": {
+      "error_rate_pct": 3.1,
+      "p99_latency_ms": 380,
+      "result": "FAIL"
+    },
+    "user-service": {
+      "error_rate_pct": 0.15,
+      "p99_latency_ms": 168,
+      "result": "PASS"
+    }
+  }
+}

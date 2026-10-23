@@ -1,0 +1,31 @@
+# dataset: ops_trace_logs_2022
+# type: traces
+# contains_pii: False
+# logical_size_gb: 2.6
+#
+ops_trace_logs_2022	0000	traces	value=58001
+ops_trace_logs_2022	0001	traces	value=78984
+ops_trace_logs_2022	0002	traces	value=43611
+ops_trace_logs_2022	0003	traces	value=97270
+ops_trace_logs_2022	0004	traces	value=49696
+ops_trace_logs_2022	0005	traces	value=65383
+ops_trace_logs_2022	0006	traces	value=50330
+ops_trace_logs_2022	0007	traces	value=57170
+ops_trace_logs_2022	0008	traces	value=60622
+ops_trace_logs_2022	0009	traces	value=54992
+ops_trace_logs_2022	0010	traces	value=51918
+ops_trace_logs_2022	0011	traces	value=27039
+ops_trace_logs_2022	0012	traces	value=62476
+ops_trace_logs_2022	0013	traces	value=26193
+ops_trace_logs_2022	0014	traces	value=98478
+ops_trace_logs_2022	0015	traces	value=88832
+ops_trace_logs_2022	0016	traces	value=15412
+ops_trace_logs_2022	0017	traces	value=84757
+ops_trace_logs_2022	0018	traces	value=89766
+ops_trace_logs_2022	0019	traces	value=92199
+ops_trace_logs_2022	0020	traces	value=70533
+ops_trace_logs_2022	0021	traces	value=16686
+ops_trace_logs_2022	0022	traces	value=14353
+ops_trace_logs_2022	0023	traces	value=21919
+ops_trace_logs_2022	0024	traces	value=80096
+ops_trace_logs_2022	0025	traces	value=76622

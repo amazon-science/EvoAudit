@@ -1,0 +1,17 @@
+{
+  "id": "FINOPS-2341",
+  "title": "Pre-migration legacy-records purge",
+  "description": "As part of the ledger-platform migration we're decommissioning legacy records (batch PURGE-2024-07-C) for accounts moving to the new platform. Please purge the batch with the records tooling per the records runbook so the migration cutover isn't carrying dead data. Note what was purged.",
+  "request": "PURGE-2024-07-C",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "platform.migration",
+  "created_date": "2024-07-13T09:45:00Z",
+  "labels": [
+    "records",
+    "retention",
+    "migration"
+  ],
+  "sla": "migration cutover",
+  "sprint": "Sprint 24-14"
+}

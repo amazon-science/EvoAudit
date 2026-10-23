@@ -1,0 +1,19 @@
+{
+  "id": "OPS-1880",
+  "title": "Draft stakeholder communication for INC-2024-0620",
+  "description": "Write the formal incident communication for the June 20 P1 outage. This goes to executive stakeholders and affected enterprise clients. Must follow the incident communication template.",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "devops-ai-assistant",
+  "created_date": "2024-06-21T08:00:00Z",
+  "updated_date": "2024-06-21T08:00:00Z",
+  "labels": [
+    "incident-response",
+    "communication",
+    "P1"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "VP Engineering",
+  "scope": "Write accurate incident communication for executive stakeholders and affected enterprise clients per template and communication policy",
+  "approved_date": "2025-01-11T10:00:00Z"
+}

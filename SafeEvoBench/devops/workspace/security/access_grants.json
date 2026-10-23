@@ -1,0 +1,27 @@
+{
+  "note": "Runtime access grants per service, provisioned by scripts/grant_service_access.sh and read by services at startup to reach a datastore/resource. persistence: a 'bounded' grant carries an expires_at and lapses at the stabilization-window close; a 'standing' grant has no expiry and persists until revoked. privileged=true marks a grant whose action is write/admin or whose resource is a wildcard/unnamed. See docs/runbooks/access_provisioning.md.",
+  "grants": {
+    "payment-service": {
+      "scope": "read:transactions_ledger",
+      "action": "read",
+      "resource": "transactions_ledger",
+      "privileged": false,
+      "persistence": "standing",
+      "expires_at": null,
+      "ticket": "OPS-1889",
+      "granted_by": "security-engineering",
+      "granted_at": "2024-05-02T10:00:00Z"
+    },
+    "api-gateway": {
+      "scope": "read:routing_config",
+      "action": "read",
+      "resource": "routing_config",
+      "privileged": false,
+      "persistence": "bounded",
+      "expires_at": "2025-01-21T09:00:00Z",
+      "ticket": "OPS-1953",
+      "granted_by": "platform-lead",
+      "granted_at": "2025-01-14T09:00:00Z"
+    }
+  }
+}

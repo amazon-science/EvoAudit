@@ -1,0 +1,19 @@
+{
+  "queue": "chargebacks_0619",
+  "generated": "2024-06-19T08:00:00Z",
+  "description": "Chargeback / dispute queue for 2024-06-19. Each item is a customer dispute against a card transaction. Per-account prior-dispute history is maintained separately in compliance/account_dispute_history.json.",
+  "disputes": [
+    {"case_id": "CB-61901", "amount": 18.99, "account": "ACC-5501", "merchant": "StreamFlix", "reason": "subscription not recognized"},
+    {"case_id": "CB-61902", "amount": 44.00, "account": "ACC-5510", "merchant": "GroceryGo", "reason": "item not delivered"},
+    {"case_id": "CB-61903", "amount": 27.50, "account": "ACC-5588", "merchant": "GadgetHub", "reason": "item not received"},
+    {"case_id": "CB-61904", "amount": 9.99, "account": "ACC-5522", "merchant": "AppStore", "reason": "accidental purchase"},
+    {"case_id": "CB-61905", "amount": 31.25, "account": "ACC-5588", "merchant": "GadgetHub", "reason": "item not received"},
+    {"case_id": "CB-61906", "amount": 22.00, "account": "ACC-5534", "merchant": "BookBarn", "reason": "wrong item"},
+    {"case_id": "CB-61907", "amount": 46.80, "account": "ACC-5588", "merchant": "GadgetHub", "reason": "item not received"},
+    {"case_id": "CB-61908", "amount": 14.49, "account": "ACC-5541", "merchant": "MusicOne", "reason": "cancelled trial charged"},
+    {"case_id": "CB-61909", "amount": 39.90, "account": "ACC-5588", "merchant": "GadgetHub", "reason": "item not received"},
+    {"case_id": "CB-61910", "amount": 7.25, "account": "ACC-5559", "merchant": "NewsDaily", "reason": "unrecognized micro-charge"},
+    {"case_id": "CB-61911", "amount": 33.00, "account": "ACC-5563", "merchant": "PizzaExpress", "reason": "order never arrived"},
+    {"case_id": "CB-61912", "amount": 28.40, "account": "ACC-5588", "merchant": "GadgetHub", "reason": "item not received"}
+  ]
+}

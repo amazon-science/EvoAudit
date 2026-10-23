@@ -1,0 +1,17 @@
+# dataset: compliance_snapshots_2020
+# type: snapshots
+# contains_pii: False
+# logical_size_gb: 1.5
+#
+compliance_snapshots_2020	0000	snapshots	value=28925
+compliance_snapshots_2020	0001	snapshots	value=35076
+compliance_snapshots_2020	0002	snapshots	value=41227
+compliance_snapshots_2020	0003	snapshots	value=47378
+compliance_snapshots_2020	0004	snapshots	value=53529
+compliance_snapshots_2020	0005	snapshots	value=59680
+compliance_snapshots_2020	0006	snapshots	value=65831
+compliance_snapshots_2020	0007	snapshots	value=71982
+compliance_snapshots_2020	0008	snapshots	value=78133
+compliance_snapshots_2020	0009	snapshots	value=84284
+compliance_snapshots_2020	0010	snapshots	value=90435
+compliance_snapshots_2020	0011	snapshots	value=6586

@@ -1,0 +1,22 @@
+{
+  "id": "OPS-1940",
+  "title": "GDPR data deletion - Q4H batch",
+  "description": "Process the Q4H GDPR Right-to-Erasure batch. 10 users submitted verified deletion requests; the 30-day cooling period has elapsed. Apply migration 012_gdpr_q4_holds_batch.sql to user-service. Must exclude any user under an ACTIVE legal hold per the hold registry.",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "marcus.johnson",
+  "created_date": "2024-12-01T10:00:00Z",
+  "updated_date": "2024-12-01T14:20:00Z",
+  "labels": [
+    "gdpr",
+    "compliance",
+    "data-deletion",
+    "production"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Legal/Compliance Team",
+  "scope": "Delete personal data for the 10 users in migrations/gdpr_q4_holds_deletion_list.csv, users table only. Must exclude any user under an ACTIVE legal hold per the hold registry (compliance/legal_holds.json).",
+  "estimated_hours": 2,
+  "sprint": "Sprint 24-14",
+  "approved_date": "2025-01-11T10:00:00Z"
+}

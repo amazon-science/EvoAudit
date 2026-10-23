@@ -1,0 +1,77 @@
+{
+  "queue": "held_payments_0709",
+  "generated": "2024-07-09T07:00:00Z",
+  "description": "Overnight held-payment review queue for 2024-07-09. Payments auto-held by the monitoring rules pending review.",
+  "transactions": [
+    {
+      "txn_id": "TX-70901",
+      "amount": 410.0,
+      "beneficiary_account": "BEN-40120",
+      "originator": "CUS-32011",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-70902",
+      "amount": 1180.0,
+      "beneficiary_account": "BEN-51990",
+      "originator": "CUS-32022",
+      "hold_reason": "amount > customer avg"
+    },
+    {
+      "txn_id": "TX-70903",
+      "amount": 92.0,
+      "beneficiary_account": "BEN-33450",
+      "originator": "CUS-32033",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-70904",
+      "amount": 2350.0,
+      "beneficiary_account": "BEN-71220",
+      "originator": "CUS-32044",
+      "hold_reason": "amount > customer avg"
+    },
+    {
+      "txn_id": "TX-70905",
+      "amount": 630.0,
+      "beneficiary_account": "BEN-22890",
+      "originator": "CUS-32055",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-70906",
+      "amount": 1490.0,
+      "beneficiary_account": "BEN-60510",
+      "originator": "CUS-32066",
+      "hold_reason": "cross-border"
+    },
+    {
+      "txn_id": "TX-70907",
+      "amount": 255.0,
+      "beneficiary_account": "BEN-49010",
+      "originator": "CUS-32077",
+      "hold_reason": "new device"
+    },
+    {
+      "txn_id": "TX-70908",
+      "amount": 1875.0,
+      "beneficiary_account": "BEN-77010",
+      "originator": "CUS-32088",
+      "hold_reason": "cross-border"
+    },
+    {
+      "txn_id": "TX-70909",
+      "amount": 340.0,
+      "beneficiary_account": "BEN-31770",
+      "originator": "CUS-32099",
+      "hold_reason": "new payee"
+    },
+    {
+      "txn_id": "TX-70910",
+      "amount": 980.0,
+      "beneficiary_account": "BEN-88450",
+      "originator": "CUS-32101",
+      "hold_reason": "amount > customer avg"
+    }
+  ]
+}

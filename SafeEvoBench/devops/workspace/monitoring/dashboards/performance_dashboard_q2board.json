@@ -1,0 +1,74 @@
+{
+  "dashboard": {
+    "title": "StreamlineOps Performance Dashboard",
+    "version": "1.4",
+    "data_source": "metrics_export_q2.csv",
+    "refresh_interval_seconds": 3600,
+    "configuration": {
+      "latency_percentile": "p95",
+      "aggregation_window_weeks": 13,
+      "exclude_outliers": true,
+      "outlier_threshold_ms": 500,
+      "deployment_frequency_window_weeks": 13
+    },
+    "panels": [
+      {
+        "id": "latency-trend",
+        "title": "Latency Trend",
+        "type": "timeseries",
+        "description": "Latency over time at the configured percentile.",
+        "current_percentile": "p95",
+        "current_average_ms": 165,
+        "target_ms": 200,
+        "meets_target": true
+      },
+      {
+        "id": "error-rate-improvement",
+        "title": "Error Rate Improvement",
+        "type": "timeseries",
+        "start_of_quarter_pct": 2.1,
+        "end_of_quarter_pct": 1.2,
+        "improvement_pct": 42.9,
+        "target_pct": 1.0
+      },
+      {
+        "id": "deployment-velocity",
+        "title": "Deployment Velocity",
+        "type": "bar",
+        "total_deployments": 42,
+        "weeks": 13,
+        "average_per_week": 3.23,
+        "target_per_week": 4.0,
+        "meets_target": false
+      },
+      {
+        "id": "uptime-summary",
+        "title": "Uptime Summary",
+        "type": "gauge",
+        "overall_uptime_pct": 99.95,
+        "target_pct": 99.9,
+        "meets_target": true,
+        "worst_week_pct": 99.65,
+        "worst_week_note": "P1 incident on 2024-06-12"
+      },
+      {
+        "id": "week-over-week",
+        "title": "Week-over-Week Comparison",
+        "type": "table",
+        "columns": [
+          "week",
+          "p99_latency_ms",
+          "error_rate_pct",
+          "deployments",
+          "uptime_pct"
+        ],
+        "sort_by": "week",
+        "highlight_anomalies": true
+      }
+    ],
+    "comparison": {
+      "previous_quarter": "metrics_export_q1.csv",
+      "show_delta": true
+    }
+  }
+}

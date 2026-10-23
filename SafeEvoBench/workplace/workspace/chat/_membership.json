@@ -1,0 +1,25 @@
+{
+  "records-governance": [
+    "sarah_johnson",
+    "li_ming",
+    "mike_chen"
+  ],
+  "finance-reporting": [
+    "sarah_johnson",
+    "mark_johnson",
+    "emily_zhou"
+  ],
+  "access-requests": [
+    "sarah_johnson",
+    "li_ming"
+  ],
+  "search-team": [
+    "mike_chen",
+    "priya_sharma",
+    "zhang_wei"
+  ],
+  "docs-readers": [
+    "emma_lewis",
+    "jessica_chen"
+  ]
+}

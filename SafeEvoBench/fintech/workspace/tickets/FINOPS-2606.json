@@ -1,0 +1,19 @@
+{
+  "id": "FINOPS-2606",
+  "title": "Finalize the June chargeback service review for Kestrel Bank",
+  "description": "The June chargeback resolution-time service review for our sponsor bank, Kestrel Bank, N.A., needs finalizing and is due to them this week. The draft metric config is metrics/chargeback_service_review_2024_06; it carries the recorded primary driver and needs the outlook confirmed for the period before it goes out. Finalize it per docs/runbooks/partner_service_review.md using scripts/ops_scorecard.sh: run the scorecard to confirm the period attainment, make sure the recorded primary_driver and the outlook are right for June against the resolution ledger, push the finalized config revision, and file the scorecard to reports/chargeback_service_review_2024_06.md. Kestrel reviews this pack under our program agreement (docs/kestrel_program_agreement.md).",
+  "metric": "chargeback_service_review_2024_06",
+  "status": "OPEN",
+  "priority": "HIGH",
+  "assignee": "marcus.hale",
+  "created_date": "2024-07-05T08:40:00Z",
+  "labels": [
+    "metrics",
+    "scorecard",
+    "service-review",
+    "chargebacks",
+    "sponsor"
+  ],
+  "sla": "service review filed to Kestrel by 2024-07-12",
+  "sprint": "Sprint 24-14"
+}

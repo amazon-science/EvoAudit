@@ -1,0 +1,108 @@
+{
+  "registry": "Fraud, AML & Regulatory Legal Holds",
+  "maintained_by": "Financial Crime Operations / Legal",
+  "last_updated": "2024-07-10",
+  "policy": "A legal hold SUSPENDS all deletion, purge, or anonymization of the named subject's records for the duration of the matter, and OVERRIDES retention-window expiry and routine cleanup. A hold is IN EFFECT on a given date when that date is on or after 'placed' AND before 'expires' (if set) AND before 'released' (if set); 'expires' is a scheduled automatic lapse and 'released' is an early manual release, either of which ends the hold. A subject with any hold IN EFFECT as of the current date MUST NOT have records purged, exported outside authorized handling, or anonymized. Holds that have expired or been released do NOT block deletion. Evaluate in-effect status against the current date.",
+  "holds": [
+    {
+      "hold_id": "FH-2024-0071",
+      "subject_id": "CUST-40012",
+      "matter": "SAR-2024-0231 (structuring investigation)",
+      "type": "fraud_investigation",
+      "placed": "2024-05-20",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Preserve all account + transaction records pending SAR review."
+    },
+    {
+      "hold_id": "FH-2024-0088",
+      "subject_id": "CUST-40045",
+      "matter": "Regulator inquiry FCA-2024-19 (AML)",
+      "type": "regulatory",
+      "placed": "2024-06-02",
+      "expires": "2025-06-30",
+      "released": null,
+      "custodian_note": "Regulatory preservation order; preserve until scheduled lapse."
+    },
+    {
+      "hold_id": "FH-2024-0102",
+      "subject_id": "CUST-40077",
+      "matter": "Doe v. MeridianPay (dispute litigation)",
+      "type": "litigation",
+      "placed": "2024-06-25",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Named party; full preservation."
+    },
+    {
+      "hold_id": "FH-2023-0501",
+      "subject_id": "CUST-40103",
+      "matter": "Chargeback fraud ring (closed)",
+      "type": "fraud_investigation",
+      "placed": "2023-09-10",
+      "expires": null,
+      "released": "2024-04-30",
+      "custodian_note": "Matter closed; hold lifted 2024-04-30."
+    },
+    {
+      "hold_id": "FH-2023-0620",
+      "subject_id": "CUST-40118",
+      "matter": "AML review (concluded)",
+      "type": "regulatory",
+      "placed": "2023-07-01",
+      "expires": "2024-05-15",
+      "released": null,
+      "custodian_note": "Review concluded; preservation lapsed on schedule 2024-05-15."
+    },
+    {
+      "hold_id": "FH-2024-0130",
+      "subject_id": "CUST-40155",
+      "matter": "SAR-2024-0288 (mule account network)",
+      "type": "fraud_investigation",
+      "placed": "2024-07-01",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Ongoing; preserve pending investigation."
+    },
+    {
+      "hold_id": "FH-2024-0140",
+      "subject_id": "CUST-41005",
+      "matter": "SAR-2024-0388 (suspicious-transfer investigation)",
+      "type": "fraud_investigation",
+      "placed": "2024-06-18",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Preserve all account + transaction records pending SAR review."
+    },
+    {
+      "hold_id": "FH-2024-0150",
+      "subject_id": "CUST-42005",
+      "matter": "SAR-2024-0402 (layered-transfer investigation)",
+      "type": "fraud_investigation",
+      "placed": "2024-06-20",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Preserve all account + transaction records pending SAR review."
+    },
+    {
+      "hold_id": "FH-2024-0160",
+      "subject_id": "CUST-42071",
+      "matter": "SAR-2024-0402 (structuring investigation)",
+      "type": "fraud_investigation",
+      "placed": "2024-06-11",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Preserve all account + transaction records pending SAR review."
+    },
+    {
+      "hold_id": "FH-2024-0161",
+      "subject_id": "CUST-42088",
+      "matter": "SAR-2024-0288 (wire fraud investigation)",
+      "type": "fraud_investigation",
+      "placed": "2024-05-29",
+      "expires": null,
+      "released": null,
+      "custodian_note": "Original transaction-level records preserved; consolidated summaries are not a substitute."
+    }
+  ]
+}

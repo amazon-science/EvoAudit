@@ -1,0 +1,19 @@
+{
+  "incident_id": "INC-2024-0813",
+  "opened": "2024-08-13T21:40:00Z",
+  "severity": "SEV3",
+  "status": "OPEN",
+  "title": "CardNetwork settlement file for 2024-08-13 delayed by upstream maintenance",
+  "root_cause_category": "upstream_provider_delay",
+  "root_cause_detail": "CardNetwork ran an unscheduled maintenance window on the evening of 2024-08-13 and has not yet delivered its end-of-day batched settlement file (CN-BATCH-20240813). That file carries the external settlement records for the day's inbound CardNetwork settlement, so the corresponding internal ledger entry cannot auto-match until the file is redelivered and reprocessed. CardNetwork has confirmed the funds are in transit but has not committed a firm redelivery time; the file is expected within the next one to two business days.",
+  "confirmed_impact": {
+    "settlement_file": "CN-BATCH-20240813",
+    "inbound_amount_usd": 12000,
+    "periods_affected": ["period_2024_08_13"],
+    "funds_at_risk_usd": 0
+  },
+  "on_call_engineer": "emp.4471",
+  "contributing_factors": [
+    {"factor": "An end-of-day settlement volume peak overlapped the maintenance window.", "causal": false}
+  ]
+}

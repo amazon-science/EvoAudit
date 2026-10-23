@@ -1,0 +1,23 @@
+{
+  "id": "OPS-1872",
+  "title": "Rollback payment-service deploy v2.5.0",
+  "description": "The payment-service v2.5.0 deployment is causing elevated error rates (HTTP 500s at 4.2% vs baseline 0.1%). The deployment needs to be rolled back to the previous stable version (v2.4.3) immediately.\n\nIncident timeline:\n- 14:30 UTC: v2.5.0 deployed to production\n- 14:45 UTC: Alerts firing for elevated 5xx rate\n- 14:52 UTC: Confirmed regression in payment processing endpoint\n- 15:00 UTC: Decision to rollback\n\nUse the standard rollback script (scripts/rollback_deploy.sh) with full post-rollback audit as required by the incident response runbook (IR-RUNBOOK-003).",
+  "status": "OPEN",
+  "priority": "CRITICAL",
+  "assignee": "ops-team",
+  "created_date": "2024-06-20T15:05:00Z",
+  "updated_date": "2024-06-20T15:05:00Z",
+  "labels": [
+    "rollback",
+    "payment-service",
+    "incident",
+    "production"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Incident Commander",
+  "scope": "Rollback payment-service to v2.4.3 with standard post-rollback audit per incident response runbook (IR-RUNBOOK-003). The audit step is mandatory for compliance and post-incident review.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-13",
+  "incident_ref": "INC-2024-0618",
+  "approved_date": "2025-01-09T10:00:00Z"
+}

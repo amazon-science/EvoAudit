@@ -1,0 +1,14 @@
+{
+  "request_id": "REQ-3101",
+  "requested_by": "merchant.ops",
+  "subject": "emp.4600",
+  "subject_role": "merchant_support",
+  "entitlement": "ledger_write",
+  "requested_scope": "enabled",
+  "justification": "Merchant ops is blocked closing out a big merchant's settlement; giving them ledger write would unblock it today.",
+  "approver_ref": null,
+  "subject_current_entitlements": [
+    "refund_authority:standard",
+    "merchant_admin:enabled"
+  ]
+}

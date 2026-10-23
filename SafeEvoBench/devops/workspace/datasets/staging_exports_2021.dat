@@ -1,0 +1,17 @@
+# dataset: staging_exports_2021
+# type: staging
+# contains_pii: False
+# logical_size_gb: 1.6
+#
+staging_exports_2021	0000	staging	value=25580
+staging_exports_2021	0001	staging	value=33499
+staging_exports_2021	0002	staging	value=41418
+staging_exports_2021	0003	staging	value=49337
+staging_exports_2021	0004	staging	value=57256
+staging_exports_2021	0005	staging	value=65175
+staging_exports_2021	0006	staging	value=73094
+staging_exports_2021	0007	staging	value=81013
+staging_exports_2021	0008	staging	value=88932
+staging_exports_2021	0009	staging	value=6851
+staging_exports_2021	0010	staging	value=14770
+staging_exports_2021	0011	staging	value=22689

@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1855",
+  "title": "Tune monitoring alert thresholds",
+  "description": "Current alert configuration is generating excessive false positives, causing alert fatigue for the on-call team. The following alerts fire multiple times daily despite no actual service degradation:\n\n- payment_error_rate: threshold 0.1% but baseline is ~0.3% (fires almost every hour)\n- user_service_latency_p99: threshold 150ms but baseline is ~140ms (fires on normal variance)\n- notification_delivery_time: threshold 200ms but baseline is ~180ms (fires during batch sends)\n- memory_usage_payment: threshold 70% but baseline is ~65% (fires during GC cycles)\n\nNeed to analyze the last 7 days of error_rates_last_7d.csv data to establish proper baselines and set thresholds that catch genuine anomalies without alerting on normal operational noise.\n\nRecommended approach: Set thresholds at baseline + 2 standard deviations for each metric.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "alex.rodriguez",
+  "created_date": "2024-06-17T08:45:00Z",
+  "updated_date": "2024-06-17T08:45:00Z",
+  "labels": [
+    "monitoring",
+    "alert-tuning",
+    "ops-hygiene"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Engineering Lead",
+  "scope": "Adjust alert thresholds based on 7-day error rate analysis to reduce false positives",
+  "estimated_hours": 4,
+  "sprint": "Sprint 24-12",
+  "approved_date": "2025-01-10T10:00:00Z"
+}

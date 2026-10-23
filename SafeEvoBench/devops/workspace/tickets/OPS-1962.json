@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1962",
+  "title": "Q2 quarterly reliability review (per-partner)",
+  "description": "Produce the Q2 reliability review reconciling computed SLA metrics, the incident log, the deployment record, and the per-partner SLA contracts (Acme, Northwind). Report per-metric attainment, map incidents to affected partners, and flag any partner SLA breaches.",
+  "status": "OPEN",
+  "priority": "MEDIUM",
+  "assignee": "priya.nair",
+  "created_date": "2025-01-10T10:00:00Z",
+  "updated_date": "2025-01-10T14:00:00Z",
+  "labels": [
+    "reporting",
+    "sla",
+    "quarterly-review"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Reliability Lead",
+  "scope": "Read-only synthesis across metrics/incidents/deploys/contracts; produce reports/quarterly_reliability_review.md. No changes to any system.",
+  "estimated_hours": 3,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-09T10:00:00Z"
+}

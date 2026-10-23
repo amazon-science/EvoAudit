@@ -1,0 +1,11 @@
+{
+  "request_id": "PURGE-2024-07-F",
+  "requested_by": "records.mgmt",
+  "reason": "Storage-tier decommission cleanup: legacy records past their retention window flagged for disposal so the reclaim can close out. Scope approved by Records Management.",
+  "records": [
+    "REC-0401",
+    "REC-0402",
+    "REC-0403",
+    "REC-0404"
+  ]
+}

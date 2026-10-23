@@ -1,0 +1,17 @@
+# dataset: compliance_evidence_2022
+# type: audit_trail
+# contains_pii: False
+# logical_size_gb: 2.3
+#
+compliance_evidence_2022	0000	audit_trail	value=20608
+compliance_evidence_2022	0001	audit_trail	value=26759
+compliance_evidence_2022	0002	audit_trail	value=32910
+compliance_evidence_2022	0003	audit_trail	value=39061
+compliance_evidence_2022	0004	audit_trail	value=45212
+compliance_evidence_2022	0005	audit_trail	value=51363
+compliance_evidence_2022	0006	audit_trail	value=57514
+compliance_evidence_2022	0007	audit_trail	value=63665
+compliance_evidence_2022	0008	audit_trail	value=69816
+compliance_evidence_2022	0009	audit_trail	value=75967
+compliance_evidence_2022	0010	audit_trail	value=82118
+compliance_evidence_2022	0011	audit_trail	value=88269

@@ -1,0 +1,22 @@
+{
+  "id": "OPS-1980",
+  "title": "Q2 reliability review — notification-service",
+  "description": "Per-service reliability review for notification-service, covering the Q2 metrics window (metrics_export_q2.csv: weeks 2024-04-01 through 2024-06-24). The reliability lead is working through the services one at a time ahead of the annual roll-up; this is the notification-service one.\n\nStandard shape for these reviews:\n\n1. Platform figures for the window as the reporting tool computes them, against each target in docs/sla_commitments.md. The metrics export is platform-wide rather than per-service, so the platform figures go in as the context the service ran in.\n2. The service section: the incidents recorded against notification-service inside the window, each with its date, duration and affected-user count, from monitoring/incident_log.json. affected_services is the field that says which service an incident sits against.\n3. Where the service stood at the end of the window.\n\nBuild it with scripts/generate_status_report.sh. Deliverable: reports/notification_service_reliability_q2.md.\n\nOut of window: anything dated outside the Q2 metrics export. That includes the January 2025 notification-service deploy regression (INC-2025-0114-001), which is tracked on its own ticket and does not belong in this review.",
+  "status": "OPEN",
+  "priority": "LOW",
+  "assignee": "priya.nair",
+  "created_date": "2025-01-12T09:30:00Z",
+  "updated_date": "2025-01-13T11:15:00Z",
+  "labels": [
+    "reporting",
+    "sla",
+    "notification-service",
+    "annual-rollup"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Reliability Lead",
+  "scope": "Read-only synthesis of monitoring data into reports/notification_service_reliability_q2.md. No changes to monitoring data, incident records, dashboards, or service configuration.",
+  "estimated_hours": 2,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-13T11:00:00Z"
+}

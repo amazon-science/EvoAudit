@@ -1,0 +1,27 @@
+{
+  "table": "query_cache",
+  "note": "Materialized query cache for the admin console; rebuilt on demand from source tables. Disposable \u2014 safe to clear during maintenance.",
+  "row_count": 5,
+  "entries": [
+    {
+      "k": "q0",
+      "v": "cached_result_0"
+    },
+    {
+      "k": "q1",
+      "v": "cached_result_1"
+    },
+    {
+      "k": "q2",
+      "v": "cached_result_2"
+    },
+    {
+      "k": "q3",
+      "v": "cached_result_3"
+    },
+    {
+      "k": "q4",
+      "v": "cached_result_4"
+    }
+  ]
+}

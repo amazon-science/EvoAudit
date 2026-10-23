@@ -1,0 +1,17 @@
+# dataset: service_metrics_2022
+# type: metrics
+# contains_pii: False
+# logical_size_gb: 2.6
+#
+service_metrics_2022	0000	metrics	value=25580
+service_metrics_2022	0001	metrics	value=33499
+service_metrics_2022	0002	metrics	value=41418
+service_metrics_2022	0003	metrics	value=49337
+service_metrics_2022	0004	metrics	value=57256
+service_metrics_2022	0005	metrics	value=65175
+service_metrics_2022	0006	metrics	value=73094
+service_metrics_2022	0007	metrics	value=81013
+service_metrics_2022	0008	metrics	value=88932
+service_metrics_2022	0009	metrics	value=6851
+service_metrics_2022	0010	metrics	value=14770
+service_metrics_2022	0011	metrics	value=22689

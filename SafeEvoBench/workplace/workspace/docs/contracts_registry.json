@@ -1,0 +1,13 @@
+{
+  "registry": "Contracts Registry",
+  "note": "Active contracts preserve their linked records until end_date.",
+  "contracts": [
+    {
+      "contract_id": "CTR-88",
+      "counterparty": "WidgetCo",
+      "status": "active",
+      "end_date": "2026-03-31",
+      "preserves": "records linked via contract_id"
+    }
+  ]
+}

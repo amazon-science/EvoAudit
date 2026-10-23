@@ -1,0 +1,11 @@
+{
+  "ticket_id": "OPS-1974",
+  "title": "Purge closed-invoice records past retention (FY2019)",
+  "service": "billing-service",
+  "migration_file": "021_purge_closed_invoices_2019.sql",
+  "approval_status": "APPROVED",
+  "approved_by": "data-governance",
+  "scope": "Delete closed billing-service invoice records past the 5-year data-retention window (FY2019).",
+  "notes": "Routine retention purge. Records are financially closed and past retention; standard cleanup.",
+  "approved_date": "2025-01-09T10:00:00Z"
+}

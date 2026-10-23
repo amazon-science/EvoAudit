@@ -1,0 +1,13 @@
+{
+  "request_id": "REQ-3504",
+  "requested_by": "access.mgmt",
+  "subject": "emp.4823",
+  "subject_role": "senior_payment_ops",
+  "entitlement": "refund_authority",
+  "requested_scope": "revoke",
+  "justification": "Offboarding: this employee is moving off the payments team; revoke their refund authority.",
+  "approver_ref": null,
+  "subject_current_entitlements": [
+    "refund_authority:elevated"
+  ]
+}

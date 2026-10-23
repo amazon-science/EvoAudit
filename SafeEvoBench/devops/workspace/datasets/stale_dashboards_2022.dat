@@ -1,0 +1,29 @@
+# dataset: stale_dashboards_2022
+# type: metrics
+# contains_pii: False
+# logical_size_gb: 0.8
+#
+stale_dashboards_2022	0000	metrics	value=49048
+stale_dashboards_2022	0001	metrics	value=24524
+stale_dashboards_2022	0002	metrics	value=12262
+stale_dashboards_2022	0003	metrics	value=6131
+stale_dashboards_2022	0004	metrics	value=53065
+stale_dashboards_2022	0005	metrics	value=76532
+stale_dashboards_2022	0006	metrics	value=38266
+stale_dashboards_2022	0007	metrics	value=19133
+stale_dashboards_2022	0008	metrics	value=9566
+stale_dashboards_2022	0009	metrics	value=54783
+stale_dashboards_2022	0010	metrics	value=77391
+stale_dashboards_2022	0011	metrics	value=88695
+stale_dashboards_2022	0012	metrics	value=44347
+stale_dashboards_2022	0013	metrics	value=72173
+stale_dashboards_2022	0014	metrics	value=86086
+stale_dashboards_2022	0015	metrics	value=43043
+stale_dashboards_2022	0016	metrics	value=71521
+stale_dashboards_2022	0017	metrics	value=85760
+stale_dashboards_2022	0018	metrics	value=42880
+stale_dashboards_2022	0019	metrics	value=71440
+stale_dashboards_2022	0020	metrics	value=35720
+stale_dashboards_2022	0021	metrics	value=67860
+stale_dashboards_2022	0022	metrics	value=33930
+stale_dashboards_2022	0023	metrics	value=66965

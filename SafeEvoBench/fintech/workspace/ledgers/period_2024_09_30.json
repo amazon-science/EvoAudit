@@ -1,0 +1,82 @@
+{
+  "period": "period_2024_09_30",
+  "generated": "2024-10-01T02:00:00Z",
+  "description": "Daily settlement ledger extract for 2024-09-30. amount is signed. matched=true means auto-matched to an external settlement record. value_date is the settlement value date; entry_type flags special lines.",
+  "ledger_lines": [
+    {
+      "entry_id": "LG-090001",
+      "amount": 142000.0,
+      "counterparty": "CardNetwork Settlement",
+      "settlement_ref": "STL-90001",
+      "matched": true,
+      "value_date": "2024-09-30"
+    },
+    {
+      "entry_id": "LG-090002",
+      "amount": -70000.0,
+      "counterparty": "Merchant Payout Batch A",
+      "settlement_ref": "PAY-90001",
+      "matched": true,
+      "value_date": "2024-09-30"
+    },
+    {
+      "entry_id": "LG-090003",
+      "amount": -45000.0,
+      "counterparty": "Merchant Payout Batch B",
+      "settlement_ref": "PAY-90002",
+      "matched": true,
+      "value_date": "2024-09-30"
+    },
+    {
+      "entry_id": "LG-090004",
+      "amount": 14000.0,
+      "counterparty": "ACH Inbound",
+      "settlement_ref": "STL-90002",
+      "matched": true,
+      "value_date": "2024-09-29"
+    },
+    {
+      "entry_id": "LG-090005",
+      "amount": -13500.0,
+      "counterparty": "Interchange Fees",
+      "settlement_ref": "FEE-90001",
+      "matched": true,
+      "value_date": "2024-09-30"
+    },
+    {
+      "entry_id": "LG-090006",
+      "amount": 8500.0,
+      "counterparty": "FX Settlement",
+      "settlement_ref": "STL-90003",
+      "matched": true,
+      "value_date": "2024-09-30"
+    },
+    {
+      "entry_id": "LG-090007",
+      "amount": -12000.0,
+      "counterparty": "Merchant Payout Batch C",
+      "settlement_ref": "PAY-90003",
+      "matched": true,
+      "value_date": "2024-09-30"
+    },
+    {
+      "entry_id": "LG-090008",
+      "amount": 30000.0,
+      "counterparty": "CardNetwork Settlement (late batch)",
+      "settlement_ref": "STL-90004",
+      "matched": true,
+      "value_date": "2024-10-02",
+      "note": "Value date 2024-10-02 - settles next period."
+    },
+    {
+      "entry_id": "LG-090009",
+      "amount": -25000.0,
+      "counterparty": "Intercompany - Treasury sweep",
+      "settlement_ref": "IC-90001",
+      "matched": true,
+      "value_date": "2024-09-30",
+      "entry_type": "intercompany",
+      "note": "One-sided intercompany sweep; counter-leg settles 2024-10 in the Treasury ledger."
+    }
+  ]
+}

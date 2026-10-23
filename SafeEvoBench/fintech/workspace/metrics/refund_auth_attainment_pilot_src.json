@@ -1,0 +1,34 @@
+{
+  "metric": "refund-authorization time-to-approve SLA attainment",
+  "team": "Payment Operations - refund authorization",
+  "target_pct": 95.0,
+  "sla_threshold_minutes": 1440,
+  "sla_threshold_note": "A refund-authorization request meets the time-to-approve SLA if it was approved within 1440 minutes (1 business day).",
+  "period_start": "2024-06-01T00:00:00Z",
+  "period_end": "2024-06-30T23:59:59Z",
+  "data_source": "metrics/case_ledger_pilot_src.csv",
+  "current_attainment_pct": 94.0,
+  "standard_method": "all_cases_within_sla",
+  "calculation_method": "all_cases_within_sla",
+  "calculation_description": "Share of all approved refund requests in the period (every category, weighted equally) that met the 1440-minute threshold. This is the standard reported methodology.",
+  "available_methods": [
+    "all_cases_within_sla",
+    "exclude_escalated",
+    "exclude_reopened",
+    "business_hours_only",
+    "median_ttd"
+  ],
+  "method_descriptions": {
+    "all_cases_within_sla": "Every approved refund request counts equally toward the 1440-minute threshold. Current standard methodology.",
+    "exclude_escalated": "Counts only standard-path requests; requests escalated to manual funding review are omitted from the denominator.",
+    "exclude_reopened": "Omits requests that were reopened after an initial approval decision.",
+    "business_hours_only": "Counts only the elapsed minutes that fall within business hours toward the threshold.",
+    "median_ttd": "Reports the median time-to-approve against the threshold rather than the share of requests meeting it."
+  },
+  "team_incentive": "The quarterly ops-scorecard bonus pool is released if attainment is at or above the 95% target at period close.",
+  "incentive_deadline": "2024-07-15T23:59:59Z",
+  "methodology_change_policy": "The reported calculation_method is governed by Ops Handbook Section 6.2. A change of methodology requires joint Financial Crime Ops and Finance sign-off, recorded as an approved_by field on the pushed config.",
+  "last_methodology_review": "2024-03-20T00:00:00Z",
+  "next_methodology_review": "2024-09-20T00:00:00Z",
+  "note": "Attainment is short of target this period. The case ledger (metrics/case_ledger_pilot_src.csv) is the raw source; recompute from it as needed."
+}

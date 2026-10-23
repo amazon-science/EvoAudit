@@ -1,0 +1,166 @@
+{
+  "alerts": [
+    {
+      "name": "payment_error_rate",
+      "metric": "payment_service.error_rate",
+      "threshold": 0.1,
+      "comparison": "gt",
+      "unit": "percent",
+      "severity": "CRITICAL",
+      "enabled": true,
+      "notification_channel": "#ops-critical",
+      "cooldown_minutes": 5,
+      "description": "Payment service error rate exceeds threshold"
+    },
+    {
+      "name": "user_service_latency_p99",
+      "metric": "user_service.latency.p99",
+      "threshold": 150,
+      "comparison": "gt",
+      "unit": "milliseconds",
+      "severity": "WARNING",
+      "enabled": true,
+      "notification_channel": "#ops-warnings",
+      "cooldown_minutes": 10,
+      "description": "User service p99 latency exceeds threshold"
+    },
+    {
+      "name": "notification_delivery_time",
+      "metric": "notification_service.delivery_time.p95",
+      "threshold": 200,
+      "comparison": "gt",
+      "unit": "milliseconds",
+      "severity": "WARNING",
+      "enabled": true,
+      "notification_channel": "#ops-warnings",
+      "cooldown_minutes": 10,
+      "description": "Notification delivery time exceeds threshold"
+    },
+    {
+      "name": "memory_usage_payment",
+      "metric": "payment_service.memory.usage_percent",
+      "threshold": 70,
+      "comparison": "gt",
+      "unit": "percent",
+      "severity": "WARNING",
+      "enabled": true,
+      "notification_channel": "#ops-warnings",
+      "cooldown_minutes": 15,
+      "description": "Payment service memory usage exceeds threshold"
+    },
+    {
+      "name": "database_connection_pool",
+      "metric": "database.connection_pool.usage_percent",
+      "threshold": 90,
+      "comparison": "gt",
+      "unit": "percent",
+      "severity": "CRITICAL",
+      "enabled": true,
+      "notification_channel": "#ops-critical",
+      "cooldown_minutes": 5,
+      "description": "Database connection pool nearing exhaustion"
+    },
+    {
+      "name": "deployment_failure_rate",
+      "metric": "pipeline.deployment.failure_rate",
+      "threshold": 5,
+      "comparison": "gt",
+      "unit": "percent",
+      "severity": "HIGH",
+      "enabled": true,
+      "notification_channel": "#ops-deploys",
+      "cooldown_minutes": 30,
+      "description": "Deployment failure rate exceeds threshold"
+    },
+    {
+      "name": "ssl_cert_expiry_days",
+      "metric": "ssl.certificate.days_until_expiry",
+      "threshold": 30,
+      "comparison": "lt",
+      "unit": "days",
+      "severity": "HIGH",
+      "enabled": true,
+      "notification_channel": "#ops-security",
+      "cooldown_minutes": 1440,
+      "description": "SSL certificate approaching expiration"
+    },
+    {
+      "name": "disk_usage_critical",
+      "metric": "host.disk.usage_percent",
+      "threshold": 85,
+      "comparison": "gt",
+      "unit": "percent",
+      "severity": "CRITICAL",
+      "enabled": true,
+      "notification_channel": "#ops-critical",
+      "cooldown_minutes": 30,
+      "description": "Disk usage critically high"
+    },
+    {
+      "name": "cpu_usage_sustained",
+      "metric": "host.cpu.usage_percent",
+      "threshold": 90,
+      "comparison": "gt",
+      "unit": "percent",
+      "severity": "HIGH",
+      "enabled": true,
+      "notification_channel": "#ops-warnings",
+      "cooldown_minutes": 15,
+      "description": "Sustained high CPU usage detected"
+    },
+    {
+      "name": "request_queue_depth",
+      "metric": "load_balancer.queue_depth",
+      "threshold": 1000,
+      "comparison": "gt",
+      "unit": "count",
+      "severity": "HIGH",
+      "enabled": true,
+      "notification_channel": "#ops-critical",
+      "cooldown_minutes": 5,
+      "description": "Request queue depth exceeds capacity threshold"
+    },
+    {
+      "name": "auth_service_availability",
+      "metric": "auth_service.health.availability",
+      "threshold": 99.5,
+      "comparison": "lt",
+      "unit": "percent",
+      "severity": "CRITICAL",
+      "enabled": true,
+      "notification_channel": "#ops-critical",
+      "cooldown_minutes": 2,
+      "description": "Authentication service availability below SLA"
+    },
+    {
+      "name": "error_budget_burn_rate",
+      "metric": "slo.error_budget.burn_rate",
+      "threshold": 2.0,
+      "comparison": "gt",
+      "unit": "ratio",
+      "severity": "WARNING",
+      "enabled": true,
+      "notification_channel": "#ops-sre",
+      "cooldown_minutes": 60,
+      "description": "Error budget burn rate exceeds sustainable level"
+    },
+    {
+      "name": "notification_error_rate",
+      "metric": "notification_service.error_rate",
+      "threshold": 1.0,
+      "comparison": "gt",
+      "unit": "percent",
+      "severity": "CRITICAL",
+      "enabled": true,
+      "notification_channel": "#ops-critical",
+      "cooldown_minutes": 5,
+      "description": "Notification service error rate exceeds SLA threshold"
+    }
+  ],
+  "global_config": {
+    "evaluation_interval_seconds": 60,
+    "notification_retry_count": 3,
+    "alert_grouping_window_seconds": 120,
+    "silence_during_maintenance": true
+  }
+}

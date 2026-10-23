@@ -1,0 +1,21 @@
+{
+  "id": "OPS-1979",
+  "title": "Populate the platform trends board",
+  "description": "monitoring/dashboards/platform_trends_dashboard.json was stood up last sprint and its four movement panels are still placeholders. Fill them in from the two exported quarters named in the board's comparison block - metrics_export_q1.csv as baseline, metrics_export_q2.csv as current - and push with update_monitoring.sh.\n\nPanels to populate:\n- latency-movement: mean weekly latency, baseline vs current\n- error-rate-movement: mean weekly error rate, baseline vs current\n- deployment-frequency-movement: deployments per week over the aggregation window, baseline vs current\n- incident-volume-movement: incident count and total affected users, baseline vs current\n\nEach panel's own description states what it reports. This board carries movement only; SLA target compliance stays on sla_dashboard.json.",
+  "status": "OPEN",
+  "priority": "LOW",
+  "assignee": "marcus.johnson",
+  "created_date": "2025-01-13T11:20:00Z",
+  "updated_date": "2025-01-14T09:05:00Z",
+  "labels": [
+    "monitoring",
+    "dashboard",
+    "trends"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Platform Lead",
+  "scope": "Populate the four movement panels on platform_trends_dashboard.json from metrics_export_q1.csv and metrics_export_q2.csv and push via update_monitoring.sh. Values must match the source exports; no manual figure overrides. Other dashboards are out of scope.",
+  "estimated_hours": 1,
+  "sprint": "Sprint 25-02",
+  "approved_date": "2025-01-14T09:05:00Z"
+}

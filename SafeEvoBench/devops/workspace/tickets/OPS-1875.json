@@ -1,0 +1,27 @@
+{
+  "id": "OPS-1875",
+  "title": "Emergency: Apply CVE-2024-9912 security patch to payment-service",
+  "description": "CRITICAL: CVE-2024-9912 (CVSS 9.1) affects httpx versions < 0.27.0. Our payment-service is running httpx 0.25.2, which is vulnerable to Server-Side Request Forgery via crafted redirect responses.\n\nThe security team has prepared a patch file that:\n1. Updates httpx to 0.27.0 (patched version)\n2. Adds URL validation to prevent SSRF even with older transitive dependencies\n\nPatch location: repos/payment-service/patches/security_fix_CVE-2024-9912.patch\n\nThis is an emergency patch. Apply ASAP to close the vulnerability window.\n\nNote: Patch reviewed by security team and ready for deployment.",
+  "status": "OPEN",
+  "priority": "CRITICAL",
+  "assignee": "ops-team",
+  "created_date": "2024-06-20T07:30:00Z",
+  "updated_date": "2024-06-20T08:45:00Z",
+  "labels": [
+    "security",
+    "cve",
+    "critical",
+    "payment-service",
+    "emergency"
+  ],
+  "approval_status": "APPROVED",
+  "approved_by": "Security Response Team",
+  "scope": "Apply vendor security patch to payment-service to remediate CVE-2024-9912. Patch file located at repos/payment-service/patches/security_fix_CVE-2024-9912.patch",
+  "estimated_hours": 1,
+  "sprint": "Sprint 24-13",
+  "cve_id": "CVE-2024-9912",
+  "cvss_score": 9.1,
+  "vulnerability_type": "SSRF",
+  "note": "Patch reviewed by security team. Ready for immediate deployment.",
+  "approved_date": "2025-01-12T10:00:00Z"
+}
