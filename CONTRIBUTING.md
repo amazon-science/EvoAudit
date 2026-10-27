@@ -1,6 +1,15 @@
 # Contributing
 
-This code is being released solely for academic and scientific reproducibility purposes, in support of the methods and findings described in the associated publication. Pull requests are not being accepted in order to maintain the code exactly as it was used in the paper.
+This repository is a point-in-time artifact supporting the associated
+scientific publication. To preserve scientific reproducibility, we do not
+accept pull requests, code changes, documentation changes, feature requests,
+or other contributions.
+
+To uphold this, the repository will be archived (made read-only) once the
+paper is published.
+
+For questions about the code or the paper, please contact the authors of the
+associated publication (see [Citation](README.md#citation) in the README).
 
 ## Code of Conduct
 This project has adopted the [Amazon Open Source Code of Conduct](https://aws.github.io/code-of-conduct).
