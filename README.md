@@ -184,7 +184,15 @@ See [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt) for the full license text
 
 ## Citation
 
-> **TODO:** add the BibTeX entry once the paper is on arXiv.
+This code accompanies the paper **Are Your Agents Ready to Evolve? Assessing Evolution-Readiness
+in Agents Through Paired Safety and Utility Scoring** by Nimet Beyza Bozdag, Tharindu Kumarage,
+Lisa Bauer, Tong Wang, Pradeep Natarajan, Dilek Hakkani-Tur, Venkatesh Saligrama, Rahul Gupta and
+Charith Peris, accepted at two NeurIPS 2026 workshops:
+
+- [The Third Workshop on Agents in the Wild: Safety, Security, and Beyond](https://neurips.cc/virtual/2026/loc/sydney/168258)
+- [Managing Agents that Manage Agents: Workshop on Responsible Use of Meta-Agents that Build, Optimize, and Supervise Other Agents](https://neurips.cc/virtual/2026/loc/sydney/169861)
+
+The paper will be available on arXiv soon; a BibTeX entry will be added here then.
 
 ## License
 
