@@ -79,7 +79,7 @@ jupyter_core==5.9.1
 jupyter_server==2.18.2
 jupyter_server_terminals==0.5.4
 kiwisolver==1.5.0
-litellm==1.89.3
+litellm==1.109.0.dev1
 lxml==6.1.1
 markdown-it-py==4.2.0
 MarkupSafe==3.0.3
