@@ -13,7 +13,7 @@ async-lru==2.0.5
 attrs==26.1.0
 babel==2.17.0
 beautifulsoup4==4.15.0
-bleach==6.3.0
+bleach==6.4.0
 boto3==1.43.31
 botocore==1.43.31
 brotlicffi==1.2.0.0
